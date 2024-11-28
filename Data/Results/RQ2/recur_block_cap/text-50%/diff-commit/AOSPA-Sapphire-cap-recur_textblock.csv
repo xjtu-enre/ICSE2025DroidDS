@@ -1,0 +1,2791 @@
+id,merge_commitid,file,Loc_details,block_text_1,block_text_2,recur_segment,proportion
+1,"['022e461c46ee3629d43ba134e977a0f3353c8782', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",services/core/java/com/android/server/display/DisplayModeDirector.java,"[(1176, 1176, 1), (1096, 1096, 1)]","        private boolean mIsDeviceActive = false;
+","        private boolean mScreenOn = false;
+",        private boolean m,"[0.51, 0.581]"
+2,"['022e461c46ee3629d43ba134e977a0f3353c8782', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",services/core/java/com/android/server/display/DisplayModeDirector.java,"[(1573, 1574, 2), (1313, 1315, 3)]","                Slog.d(TAG, ""Display brightness "" + mBrightness + "", ambient lux "" +  mAmbientLux +
+                        "", Vote "" + vote);
+","            if (DEBUG) {
+                Slog.d(TAG, ""Display brightness "" + brightness + "", ambient lux "" +  mAmbientLux +
+                        "", Vote "" + vote);
+","rightness + "", ambient lux "" +  mAmbientLux +
+                        "", Vote "" + vote);
+","[0.622, 0.533]"
+3,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '1b62159ffcebb2c102e129b2e778a8f65b7e5948']",core/java/android/app/ActivityManagerInternal.java,"[(638, 639, 2), (587, 588, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+4,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '1b62159ffcebb2c102e129b2e778a8f65b7e5948']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(700, 700, 1), (592, 593, 2)]","            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","[1.0, 0.678]"
+5,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '2051462f672b5986ef321bf1de3657e7653864e8']",core/java/android/app/ActivityManagerInternal.java,"[(638, 639, 2), (574, 575, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+6,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '219787565ff982848d596fa8743cd132af113e6b']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(700, 700, 1), (610, 611, 2)]","            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","[1.0, 0.678]"
+7,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '24818fca475a6726f5ef0cae42149615079af6e9']",core/java/android/app/ActivityManagerInternal.java,"[(638, 639, 2), (542, 543, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+8,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '26017c68ee11d3f2d54ca731119c8dc4ddb842cf']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(700, 700, 1), (718, 719, 2)]","            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            FeatureFlags featureFlags,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","[1.0, 0.678]"
+9,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '3933f277a025be704e68ea593536e492831a7e05']",core/java/android/app/ActivityManagerInternal.java,"[(638, 639, 2), (479, 480, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+10,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '3e8cb98421761bb7dfafe59a22a15fe2e176f272']",packages/SettingsLib/src/com/android/settingslib/wifi/WifiStatusTracker.java,"[(263, 268, 6), (261, 269, 9)]","            updateRssi(mWifiInfo.getRssi());
+            maybeRequestNetworkScore();
+            wifiStandard = mWifiInfo.getWifiStandard();
+            vhtMax8SpatialStreamsSupport = mWifiInfo.isVhtMax8SpatialStreamsSupported();
+            he8ssCapableAp = mWifiInfo.isHe8ssCapableAp();
+            if (mProviderModel) {
+","            updateRssi(mWifiInfo.getRssi());
+            maybeRequestNetworkScore();
+            wifiStandard = mWifiInfo.getWifiStandard();
+            vhtMax8SpatialStreamsSupport = mWifiInfo.isVhtMax8SpatialStreamsSupported();
+            he8ssCapableAp = mWifiInfo.isHe8ssCapableAp();
+            if (mSupportMergedUi) {
+                isCarrierMerged = mWifiInfo.isCarrierMerged();
+                subId = mWifiInfo.getSubscriptionId();
+            }
+","            updateRssi(mWifiInfo.getRssi());
+            maybeRequestNetworkScore();
+            wifiStandard = mWifiInfo.getWifiStandard();
+            vhtMax8SpatialStreamsSupport = mWifiInfo.isVhtMax8SpatialStreamsSupported();
+            he8ssCapableAp = mWifiInfo.isHe8ssCapableAp();
+            if (m","[0.947, 0.67]"
+11,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '71c831703ae59baf47e0afe611fecd714c481cdf']",services/core/java/com/android/server/wm/RefreshRatePolicy.java,"[(101, 111, 11), (100, 106, 7)]","        // If app is forced to specified refresh rate, return the specified refresh rate
+        int forceRefreshRateId = mForceList.getForceRefreshRateId(w.getOwningPackage());
+        if(forceRefreshRateId > 0) {
+            return forceRefreshRateId;
+        }
+
+        if (w.mAttrs.preferredRefreshRate != 0 || w.mAttrs.preferredDisplayModeId != 0) {
+            return w.mAttrs.preferredDisplayModeId;
+        }
+
+        return 0;
+","        // If app is forced to specified refresh rate, return the specified refresh rate
+        int forceRefreshRateId = mForceList.getForceRefreshRateId(w.getOwningPackage());
+        if(forceRefreshRateId > 0) {
+            return forceRefreshRateId;
+        }
+
+        // If app requests a certain refresh rate or mode, don't override it.
+","        // If app is forced to specified refresh rate, return the specified refresh rate
+        int forceRefreshRateId = mForceList.getForceRefreshRateId(w.getOwningPackage());
+        if(forceRefreshRateId > 0) {
+            return forceRefreshRateId;
+        }
+
+        ","[0.626, 0.796]"
+12,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '71c831703ae59baf47e0afe611fecd714c481cdf']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(700, 700, 1), (613, 614, 2)]","            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","[1.0, 0.678]"
+13,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",core/java/android/app/ActivityManagerInternal.java,"[(638, 639, 2), (444, 445, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+14,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '9d10272031d3f400d399db45927abf3be739b074']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(700, 700, 1), (725, 726, 2)]","            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            EmergencyButtonController.Factory emergencyButtonControllerFactory,
+            NotificationRemoteInputManager remoteInputManager) {
+",            EmergencyButtonController.Factory emergencyButtonControllerFactory,"[0.951, 0.538]"
+15,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",core/java/android/app/ActivityManagerInternal.java,"[(638, 639, 2), (490, 491, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+16,"['15d9159eb00fb7fd92f9dc249af588f655fd8f66', '48cbb14e1815430efd7ff5086e7a4c70e75d475f']",services/core/java/com/android/server/pm/PackageManagerService.java,"[(25702, 25702, 1), (25571, 25571, 1)]","            int flags;
+","            int flags;
+","            int flags;
+","[1.0, 1.0]"
+17,"['1703ba989d8ea7e3cfbf32ac94111087166672de', '2051462f672b5986ef321bf1de3657e7653864e8']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4948, 4985, 38), (4976, 5013, 38)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * String array of APN configurations of same MVNO type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+    /**
+     * Determines whether carrier supports Sms Callback Mode.
+     * When {@code true}, modem can enter/exit SMS callback mode (SCBM) after sending e911 SMS.
+     * When user tries to make a following e911 call and modem is in SCBM, the same sub will be
+     * selected to place the e911 call over IMS.
+     * When {@code false}, follows the current slot selection logic to place the e911 call.
+     *
+     * @hide
+     */
+    public static final String KEY_USE_SMS_CALLBACK_MODE_BOOL =
+            ""use_sms_callback_mode_bool"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * String array of APN configurations of same MVNO type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+    /**
+     * Determines whether carrier supports Sms Callback Mode.
+     * When {@code true}, modem can enter/exit SMS callback mode (SCBM) after sending e911 SMS.
+     * When user tries to make a following e911 call and modem is in SCBM, the same sub will be
+     * selected to place the e911 call over IMS.
+     * When {@code false}, follows the current slot selection logic to place the e911 call.
+     *
+     * @hide
+     */
+    public static final String KEY_USE_SMS_CALLBACK_MODE_BOOL =
+            ""use_sms_callback_mode_bool"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * String array of APN configurations of same MVNO type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+    /**
+     * Determines whether carrier supports Sms Callback Mode.
+     * When {@code true}, modem can enter/exit SMS callback mode (SCBM) after sending e911 SMS.
+     * When user tries to make a following e911 call and modem is in SCBM, the same sub will be
+     * selected to place the e911 call over IMS.
+     * When {@code false}, follows the current slot selection logic to place the e911 call.
+     *
+     * @hide
+     */
+    public static final String KEY_USE_SMS_CALLBACK_MODE_BOOL =
+            ""use_sms_callback_mode_bool"";
+","[1.0, 1.0]"
+18,"['1703ba989d8ea7e3cfbf32ac94111087166672de', '2051462f672b5986ef321bf1de3657e7653864e8']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5568, 5588, 21), (5599, 5619, 21)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","[1.0, 1.0]"
+19,"['1703ba989d8ea7e3cfbf32ac94111087166672de', '21cdef883cc867db55340b25d5c95e19b12ab383']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4948, 4985, 38), (4871, 4908, 38)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * String array of APN configurations of same MVNO type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+    /**
+     * Determines whether carrier supports Sms Callback Mode.
+     * When {@code true}, modem can enter/exit SMS callback mode (SCBM) after sending e911 SMS.
+     * When user tries to make a following e911 call and modem is in SCBM, the same sub will be
+     * selected to place the e911 call over IMS.
+     * When {@code false}, follows the current slot selection logic to place the e911 call.
+     *
+     * @hide
+     */
+    public static final String KEY_USE_SMS_CALLBACK_MODE_BOOL =
+            ""use_sms_callback_mode_bool"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * String array of APN configurations of same MVNO type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+    /**
+     * Determines whether carrier supports Sms Callback Mode.
+     * When {@code true}, modem can enter/exit SMS callback mode (SCBM) after sending e911 SMS.
+     * When user tries to make a following e911 call and modem is in SCBM, the same sub will be
+     * selected to place the e911 call over IMS.
+     * When {@code false}, follows the current slot selection logic to place the e911 call.
+     *
+     * @hide
+     */
+    public static final String KEY_USE_SMS_CALLBACK_MODE_BOOL =
+            ""use_sms_callback_mode_bool"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * String array of APN configurations of same MVNO type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+    /**
+     * Determines whether carrier supports Sms Callback Mode.
+     * When {@code true}, modem can enter/exit SMS callback mode (SCBM) after sending e911 SMS.
+     * When user tries to make a following e911 call and modem is in SCBM, the same sub will be
+     * selected to place the e911 call over IMS.
+     * When {@code false}, follows the current slot selection logic to place the e911 call.
+     *
+     * @hide
+     */
+    public static final String KEY_USE_SMS_CALLBACK_MODE_BOOL =
+            ""use_sms_callback_mode_bool"";
+","[1.0, 1.0]"
+20,"['1703ba989d8ea7e3cfbf32ac94111087166672de', '21cdef883cc867db55340b25d5c95e19b12ab383']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5568, 5588, 21), (5475, 5495, 21)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","[1.0, 1.0]"
+21,"['1703ba989d8ea7e3cfbf32ac94111087166672de', '26017c68ee11d3f2d54ca731119c8dc4ddb842cf']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5568, 5588, 21), (5979, 5998, 20)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","[0.943, 1.0]"
+22,"['1703ba989d8ea7e3cfbf32ac94111087166672de', '3e8cb98421761bb7dfafe59a22a15fe2e176f272']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5568, 5588, 21), (5765, 5785, 21)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","[1.0, 1.0]"
+23,"['1b62159ffcebb2c102e129b2e778a8f65b7e5948', '2051462f672b5986ef321bf1de3657e7653864e8']",core/java/android/app/ActivityManagerInternal.java,"[(587, 588, 2), (574, 575, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+24,"['1b62159ffcebb2c102e129b2e778a8f65b7e5948', '2051462f672b5986ef321bf1de3657e7653864e8']",services/core/java/com/android/server/BluetoothManagerService.java,"[(1129, 1131, 3), (1111, 1113, 3)]","                if (mBluetoothGatt != null) {
+                    mBluetoothGatt.unregAll(mContext.getAttributionSource());
+                }
+","                if (mBluetoothGatt != null) {
+                    mBluetoothGatt.unregAll();
+                }
+","                if (mBluetoothGatt != null) {
+                    mBluetoothGatt.unregAll(","[0.634, 0.811]"
+25,"['1b62159ffcebb2c102e129b2e778a8f65b7e5948', '219787565ff982848d596fa8743cd132af113e6b']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(592, 593, 2), (610, 611, 2)]","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","[1.0, 1.0]"
+26,"['1b62159ffcebb2c102e129b2e778a8f65b7e5948', '24818fca475a6726f5ef0cae42149615079af6e9']",core/java/android/app/ActivityManagerInternal.java,"[(587, 588, 2), (542, 543, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+27,"['1b62159ffcebb2c102e129b2e778a8f65b7e5948', '24818fca475a6726f5ef0cae42149615079af6e9']",services/core/java/com/android/server/locksettings/LockSettingsService.java,"[(230, 231, 2), (228, 229, 2)]","    private static String mSavePassword = DEFAULT_PASSWORD;
+
+","    private static String mSavePassword = DEFAULT_PASSWORD;
+
+","    private static String mSavePassword = DEFAULT_PASSWORD;
+
+","[1.0, 1.0]"
+28,"['1b62159ffcebb2c102e129b2e778a8f65b7e5948', '26017c68ee11d3f2d54ca731119c8dc4ddb842cf']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(592, 593, 2), (718, 719, 2)]","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            FeatureFlags featureFlags,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+",",
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","[0.694, 0.694]"
+29,"['1b62159ffcebb2c102e129b2e778a8f65b7e5948', '3933f277a025be704e68ea593536e492831a7e05']",core/java/android/app/ActivityManagerInternal.java,"[(587, 588, 2), (479, 480, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+30,"['1b62159ffcebb2c102e129b2e778a8f65b7e5948', '71c831703ae59baf47e0afe611fecd714c481cdf']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(592, 593, 2), (613, 614, 2)]","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","[1.0, 1.0]"
+31,"['1b62159ffcebb2c102e129b2e778a8f65b7e5948', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",core/java/android/app/ActivityManagerInternal.java,"[(587, 588, 2), (444, 445, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+32,"['1b62159ffcebb2c102e129b2e778a8f65b7e5948', '9d10272031d3f400d399db45927abf3be739b074']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(592, 593, 2), (725, 726, 2)]","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            EmergencyButtonController.Factory emergencyButtonControllerFactory,
+            NotificationRemoteInputManager remoteInputManager) {
+",            EmergencyButtonController.Factory emergencyButtonControllerFactory,"[0.645, 0.538]"
+33,"['1b62159ffcebb2c102e129b2e778a8f65b7e5948', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",core/java/android/app/ActivityManagerInternal.java,"[(587, 588, 2), (490, 491, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+34,"['2051462f672b5986ef321bf1de3657e7653864e8', '21cdef883cc867db55340b25d5c95e19b12ab383']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4976, 5013, 38), (4871, 4908, 38)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * String array of APN configurations of same MVNO type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+    /**
+     * Determines whether carrier supports Sms Callback Mode.
+     * When {@code true}, modem can enter/exit SMS callback mode (SCBM) after sending e911 SMS.
+     * When user tries to make a following e911 call and modem is in SCBM, the same sub will be
+     * selected to place the e911 call over IMS.
+     * When {@code false}, follows the current slot selection logic to place the e911 call.
+     *
+     * @hide
+     */
+    public static final String KEY_USE_SMS_CALLBACK_MODE_BOOL =
+            ""use_sms_callback_mode_bool"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * String array of APN configurations of same MVNO type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+    /**
+     * Determines whether carrier supports Sms Callback Mode.
+     * When {@code true}, modem can enter/exit SMS callback mode (SCBM) after sending e911 SMS.
+     * When user tries to make a following e911 call and modem is in SCBM, the same sub will be
+     * selected to place the e911 call over IMS.
+     * When {@code false}, follows the current slot selection logic to place the e911 call.
+     *
+     * @hide
+     */
+    public static final String KEY_USE_SMS_CALLBACK_MODE_BOOL =
+            ""use_sms_callback_mode_bool"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * String array of APN configurations of same MVNO type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+    /**
+     * Determines whether carrier supports Sms Callback Mode.
+     * When {@code true}, modem can enter/exit SMS callback mode (SCBM) after sending e911 SMS.
+     * When user tries to make a following e911 call and modem is in SCBM, the same sub will be
+     * selected to place the e911 call over IMS.
+     * When {@code false}, follows the current slot selection logic to place the e911 call.
+     *
+     * @hide
+     */
+    public static final String KEY_USE_SMS_CALLBACK_MODE_BOOL =
+            ""use_sms_callback_mode_bool"";
+","[1.0, 1.0]"
+35,"['2051462f672b5986ef321bf1de3657e7653864e8', '21cdef883cc867db55340b25d5c95e19b12ab383']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5599, 5619, 21), (5475, 5495, 21)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","[1.0, 1.0]"
+36,"['2051462f672b5986ef321bf1de3657e7653864e8', '21cdef883cc867db55340b25d5c95e19b12ab383']",services/core/java/com/android/server/BluetoothManagerService.java,"[(2816, 2817, 2), (2739, 2740, 2)]","        intent.setFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+        mContext.sendBroadcastAsUser(intent, UserHandle.ALL, BLUETOOTH_CONNECT);
+","        intent.setFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+        mContext.sendBroadcastAsUser(intent, UserHandle.ALL, BLUETOOTH_PERM);
+","        intent.setFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+        mContext.sendBroadcastAsUser(intent, UserHandle.ALL, BLUETOOTH_","[0.928, 0.949]"
+37,"['2051462f672b5986ef321bf1de3657e7653864e8', '21cdef883cc867db55340b25d5c95e19b12ab383']",services/core/java/com/android/server/BluetoothManagerService.java,"[(2899, 2900, 2), (2822, 2823, 2)]","            intent.addFlags(Intent.FLAG_RECEIVER_INCLUDE_BACKGROUND);
+            mContext.sendBroadcastAsUser(intent, UserHandle.ALL, BLUETOOTH_CONNECT);
+","            intent.addFlags(Intent.FLAG_RECEIVER_INCLUDE_BACKGROUND);
+            mContext.sendBroadcastAsUser(intent, UserHandle.ALL, BLUETOOTH_PERM);
+","            intent.addFlags(Intent.FLAG_RECEIVER_INCLUDE_BACKGROUND);
+            mContext.sendBroadcastAsUser(intent, UserHandle.ALL, BLUETOOTH_","[0.935, 0.954]"
+38,"['2051462f672b5986ef321bf1de3657e7653864e8', '24818fca475a6726f5ef0cae42149615079af6e9']",core/java/android/app/ActivityManagerInternal.java,"[(574, 575, 2), (542, 543, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+39,"['2051462f672b5986ef321bf1de3657e7653864e8', '26017c68ee11d3f2d54ca731119c8dc4ddb842cf']",packages/SettingsLib/src/com/android/settingslib/bluetooth/CachedBluetoothDevice.java,"[(1322, 1368, 47), (1390, 1438, 49)]","    public int getGroupId(){
+        return mGroupId;
+    }
+
+    public boolean isGroupDevice() {
+        return mIsGroupDevice;
+    }
+
+    public boolean isPrivateAddr() {
+        return mIsIgnore;
+    }
+
+    public void setDeviceType(int deviceType) {
+        if (deviceType!= mType) {
+            // Log.d(TAG, ""setDeviceType deviceType "" + deviceType + "" type "" + mType);
+            mType = deviceType;
+            if (mType == UNKNOWN || mType == BREDR) {
+                mIsGroupDevice = false;
+                mGroupId = UNKNOWN;
+                mIsIgnore = false;
+            } else if (mType == PRIVATE_ADDR) {
+                mIsGroupDevice = false;
+                mGroupId = UNKNOWN;
+                mIsIgnore = true;
+            } else if (mType >= GROUPID_START && mType <= GROUPID_END ) {
+                mGroupId = mType;
+                mIsIgnore = false;
+                mIsGroupDevice = true;
+            } else {
+                Log.e(TAG, ""setDeviceType error type "" + mType);
+            }
+        }
+       /* Log.d(TAG, ""setDeviceType mType "" + mType + "" mIsGroupDevice "" + mIsGroupDevice
+                + "" mGroupId "" + mGroupId + "" mIsIgnore "" + mIsIgnore
+                + "" name "" + getName() + "" addr "" + getAddress()); */
+    }
+
+    public boolean isTypeUnKnown() {
+        if (mType == UNKNOWN) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int getmType() {
+        return mType;
+","    public int getGroupId(){
+        return mGroupId;
+    }
+
+    public boolean isGroupDevice() {
+        return mIsGroupDevice;
+    }
+
+    public boolean isPrivateAddr() {
+        return mIsIgnore;
+    }
+
+    public void setDeviceType(int deviceType) {
+        if (deviceType!= mType) {
+            // Log.d(TAG, ""setDeviceType deviceType "" + deviceType + "" type "" + mType);
+            mType = deviceType;
+            if (mType == UNKNOWN || mType == BREDR) {
+                mIsGroupDevice = false;
+                mGroupId = UNKNOWN;
+                mIsIgnore = false;
+            } else if (mType == PRIVATE_ADDR) {
+                mIsGroupDevice = false;
+                mGroupId = UNKNOWN;
+                mIsIgnore = true;
+            } else if (mType >= GROUPID_START && mType <= GROUPID_END ) {
+                mGroupId = mType;
+                mIsIgnore = false;
+                mIsGroupDevice = true;
+            } else {
+                Log.e(TAG, ""setDeviceType error type "" + mType);
+            }
+        }
+       /* Log.d(TAG, ""setDeviceType mType "" + mType + "" mIsGroupDevice "" + mIsGroupDevice
+                + "" mGroupId "" + mGroupId + "" mIsIgnore "" + mIsIgnore
+                + "" name "" + getName() + "" addr "" + getAddress()); */
+    }
+
+    public boolean isTypeUnKnown() {
+        if (mType == UNKNOWN) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int getmType() {
+        return mType;
+    }
+
+","    public int getGroupId(){
+        return mGroupId;
+    }
+
+    public boolean isGroupDevice() {
+        return mIsGroupDevice;
+    }
+
+    public boolean isPrivateAddr() {
+        return mIsIgnore;
+    }
+
+    public void setDeviceType(int deviceType) {
+        if (deviceType!= mType) {
+            // Log.d(TAG, ""setDeviceType deviceType "" + deviceType + "" type "" + mType);
+            mType = deviceType;
+            if (mType == UNKNOWN || mType == BREDR) {
+                mIsGroupDevice = false;
+                mGroupId = UNKNOWN;
+                mIsIgnore = false;
+            } else if (mType == PRIVATE_ADDR) {
+                mIsGroupDevice = false;
+                mGroupId = UNKNOWN;
+                mIsIgnore = true;
+            } else if (mType >= GROUPID_START && mType <= GROUPID_END ) {
+                mGroupId = mType;
+                mIsIgnore = false;
+                mIsGroupDevice = true;
+            } else {
+                Log.e(TAG, ""setDeviceType error type "" + mType);
+            }
+        }
+       /* Log.d(TAG, ""setDeviceType mType "" + mType + "" mIsGroupDevice "" + mIsGroupDevice
+                + "" mGroupId "" + mGroupId + "" mIsIgnore "" + mIsIgnore
+                + "" name "" + getName() + "" addr "" + getAddress()); */
+    }
+
+    public boolean isTypeUnKnown() {
+        if (mType == UNKNOWN) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int getmType() {
+        return mType;
+","[1.0, 0.995]"
+40,"['2051462f672b5986ef321bf1de3657e7653864e8', '26017c68ee11d3f2d54ca731119c8dc4ddb842cf']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5599, 5619, 21), (5979, 5998, 20)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","[0.943, 1.0]"
+41,"['2051462f672b5986ef321bf1de3657e7653864e8', '3933f277a025be704e68ea593536e492831a7e05']",core/java/android/app/ActivityManagerInternal.java,"[(574, 575, 2), (479, 480, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+42,"['2051462f672b5986ef321bf1de3657e7653864e8', '3e8cb98421761bb7dfafe59a22a15fe2e176f272']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5599, 5619, 21), (5765, 5785, 21)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","[1.0, 1.0]"
+43,"['2051462f672b5986ef321bf1de3657e7653864e8', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",core/java/android/app/ActivityManagerInternal.java,"[(574, 575, 2), (444, 445, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+44,"['2051462f672b5986ef321bf1de3657e7653864e8', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",core/java/android/app/ActivityManagerInternal.java,"[(574, 575, 2), (490, 491, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+45,"['219787565ff982848d596fa8743cd132af113e6b', '26017c68ee11d3f2d54ca731119c8dc4ddb842cf']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(610, 611, 2), (718, 719, 2)]","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            FeatureFlags featureFlags,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+",",
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","[0.694, 0.694]"
+46,"['219787565ff982848d596fa8743cd132af113e6b', '71c831703ae59baf47e0afe611fecd714c481cdf']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(610, 611, 2), (613, 614, 2)]","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","[1.0, 1.0]"
+47,"['219787565ff982848d596fa8743cd132af113e6b', '9d10272031d3f400d399db45927abf3be739b074']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(610, 611, 2), (725, 726, 2)]","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            EmergencyButtonController.Factory emergencyButtonControllerFactory,
+            NotificationRemoteInputManager remoteInputManager) {
+",            EmergencyButtonController.Factory emergencyButtonControllerFactory,"[0.645, 0.538]"
+48,"['21cdef883cc867db55340b25d5c95e19b12ab383', '26017c68ee11d3f2d54ca731119c8dc4ddb842cf']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5475, 5495, 21), (5979, 5998, 20)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","[0.943, 1.0]"
+49,"['21cdef883cc867db55340b25d5c95e19b12ab383', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",packages/SystemUI/src/com/android/keyguard/KeyguardSecurityModel.java,"[(26, 27, 2), (27, 27, 1)]","import com.android.systemui.Dependency;
+import com.android.systemui.keyguard.KeyguardViewMediator;
+","import com.android.systemui.keyguard.KeyguardViewMediator;
+","import com.android.systemui.keyguard.KeyguardViewMediator;
+","[0.596, 1.0]"
+50,"['21cdef883cc867db55340b25d5c95e19b12ab383', '3e8cb98421761bb7dfafe59a22a15fe2e176f272']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5475, 5495, 21), (5765, 5785, 21)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","[1.0, 1.0]"
+51,"['21cdef883cc867db55340b25d5c95e19b12ab383', '81abbc1d7858f29d3344ff6f1702ece80eab8341']",services/core/java/com/android/server/Watchdog.java,"[(747, 747, 1), (747, 747, 1)]","                                    subject, report.toString(), finalStack, null);
+","                                    subject, report.toString(), finalStack, null, null, null);
+","                                    subject, report.toString(), finalStack, null","[0.964, 0.842]"
+52,"['24818fca475a6726f5ef0cae42149615079af6e9', '337095f9d277c566cb888bc3adbac16576f1ae70']",core/java/android/content/res/CompatibilityInfo.java,"[(264, 265, 2), (254, 255, 2)]","            int density = appInfo.getOverrideDensity();
+            if ((appInfo.flags & ApplicationInfo.FLAG_SUPPORTS_SCREEN_DENSITIES) == 0) {
+","            int density = appInfo.getOverrideDensity();
+            if ((appInfo.flags & ApplicationInfo.FLAG_SUPPORTS_SCREEN_DENSITIES) == 0) {
+","            int density = appInfo.getOverrideDensity();
+            if ((appInfo.flags & ApplicationInfo.FLAG_SUPPORTS_SCREEN_DENSITIES) == 0) {
+","[1.0, 1.0]"
+53,"['24818fca475a6726f5ef0cae42149615079af6e9', '3933f277a025be704e68ea593536e492831a7e05']",core/java/android/app/ActivityManagerInternal.java,"[(542, 543, 2), (479, 480, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+54,"['24818fca475a6726f5ef0cae42149615079af6e9', '449f659b21d039b8692602294b040038ac1e6ccb']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4794, 4802, 9), (3977, 3993, 17)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+","[1.0, 0.713]"
+55,"['24818fca475a6726f5ef0cae42149615079af6e9', '449f659b21d039b8692602294b040038ac1e6ccb']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5365, 5365, 1), (4541, 4542, 2)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","[1.0, 0.599]"
+56,"['24818fca475a6726f5ef0cae42149615079af6e9', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4794, 4802, 9), (4077, 4093, 17)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+","[1.0, 0.713]"
+57,"['24818fca475a6726f5ef0cae42149615079af6e9', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5365, 5365, 1), (4645, 4646, 2)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","[1.0, 0.599]"
+58,"['24818fca475a6726f5ef0cae42149615079af6e9', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4794, 4802, 9), (3853, 3869, 17)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+","[1.0, 0.713]"
+59,"['24818fca475a6726f5ef0cae42149615079af6e9', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5365, 5365, 1), (4406, 4407, 2)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","[1.0, 0.599]"
+60,"['24818fca475a6726f5ef0cae42149615079af6e9', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",core/java/android/app/ActivityManagerInternal.java,"[(542, 543, 2), (444, 445, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+61,"['24818fca475a6726f5ef0cae42149615079af6e9', 'b03d6d43646266d456c22154a1f6fd945bf79f83']",services/core/java/com/android/server/wm/ActivityRecord.java,"[(1742, 1744, 3), (1668, 1669, 2)]","
+        if (mPerf == null)
+            mPerf = new BoostFramework();
+","        if (mPerf == null)
+            mPerf = new BoostFramework();
+","        if (mPerf == null)
+            mPerf = new BoostFramework();
+","[0.986, 1.0]"
+62,"['24818fca475a6726f5ef0cae42149615079af6e9', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",core/java/android/app/ActivityManagerInternal.java,"[(542, 543, 2), (490, 491, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+63,"['24818fca475a6726f5ef0cae42149615079af6e9', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4794, 4802, 9), (4632, 4648, 17)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+","[1.0, 0.713]"
+64,"['24818fca475a6726f5ef0cae42149615079af6e9', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5365, 5365, 1), (5202, 5202, 1)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","[1.0, 1.0]"
+65,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '337095f9d277c566cb888bc3adbac16576f1ae70']",services/core/java/com/android/server/display/LocalDisplayAdapter.java,"[(606, 625, 20), (609, 628, 20)]","                } else if (isBuiltIn) {
+                    mInfo.type = Display.TYPE_INTERNAL;
+                    mInfo.touch = DisplayDeviceInfo.TOUCH_INTERNAL;
+                    mInfo.name = getContext().getResources().getString(
+                            com.android.internal.R.string.display_manager_built_in_display_name);
+                    mInfo.flags |= DisplayDeviceInfo.FLAG_ROTATES_WITH_CONTENT;
+
+                    if (SystemProperties.getBoolean(
+                                    ""vendor.display.builtin_presentation"", false)) {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_PRESENTATION;
+                    } else {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_PRIVATE;
+                    }
+
+                    if (!SystemProperties.getBoolean(
+                                    ""vendor.display.builtin_mirroring"", false)) {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_OWN_CONTENT_ONLY;
+                    }
+
+                    mInfo.setAssumedDensityForExternalDisplay(mActiveSfDisplayMode.width, mActiveSfDisplayMode.height);
+","                } else if (isBuiltIn) {
+                    mInfo.type = Display.TYPE_INTERNAL;
+                    mInfo.touch = DisplayDeviceInfo.TOUCH_INTERNAL;
+                    mInfo.name = getContext().getResources().getString(
+                            com.android.internal.R.string.display_manager_built_in_display_name);
+                    mInfo.flags |= DisplayDeviceInfo.FLAG_ROTATES_WITH_CONTENT;
+
+                    if (SystemProperties.getBoolean(
+                                    ""vendor.display.builtin_presentation"", false)) {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_PRESENTATION;
+                    } else {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_PRIVATE;
+                    }
+
+                    if (!SystemProperties.getBoolean(
+                                    ""vendor.display.builtin_mirroring"", false)) {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_OWN_CONTENT_ONLY;
+                    }
+
+                    mInfo.setAssumedDensityForExternalDisplay(config.width, config.height);
+","                } else if (isBuiltIn) {
+                    mInfo.type = Display.TYPE_INTERNAL;
+                    mInfo.touch = DisplayDeviceInfo.TOUCH_INTERNAL;
+                    mInfo.name = getContext().getResources().getString(
+                            com.android.internal.R.string.display_manager_built_in_display_name);
+                    mInfo.flags |= DisplayDeviceInfo.FLAG_ROTATES_WITH_CONTENT;
+
+                    if (SystemProperties.getBoolean(
+                                    ""vendor.display.builtin_presentation"", false)) {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_PRESENTATION;
+                    } else {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_PRIVATE;
+                    }
+
+                    if (!SystemProperties.getBoolean(
+                                    ""vendor.display.builtin_mirroring"", false)) {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_OWN_CONTENT_ONLY;
+                    }
+
+                    mInfo.setAssumedDensityForExternalDisplay(","[0.948, 0.972]"
+66,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '337095f9d277c566cb888bc3adbac16576f1ae70']",packages/SystemUI/tests/src/com/android/systemui/qs/carrier/QSCarrierGroupControllerTest.java,"[(237, 237, 1), (221, 221, 1)]","                0, 0, true, true, 0, """", """", """", 0, true, true);
+","                0, 0, true, true, 0, """", """", """", true, 0, true);
+","                0, 0, true, true, 0, """", """", """", ","[0.754, 0.754]"
+67,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '337095f9d277c566cb888bc3adbac16576f1ae70']",services/core/java/com/android/server/wm/DisplayPolicy.java,"[(140, 140, 1), (132, 133, 2)]","import android.util.BoostFramework;
+","import android.util.BoostFramework;
+import android.util.ArraySet;
+","import android.util.BoostFramework;
+","[1.0, 0.545]"
+68,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '3e8cb98421761bb7dfafe59a22a15fe2e176f272']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5979, 5998, 20), (5765, 5785, 21)]","        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","[1.0, 0.943]"
+69,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '71c831703ae59baf47e0afe611fecd714c481cdf']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(718, 719, 2), (613, 614, 2)]","            FeatureFlags featureFlags,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+",",
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","[0.694, 0.694]"
+70,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '757dbb836469bbdd7eb8312deaf584fe0c99c17d']",packages/SystemUI/tests/src/com/android/systemui/qs/carrier/QSCarrierGroupControllerTest.java,"[(237, 237, 1), (221, 221, 1)]","                0, 0, true, true, 0, """", """", """", 0, true, true);
+","                0, 0, true, true, 0, """", """", """", true, 0, true, true);
+","                0, 0, true, true, 0, """", """", """", ","[0.754, 0.69]"
+71,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",telephony/java/android/telephony/CarrierConfigManager.java,"[(5979, 5998, 20), (4552, 4572, 21)]","        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+","        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+","[0.949, 0.903]"
+72,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '9d10272031d3f400d399db45927abf3be739b074']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(718, 719, 2), (725, 726, 2)]","            FeatureFlags featureFlags,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            EmergencyButtonController.Factory emergencyButtonControllerFactory,
+            NotificationRemoteInputManager remoteInputManager) {
+",            EmergencyButtonController.Factory emergencyButtonControllerFactory,"[0.645, 0.538]"
+73,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '3933f277a025be704e68ea593536e492831a7e05']",services/java/com/android/server/SystemServer.java,"[(1239, 1239, 1), (1253, 1255, 3)]","            mSystemServiceManager.startService(ActivityTriggerService.class);
+","            mSystemServiceManager.startService(ActivityTriggerService.class);
+
+            if (Build.IS_DEBUGGABLE) {
+","            mSystemServiceManager.startService(ActivityTriggerService.class);
+","[1.0, 0.661]"
+74,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '449f659b21d039b8692602294b040038ac1e6ccb']",services/core/java/com/android/server/wm/TaskDisplayArea.java,"[(158, 162, 5), (159, 164, 6)]","    public static boolean mPerfSendTapHint = false;
+    public static boolean mIsPerfBoostAcquired = false;
+    public static int mPerfHandle = -1;
+    public BoostFramework mPerfBoost = null;
+    public BoostFramework mUxPerf = null;
+","    public static boolean mPerfSendTapHint = false;
+    public static boolean mIsPerfBoostAcquired = false;
+    public static int mPerfHandle = -1;
+    public BoostFramework mPerfBoost = null;
+    public BoostFramework mUxPerf = null;
+
+","    public static boolean mPerfSendTapHint = false;
+    public static boolean mIsPerfBoostAcquired = false;
+    public static int mPerfHandle = -1;
+    public BoostFramework mPerfBoost = null;
+    public BoostFramework mUxPerf = null;
+","[1.0, 0.996]"
+75,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '449f659b21d039b8692602294b040038ac1e6ccb']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4496, 4498, 3), (4541, 4542, 2)]","        sDefaults.putBoolean(KEY_DISABLE_DUN_APN_WHILE_ROAMING, false);
+        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","[0.656, 1.0]"
+76,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '449f659b21d039b8692602294b040038ac1e6ccb']",services/core/java/com/android/server/location/LocationManagerService.java,"[(286, 293, 8), (219, 224, 6)]","
+    private final PassiveLocationProviderManager mPassiveManager;
+
+    private String mComboNlpPackageName;
+    private String mComboNlpReadyMarker;
+    private String mComboNlpScreenMarker;
+    private PowerManager mPowerManager;
+
+","    @Nullable private volatile GnssManagerService mGnssManagerService = null;
+
+    private String mComboNlpPackageName;
+    private String mComboNlpReadyMarker;
+    private String mComboNlpScreenMarker;
+
+",";
+
+    private String mComboNlpPackageName;
+    private String mComboNlpReadyMarker;
+    private String mComboNlpScreenMarker;
+","[0.545, 0.623]"
+77,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '449f659b21d039b8692602294b040038ac1e6ccb']",core/java/android/view/Choreographer.java,"[(1032, 1032, 1), (1033, 1034, 2)]","            ScrollOptimizer.setVsyncTime(mTimestampNanos);
+","            ScrollOptimizer.setVsyncTime(mTimestampNanos);
+            mFrameTimelineVsyncId = frameTimelineVsyncId;
+","            ScrollOptimizer.setVsyncTime(mTimestampNanos);
+","[1.0, 0.504]"
+78,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",services/core/java/com/android/server/pm/PackageInstallerSession.java,"[(2715, 2727, 13), (3249, 3257, 9)]","    @Override
+    public void abandon() {
+        if (mIsPerfLockAcquired && mPerfBoostInstall != null) {
+            mPerfBoostInstall.perfLockRelease();
+            mIsPerfLockAcquired = false;
+        }
+        if (hasParentSessionId()) {
+            throw new IllegalStateException(
+                    ""Session "" + sessionId + "" is a child of multi-package session ""
+                            + getParentSessionId() +  "" and may not be abandoned directly."");
+        }
+
+        List<PackageInstallerSession> childSessions = getChildSessionsNotLocked();
+","        if (mIsPerfLockAcquired && mPerfBoostInstall != null) {
+            mPerfBoostInstall.perfLockRelease();
+            mIsPerfLockAcquired = false;
+        }
+        if (hasParentSessionId()) {
+            throw new IllegalStateException(
+                    ""Session "" + sessionId + "" is a child of multi-package session ""
+                            + getParentSessionId() +  "" and may not be abandoned directly."");
+        }
+","        if (mIsPerfLockAcquired && mPerfBoostInstall != null) {
+            mPerfBoostInstall.perfLockRelease();
+            mIsPerfLockAcquired = false;
+        }
+        if (hasParentSessionId()) {
+            throw new IllegalStateException(
+                    ""Session "" + sessionId + "" is a child of multi-package session ""
+                            + getParentSessionId() +  "" and may not be abandoned directly."");
+        }
+","[0.775, 1.0]"
+79,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4496, 4498, 3), (4645, 4646, 2)]","        sDefaults.putBoolean(KEY_DISABLE_DUN_APN_WHILE_ROAMING, false);
+        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","[0.656, 1.0]"
+80,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",location/java/android/location/LocationManager.java,"[(943, 943, 1), (716, 716, 1)]","        android.util.SeempLog.record(47);
+","        android.util.SeempLog.record(46);
+",        android.util.SeempLog.record(4,"[0.905, 0.905]"
+81,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4496, 4498, 3), (4406, 4407, 2)]","        sDefaults.putBoolean(KEY_DISABLE_DUN_APN_WHILE_ROAMING, false);
+        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","[0.656, 1.0]"
+82,"['337095f9d277c566cb888bc3adbac16576f1ae70', '757dbb836469bbdd7eb8312deaf584fe0c99c17d']",packages/SystemUI/tests/src/com/android/systemui/qs/carrier/QSCarrierGroupControllerTest.java,"[(221, 221, 1), (221, 221, 1)]","                0, 0, true, true, 0, """", """", """", true, 0, true);
+","                0, 0, true, true, 0, """", """", """", true, 0, true, true);
+","                0, 0, true, true, 0, """", """", """", true, 0, true","[0.954, 0.873]"
+83,"['337095f9d277c566cb888bc3adbac16576f1ae70', '757dbb836469bbdd7eb8312deaf584fe0c99c17d']",packages/SystemUI/src/com/android/systemui/qs/tiles/CastTile.java,"[(279, 281, 3), (279, 281, 3)]","                    if(SystemProperties.getBoolean(WFD_ENABLE, false)) {
+                        if(enabled != mWifiConnected) {
+                            mWifiConnected = enabled;
+","                    if(SystemProperties.getBoolean(WFD_ENABLE, false)) {
+                        if(enabled != mWifiConnected) {
+                            mWifiConnected = enabled;
+","                    if(SystemProperties.getBoolean(WFD_ENABLE, false)) {
+                        if(enabled != mWifiConnected) {
+                            mWifiConnected = enabled;
+","[1.0, 1.0]"
+84,"['337095f9d277c566cb888bc3adbac16576f1ae70', '757dbb836469bbdd7eb8312deaf584fe0c99c17d']",packages/SystemUI/src/com/android/systemui/statusbar/phone/KeyguardBottomAreaView.java,"[(782, 782, 1), (820, 821, 2)]","        mEmergencyCarrierArea.setAlpha(alpha);
+","        mAltLeftButton.setAlpha(alpha);
+        mEmergencyCarrierArea.setAlpha(alpha);
+","        mEmergencyCarrierArea.setAlpha(alpha);
+","[1.0, 0.54]"
+85,"['337095f9d277c566cb888bc3adbac16576f1ae70', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a']",services/core/java/com/android/server/wm/ActivityRecord.java,"[(5266, 5267, 2), (5096, 5097, 2)]","        launching = false;
+        final Task stack = getRootTask();
+","        launching = false;
+        final ActivityStack stack = getRootTask();
+","        launching = false;
+        final ","[0.594, 0.526]"
+86,"['337095f9d277c566cb888bc3adbac16576f1ae70', '9d10272031d3f400d399db45927abf3be739b074']",packages/SystemUI/src/com/android/systemui/statusbar/phone/KeyguardBottomAreaView.java,"[(751, 751, 1), (866, 866, 1)]","            mEmergencyCarrierArea.setVisibility(INVISIBLE);
+","        mEmergencyCarrierArea.setAlpha(alpha);
+",        mEmergencyCarrierArea.set,"[0.55, 0.702]"
+87,"['337095f9d277c566cb888bc3adbac16576f1ae70', '9d10272031d3f400d399db45927abf3be739b074']",packages/SystemUI/src/com/android/systemui/statusbar/phone/KeyguardBottomAreaView.java,"[(782, 782, 1), (866, 866, 1)]","        mEmergencyCarrierArea.setAlpha(alpha);
+","        mEmergencyCarrierArea.setAlpha(alpha);
+","        mEmergencyCarrierArea.setAlpha(alpha);
+","[1.0, 1.0]"
+88,"['337095f9d277c566cb888bc3adbac16576f1ae70', 'd3ff2de786af936a9af8739f5c98972804dd5823']",media/java/android/media/AudioFormat.java,"[(319, 343, 25), (288, 311, 24)]","    /** Audio data format: AMRNB
+     * @hide
+     * */
+    public static final int ENCODING_AMRNB = 100;
+    /** Audio data format: AMRWB
+     * @hide
+     * */
+    public static final int ENCODING_AMRWB = 101;
+    /** Audio data format: EVRC
+     * @hide
+     * */
+    public static final int ENCODING_EVRC = 102;
+    /** Audio data format: EVRCB
+     * @hide
+     * */
+    public static final int ENCODING_EVRCB = 103;
+    /** Audio data format: EVRCWB
+     * @hide
+     * */
+    public static final int ENCODING_EVRCWB = 104;
+    /** Audio data format: EVRCNW
+     * @hide
+     * */
+    public static final int ENCODING_EVRCNW = 105;
+
+","    /** Audio data format: AMRNB
+     * @hide
+     * */
+    public static final int ENCODING_AMRNB = 100;
+    /** Audio data format: AMRWB
+     * @hide
+     * */
+    public static final int ENCODING_AMRWB = 101;
+    /** Audio data format: EVRC
+     * @hide
+     * */
+    public static final int ENCODING_EVRC = 102;
+    /** Audio data format: EVRCB
+     * @hide
+     * */
+    public static final int ENCODING_EVRCB = 103;
+    /** Audio data format: EVRCWB
+     * @hide
+     * */
+    public static final int ENCODING_EVRCWB = 104;
+    /** Audio data format: EVRCNW
+     * @hide
+     * */
+    public static final int ENCODING_EVRCNW = 105;
+","    /** Audio data format: AMRNB
+     * @hide
+     * */
+    public static final int ENCODING_AMRNB = 100;
+    /** Audio data format: AMRWB
+     * @hide
+     * */
+    public static final int ENCODING_AMRWB = 101;
+    /** Audio data format: EVRC
+     * @hide
+     * */
+    public static final int ENCODING_EVRC = 102;
+    /** Audio data format: EVRCB
+     * @hide
+     * */
+    public static final int ENCODING_EVRCB = 103;
+    /** Audio data format: EVRCWB
+     * @hide
+     * */
+    public static final int ENCODING_EVRCWB = 104;
+    /** Audio data format: EVRCNW
+     * @hide
+     * */
+    public static final int ENCODING_EVRCNW = 105;
+","[0.998, 1.0]"
+89,"['337095f9d277c566cb888bc3adbac16576f1ae70', 'd3ff2de786af936a9af8739f5c98972804dd5823']",services/core/java/com/android/server/am/OomAdjuster.java,"[(1499, 1518, 20), (1484, 1501, 18)]","            app.bumpAllowStartFgsState(PROCESS_STATE_TOP);
+
+            if(mIsTopAppRenderThreadBoostEnabled) {
+                if(mCurRenderThreadTid != app.renderThreadTid && app.renderThreadTid > 0) {
+                    mCurRenderThreadTid = app.renderThreadTid;
+                    if (mPerfBoost != null) {
+                        Slog.d(TAG, ""TOP-APP: pid:"" + app.pid + "", processName: ""
+                               + app.processName + "", renderThreadTid: "" + app.renderThreadTid);
+                        if (mPerfHandle >= 0) {
+                            mPerfBoost.perfLockRelease();
+                            mPerfHandle = -1;
+                        }
+                        mPerfHandle = mPerfBoost.perfHint(BoostFramework.VENDOR_HINT_BOOST_RENDERTHREAD,
+                                                          app.processName, app.renderThreadTid, 1);
+                        Slog.d(TAG, ""VENDOR_HINT_BOOST_RENDERTHREAD perfHint was called. mPerfHandle: ""
+                               + mPerfHandle);
+                    }
+                }
+            }
+
+","            if(mIsTopAppRenderThreadBoostEnabled) {
+                if(mCurRenderThreadTid != app.renderThreadTid && app.renderThreadTid > 0) {
+                    mCurRenderThreadTid = app.renderThreadTid;
+                    if (mPerfBoost != null) {
+                        Slog.d(TAG, ""TOP-APP: pid:"" + app.pid + "", processName: ""
+                               + app.processName + "", renderThreadTid: "" + app.renderThreadTid);
+                        if (mPerfHandle >= 0) {
+                            mPerfBoost.perfLockRelease();
+                            mPerfHandle = -1;
+                        }
+                        mPerfHandle = mPerfBoost.perfHint(BoostFramework.VENDOR_HINT_BOOST_RENDERTHREAD,
+                                                          app.processName, app.renderThreadTid, 1);
+                        Slog.d(TAG, ""VENDOR_HINT_BOOST_RENDERTHREAD perfHint was called. mPerfHandle: ""
+                               + mPerfHandle);
+                    }
+                }
+            }
+
+","            if(mIsTopAppRenderThreadBoostEnabled) {
+                if(mCurRenderThreadTid != app.renderThreadTid && app.renderThreadTid > 0) {
+                    mCurRenderThreadTid = app.renderThreadTid;
+                    if (mPerfBoost != null) {
+                        Slog.d(TAG, ""TOP-APP: pid:"" + app.pid + "", processName: ""
+                               + app.processName + "", renderThreadTid: "" + app.renderThreadTid);
+                        if (mPerfHandle >= 0) {
+                            mPerfBoost.perfLockRelease();
+                            mPerfHandle = -1;
+                        }
+                        mPerfHandle = mPerfBoost.perfHint(BoostFramework.VENDOR_HINT_BOOST_RENDERTHREAD,
+                                                          app.processName, app.renderThreadTid, 1);
+                        Slog.d(TAG, ""VENDOR_HINT_BOOST_RENDERTHREAD perfHint was called. mPerfHandle: ""
+                               + mPerfHandle);
+                    }
+                }
+            }
+
+","[0.944, 1.0]"
+90,"['3933f277a025be704e68ea593536e492831a7e05', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",core/java/android/app/ActivityManagerInternal.java,"[(479, 480, 2), (444, 445, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+91,"['3933f277a025be704e68ea593536e492831a7e05', 'ac442e0398fe7344f66cbbd4d2af15b1bfdbf46b']",services/core/java/com/android/server/am/ActiveServices.java,"[(448, 449, 2), (468, 471, 4)]","        if(mPerf != null)
+            SERVICE_RESCHEDULE = Boolean.parseBoolean(mPerf.perfGetProp(""ro.vendor.qti.am.reschedule_service"", ""false""));
+","        mPlatformCompat = IPlatformCompat.Stub.asInterface(b);
+
+        if(mPerf != null)
+            SERVICE_RESCHEDULE = Boolean.parseBoolean(mPerf.perfGetProp(""ro.vendor.qti.am.reschedule_service"", ""false""));
+","        if(mPerf != null)
+            SERVICE_RESCHEDULE = Boolean.parseBoolean(mPerf.perfGetProp(""ro.vendor.qti.am.reschedule_service"", ""false""));
+","[1.0, 0.698]"
+92,"['3933f277a025be704e68ea593536e492831a7e05', 'ac442e0398fe7344f66cbbd4d2af15b1bfdbf46b']",services/core/java/com/android/server/display/DisplayManagerService.java,"[(316, 321, 6), (361, 366, 6)]","    // The synchronization root for the display dumpsys.
+    private final SyncRoot mSyncDump = new SyncRoot();
+
+    // Whether dump is inprogress or not.
+    @GuardedBy(""mSyncDump"")
+    private boolean mDumpInProgress;
+","    // The synchronization root for the display dumpsys.
+    private final SyncRoot mSyncDump = new SyncRoot();
+
+    // Whether dump is inprogress or not.
+    @GuardedBy(""mSyncDump"")
+    private boolean mDumpInProgress;
+","    // The synchronization root for the display dumpsys.
+    private final SyncRoot mSyncDump = new SyncRoot();
+
+    // Whether dump is inprogress or not.
+    @GuardedBy(""mSyncDump"")
+    private boolean mDumpInProgress;
+","[1.0, 1.0]"
+93,"['3933f277a025be704e68ea593536e492831a7e05', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",core/java/android/app/ActivityManagerInternal.java,"[(479, 480, 2), (490, 491, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+94,"['3e8cb98421761bb7dfafe59a22a15fe2e176f272', 'b6d6690a3594cd78966e26508247d4ab1b66776f']",services/core/java/com/android/server/pm/PackageManagerService.java,"[(25571, 25572, 2), (25218, 25219, 2)]","            int flags;
+            if (umInternal.isUserUnlockingOrUnlocked(user.id)) {
+","            int flags = 0;
+            if (umInternal.isUserUnlockingOrUnlocked(user.id)) {
+",";
+            if (umInternal.isUserUnlockingOrUnlocked(user.id)) {
+","[0.761, 0.728]"
+95,"['449f659b21d039b8692602294b040038ac1e6ccb', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",telephony/java/android/telephony/CarrierConfigManager.java,"[(3977, 3993, 17), (4077, 4093, 17)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","[1.0, 1.0]"
+96,"['449f659b21d039b8692602294b040038ac1e6ccb', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4541, 4542, 2), (4645, 4646, 2)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","[1.0, 1.0]"
+97,"['449f659b21d039b8692602294b040038ac1e6ccb', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a']",telephony/java/android/telephony/CarrierConfigManager.java,"[(3977, 3993, 17), (3853, 3869, 17)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","[1.0, 1.0]"
+98,"['449f659b21d039b8692602294b040038ac1e6ccb', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4541, 4542, 2), (4406, 4407, 2)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","[1.0, 1.0]"
+99,"['449f659b21d039b8692602294b040038ac1e6ccb', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",telephony/java/android/telephony/CarrierConfigManager.java,"[(3977, 3993, 17), (3973, 4007, 35)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+
+    /**
+     * String array of Apn configurations of same mvno type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","[1.0, 0.509]"
+100,"['449f659b21d039b8692602294b040038ac1e6ccb', 'b03d6d43646266d456c22154a1f6fd945bf79f83']",services/core/java/com/android/server/wm/TaskDisplayArea.java,"[(43, 44, 2), (41, 42, 2)]","import static com.android.server.wm.RootWindowContainer.TAG_STATES;
+import static com.android.server.wm.Task.ActivityState.DESTROYED;
+","import static com.android.server.wm.DisplayContent.alwaysCreateStack;
+import static com.android.server.wm.Task.ActivityState.DESTROYED;
+",";
+import static com.android.server.wm.Task.ActivityState.DESTROYED;
+","[0.507, 0.5]"
+101,"['449f659b21d039b8692602294b040038ac1e6ccb', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",telephony/java/android/telephony/CarrierConfigManager.java,"[(3977, 3993, 17), (4632, 4648, 17)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","[1.0, 1.0]"
+102,"['449f659b21d039b8692602294b040038ac1e6ccb', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4541, 4542, 2), (5202, 5202, 1)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","[0.599, 1.0]"
+103,"['4c3d4ac80fe9f0fb4fbb4fcffcd2ba3f4e6fca6c', 'b6d6690a3594cd78966e26508247d4ab1b66776f']",core/java/android/app/PendingIntent.java,"[(374, 384, 11), (374, 383, 10)]","            if (Compatibility.isChangeEnabled(PENDING_INTENT_EXPLICIT_MUTABILITY_REQUIRED)
+                    && !""com.google.android.apps.gcs"".equals(packageName)
+                    && !flagImmutableSet && !flagMutableSet) {
+                String msg = packageName + "": Targeting S+ (version "" + Build.VERSION_CODES.S
+                        + "" and above) requires that one of FLAG_IMMUTABLE or FLAG_MUTABLE""
+                        + "" be specified when creating a PendingIntent.\nStrongly consider""
+                        + "" using FLAG_IMMUTABLE, only use FLAG_MUTABLE if some functionality""
+                        + "" depends on the PendingIntent being mutable, e.g. if it needs to""
+                        + "" be used with inline replies or bubbles."";
+                    throw new IllegalArgumentException(msg);
+            }
+","            if (Compatibility.isChangeEnabled(PENDING_INTENT_EXPLICIT_MUTABILITY_REQUIRED)
+                    && !flagImmutableSet && !flagMutableSet) {
+                String msg = packageName + "": Targeting S+ (version "" + Build.VERSION_CODES.S
+                        + "" and above) requires that one of FLAG_IMMUTABLE or FLAG_MUTABLE""
+                        + "" be specified when creating a PendingIntent.\nStrongly consider""
+                        + "" using FLAG_IMMUTABLE, only use FLAG_MUTABLE if some functionality""
+                        + "" depends on the PendingIntent being mutable, e.g. if it needs to""
+                        + "" be used with inline replies or bubbles."";
+                    throw new IllegalArgumentException(msg);
+            }
+",")
+                    && !flagImmutableSet && !flagMutableSet) {
+                String msg = packageName + "": Targeting S+ (version "" + Build.VERSION_CODES.S
+                        + "" and above) requires that one of FLAG_IMMUTABLE or FLAG_MUTABLE""
+                        + "" be specified when creating a PendingIntent.\nStrongly consider""
+                        + "" using FLAG_IMMUTABLE, only use FLAG_MUTABLE if some functionality""
+                        + "" depends on the PendingIntent being mutable, e.g. if it needs to""
+                        + "" be used with inline replies or bubbles."";
+                    throw new IllegalArgumentException(msg);
+            }
+","[0.806, 0.884]"
+104,"['71c831703ae59baf47e0afe611fecd714c481cdf', '81abbc1d7858f29d3344ff6f1702ece80eab8341']",services/core/java/com/android/server/Watchdog.java,"[(758, 758, 1), (747, 747, 1)]","                                    localSubject, report.toString(), finalStack, null, null, null);
+","                                    subject, report.toString(), finalStack, null, null, null);
+","ubject, report.toString(), finalStack, null, null, null);
+","[0.58, 0.611]"
+105,"['71c831703ae59baf47e0afe611fecd714c481cdf', '9d10272031d3f400d399db45927abf3be739b074']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(613, 614, 2), (725, 726, 2)]","            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+","            EmergencyButtonController.Factory emergencyButtonControllerFactory,
+            NotificationRemoteInputManager remoteInputManager) {
+",            EmergencyButtonController.Factory emergencyButtonControllerFactory,"[0.645, 0.538]"
+106,"['71c831703ae59baf47e0afe611fecd714c481cdf', '9d10272031d3f400d399db45927abf3be739b074']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(1043, 1048, 6), (1187, 1190, 4)]","        mKeyguardBottomArea.initWallet(mQuickAccessWalletClient, mUiExecutor,
+                mFeatureFlags.isQuickAccessWalletEnabled());
+        EmergencyButton emergencyButton =
+                mKeyguardBottomArea.findViewById(R.id.emergency_call_button);
+        mEmergencyButtonController = mEmergencyButtonControllerFactory.create(emergencyButton);
+        mEmergencyButtonController.init();
+","        EmergencyButton emergencyButton =
+                mKeyguardBottomArea.findViewById(R.id.emergency_call_button);
+        mEmergencyButtonController = mEmergencyButtonControllerFactory.create(emergencyButton);
+        mEmergencyButtonController.init();
+","        EmergencyButton emergencyButton =
+                mKeyguardBottomArea.findViewById(R.id.emergency_call_button);
+        mEmergencyButtonController = mEmergencyButtonControllerFactory.create(emergencyButton);
+        mEmergencyButtonController.init();
+","[0.651, 1.0]"
+107,"['757dbb836469bbdd7eb8312deaf584fe0c99c17d', '9d10272031d3f400d399db45927abf3be739b074']",packages/SystemUI/src/com/android/systemui/statusbar/phone/KeyguardBottomAreaView.java,"[(820, 821, 2), (866, 866, 1)]","        mAltLeftButton.setAlpha(alpha);
+        mEmergencyCarrierArea.setAlpha(alpha);
+","        mEmergencyCarrierArea.setAlpha(alpha);
+","        mEmergencyCarrierArea.setAlpha(alpha);
+","[0.54, 1.0]"
+108,"['7fd6edc3a3ff37a750641d5e192835fe217f6050', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4077, 4093, 17), (3853, 3869, 17)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","[1.0, 1.0]"
+109,"['7fd6edc3a3ff37a750641d5e192835fe217f6050', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4645, 4646, 2), (4406, 4407, 2)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","[1.0, 1.0]"
+110,"['7fd6edc3a3ff37a750641d5e192835fe217f6050', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4077, 4093, 17), (3973, 4007, 35)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+
+    /**
+     * String array of Apn configurations of same mvno type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","[1.0, 0.509]"
+111,"['7fd6edc3a3ff37a750641d5e192835fe217f6050', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4077, 4093, 17), (4632, 4648, 17)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","[1.0, 1.0]"
+112,"['7fd6edc3a3ff37a750641d5e192835fe217f6050', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4645, 4646, 2), (5202, 5202, 1)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","[0.599, 1.0]"
+113,"['8abdf0e95a5d15a310b6df69d33a4510a0b44b4a', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",telephony/java/android/telephony/CarrierConfigManager.java,"[(3853, 3869, 17), (3973, 4007, 35)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+
+    /**
+     * String array of Apn configurations of same mvno type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","[1.0, 0.509]"
+114,"['8abdf0e95a5d15a310b6df69d33a4510a0b44b4a', 'b03d6d43646266d456c22154a1f6fd945bf79f83']",services/core/java/com/android/server/wm/RootWindowContainer.java,"[(1854, 1854, 1), (1860, 1860, 1)]","    public ActivityStack getTopDisplayFocusedStack() {
+","    public Task getTopDisplayFocusedStack() {
+","k getTopDisplayFocusedStack() {
+","[0.582, 0.696]"
+115,"['8abdf0e95a5d15a310b6df69d33a4510a0b44b4a', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",telephony/java/android/telephony/CarrierConfigManager.java,"[(3853, 3869, 17), (4632, 4648, 17)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","[1.0, 1.0]"
+116,"['8abdf0e95a5d15a310b6df69d33a4510a0b44b4a', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",telephony/java/android/telephony/CarrierConfigManager.java,"[(4406, 4407, 2), (5202, 5202, 1)]","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+","[0.599, 1.0]"
+117,"['9272406e82304c5a2a8124c75eedb4b5fdf7273a', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",telephony/java/android/telephony/CarrierConfigManager.java,"[(3973, 4007, 35), (4632, 4648, 17)]","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+
+    /**
+     * String array of Apn configurations of same mvno type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+","[0.509, 1.0]"
+118,"['9272406e82304c5a2a8124c75eedb4b5fdf7273a', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",core/java/android/app/ActivityManagerInternal.java,"[(444, 445, 2), (490, 491, 2)]","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+","[1.0, 1.0]"
+119,"['9d10272031d3f400d399db45927abf3be739b074', 'b6d6690a3594cd78966e26508247d4ab1b66776f']",packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"[(1187, 1190, 4), (1139, 1146, 8)]","        EmergencyButton emergencyButton =
+                mKeyguardBottomArea.findViewById(R.id.emergency_call_button);
+        mEmergencyButtonController = mEmergencyButtonControllerFactory.create(emergencyButton);
+        mEmergencyButtonController.init();
+","
+        if (mFeatureFlags.isQuickAccessWalletEnabled()) {
+            mKeyguardBottomArea.initWallet(mQuickAccessWalletController);
+        }
+        EmergencyButton emergencyButton =
+                mKeyguardBottomArea.findViewById(R.id.emergency_call_button);
+        mEmergencyButtonController = mEmergencyButtonControllerFactory.create(emergencyButton);
+        mEmergencyButtonController.init();
+","        EmergencyButton emergencyButton =
+                mKeyguardBottomArea.findViewById(R.id.emergency_call_button);
+        mEmergencyButtonController = mEmergencyButtonControllerFactory.create(emergencyButton);
+        mEmergencyButtonController.init();
+","[1.0, 0.644]"
+120,"['b6d6690a3594cd78966e26508247d4ab1b66776f', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",packages/SystemUI/src/com/android/systemui/statusbar/phone/PanelViewController.java,"[(584, 588, 5), (625, 628, 4)]","        mFlingVelocity = vel;
+        if (mPerf != null) {
+            String currentPackage = mView.getContext().getPackageName();
+            mPerf.perfHint(BoostFramework.VENDOR_HINT_SCROLL_BOOST, currentPackage, -1, BoostFramework.Scroll.PANEL_VIEW);
+        }
+","        if (mPerf != null) {
+            String currentPackage = mView.getContext().getPackageName();
+            mPerf.perfHint(BoostFramework.VENDOR_HINT_SCROLL_BOOST, currentPackage, -1, BoostFramework.Scroll.PANEL_VIEW);
+        }
+","        if (mPerf != null) {
+            String currentPackage = mView.getContext().getPackageName();
+            mPerf.perfHint(BoostFramework.VENDOR_HINT_SCROLL_BOOST, currentPackage, -1, BoostFramework.Scroll.PANEL_VIEW);
+        }
+","[0.887, 1.0]"

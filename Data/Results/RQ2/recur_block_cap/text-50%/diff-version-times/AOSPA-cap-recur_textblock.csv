@@ -1,0 +1,1627 @@
+id,file,merge_commitid,times,recur_segment
+1,core/java/android/app/ActivityManagerInternal.java,"['2051462f672b5986ef321bf1de3657e7653864e8', '1b62159ffcebb2c102e129b2e778a8f65b7e5948', '02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '24818fca475a6726f5ef0cae42149615079af6e9', 'd28a4f6b38dbab44128b4319f665dd65c3e4ec2c', '9272406e82304c5a2a8124c75eedb4b5fdf7273a', 'df73284a33506ba26aadbd20a1dbd01353820200', 'a9736185db896fe2edde0281d71102b35327b7f8', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e', '3933f277a025be704e68ea593536e492831a7e05']",10,"    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+"
+2,core/java/android/bluetooth/BluetoothCodecConfig.java,"['24adcf1303bc4e0f0203c9ea0c691d7faa0c2aba', '449f659b21d039b8692602294b040038ac1e6ccb']",2,"    public static final int SOURCE_CODEC_TYPE_APTX_ADAPTIVE = 4;
+
+    public static final int SOURCE_CODEC_TYPE_LDAC = 5;
+
+    public static final int SOURCE_CODEC_TYPE_APTX_TWSP = 6;
+
+    public static final int SOURCE_CODEC_TYPE_MAX = 7;
+
+    /* CELT is not an A2DP Codec and only used to fetch encoder
+    ** format for BA usecase, moving out of a2dp codec value list
+    */
+    public static final int SOURCE_CODEC_TYPE_CELT = 8;
+
+   "
+3,core/java/android/content/pm/ApplicationInfo.java,"['a33382db0bb0bc29bab84f1e5ee36d682bea593e', '337095f9d277c566cb888bc3adbac16576f1ae70']",2,"    /** {@hide} */ public int canOverrideRes() { return overrideRes; }
+"
+4,core/java/android/content/pm/ApplicationInfo.java,"['a33382db0bb0bc29bab84f1e5ee36d682bea593e', '337095f9d277c566cb888bc3adbac16576f1ae70', '6f47ceafbe6febe54aa5c376baed3415cdf848ad']",3,"    /** {@hide} */ public void setOverrideRes(int overrideResolution) { overrideRes = overrideResolution; }
+"
+5,core/java/android/hardware/camera2/CameraManager.java,"['74a21b989f82a6a024f29085ad324e939472bed1', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,"import android.app.ActivityThread;
+"
+6,location/java/android/location/LocationManager.java,"['18970c4d9d55a44040fe6fb762dac93a077c64b5', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '7fd6edc3a3ff37a750641d5e192835fe217f6050', 'a97ca47ee3713a075711c311c49e3951264007ef']",4,        android.util.SeempLog.record(4
+7,location/java/android/location/LocationManager.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', '2775a5a9b030266a910301e8b464811acafcd5fa']",2,"        android.util.SeempLog.record(45);
+"
+8,packages/SettingsLib/src/com/android/settingslib/Utils.java,"['24adcf1303bc4e0f0203c9ea0c691d7faa0c2aba', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",2,"        return getWifiIconResource(level, 0 /* standard */, false /* isReady */);
+"
+9,packages/SettingsLib/src/com/android/settingslib/Utils.java,"['24adcf1303bc4e0f0203c9ea0c691d7faa0c2aba', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",2,"     * @param level The number of bars to show (0-4)
+     * @throws IllegalArgumentException if an invalid RSSI level is given.
+     */
+    public static int getWifiIconResource(int level, int standard, boolean isReady) {
+        if (level < 0 || level >= WIFI_PIE.length) {
+            throw new IllegalArgumentException(""No Wifi icon found for level: "" + level);
+        }
+
+        switch (standard) {
+            case 4:
+                return WIFI_4_PIE[level];
+            case 5:
+                if (isReady) {
+                    return WIFI_6_PIE[level];
+                } else {
+                    return WIFI_5_PIE[level];
+                }
+            case 6:
+                return WIFI_6_PIE[level];
+            default:
+                return WIFI_PIE[level];
+       }
+"
+10,packages/SettingsLib/src/com/android/settingslib/bluetooth/CachedBluetoothDevice.java,"['757dbb836469bbdd7eb8312deaf584fe0c99c17d', '2edeff882ab756e76b3a028a1568d8774ddc0257']",2,"                if ((mDevice.getBluetoothClass() != null) &&
+                   (mDevice.getBluetoothClass().getDeviceClass()
+                        == BluetoothClass.Device.AUDIO_VIDEO_HANDSFREE ||
+                    mDevice.getBluetoothClass().getDeviceClass()
+"
+11,packages/SettingsLib/src/com/android/settingslib/bluetooth/CachedBluetoothDevice.java,"['2051462f672b5986ef321bf1de3657e7653864e8', 'ddcaa93e851eb5e57692799446f2ef3fe31436ae']",2,"    /* Gets Device for seondary TWS device
+     * @param mDevice Primary TWS device  to get secondary
+     * @return Description of the device
+     */
+
+    private BluetoothDevice getTwsPeerDevice() {
+      BluetoothAdapter bluetoothAdapter;
+      BluetoothDevice peerDevice = null;
+      if (mDevice.isTwsPlusDevice()) {
+        bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        String peerAddress = mDevice.getTwsPlusPeerAddress();
+        peerDevice = bluetoothAdapter.getRemoteDevice(peerAddress);
+      }
+      return peerDevice;
+"
+12,packages/SettingsLib/src/com/android/settingslib/bluetooth/LocalBluetoothProfileManager.java,"['ae1b3a8f3221dbe692fd90d414cfe5040538c264', 'ddcaa93e851eb5e57692799446f2ef3fe31436ae']",2,"import android.bluetooth.BluetoothDun;
+"
+13,packages/SettingsLib/src/com/android/settingslib/wifi/AccessPoint.java,"['4a30c150e58ec67edb92a7bec5ea48cebd6b90d4', '71998c3d8b36220df1be12fe6e1ba7eda81cde41']",2,"    private static final int LEGACY_CAPABLE_BSSID = 0;
+    private static final int HT_CAPABLE_BSSID = 1;
+    private static final int VHT_CAPABLE_BSSID = 2;
+    private static final int HE_CAPABLE_BSSID = 3;
+    private static final int MAX_CAPABLE_BSSID = Integer.MAX_VALUE;
+
+    private static final int WIFI_GENERATION_LEGACY = 0;
+    private static final int WIFI_GENERATION_4 = 4;
+    private static final int WIFI_GENERATION_5 = 5;
+    private static final int WIFI_GENERATION_6 = 6;
+"
+14,packages/SettingsLib/src/com/android/settingslib/wifi/AccessPoint.java,"['757dbb836469bbdd7eb8312deaf584fe0c99c17d', 'b76115be4efabffaa6febc57cec47acc2f933c79']",2,    public static final int SECURITY_DPP = 
+15,packages/SettingsLib/src/com/android/settingslib/wifi/AccessPoint.java,"['757dbb836469bbdd7eb8312deaf584fe0c99c17d', '8d21ad0d966c1e9f96e5a65144efad2582391957']",2,"    public static final int SECURITY_DPP = 7;
+"
+16,packages/SettingsLib/src/com/android/settingslib/wifi/WifiEntryPreference.java,"['24adcf1303bc4e0f0203c9ea0c691d7faa0c2aba', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",2,"        final Drawable drawable = mIconInjector.getIcon(level, standard, isReady);
+"
+17,packages/SettingsLib/src/com/android/settingslib/wifi/WifiEntryPreference.java,"['24adcf1303bc4e0f0203c9ea0c691d7faa0c2aba', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",2,"        final int standard = mWifiEntry.getWifiStandard();
+        final boolean vhtMax8SpatialStreamsSupport = mWifiEntry.isVhtMax8SpatialStreamsSupported();
+        final boolean he8ssCapableAp = mWifiEntry.isHe8ssCapableAp();
+
+        if (level != mLevel || standard != mWifiStandard || he8ssCapableAp != mHe8ssCapableAp ||
+                vhtMax8SpatialStreamsSupport != mVhtMax8SpatialStreamsSupport) {
+            mLevel = level;
+            mWifiStandard = standard;
+            mHe8ssCapableAp = he8ssCapableAp;
+            mVhtMax8SpatialStreamsSupport = vhtMax8SpatialStreamsSupport;
+            updateIcon(mLevel, mWifiStandard, mHe8ssCapableAp && mVhtMax8SpatialStreamsSupport);
+"
+18,packages/SettingsLib/src/com/android/settingslib/wifi/WifiEntryPreference.java,"['24adcf1303bc4e0f0203c9ea0c691d7faa0c2aba', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",2,"    private int mWifiStandard;
+    private boolean mVhtMax8SpatialStreamsSupport;
+    private boolean mHe8ssCapableAp;
+"
+19,packages/SettingsLib/src/com/android/settingslib/wifi/WifiEntryPreference.java,"['24adcf1303bc4e0f0203c9ea0c691d7faa0c2aba', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",2,"    private void updateIcon(int level, int standard, boolean isReady) {
+"
+20,packages/SystemUI/src/com/android/keyguard/KeyguardUpdateMonitor.java,['4e4914b22b779e6376bb00ae20636175b2a70d8c'],1,"                case MSG_LOCALE_CHANGED:
+                    handleLocaleChanged();
+"
+21,packages/SystemUI/src/com/android/keyguard/KeyguardUpdateMonitor.java,['4e4914b22b779e6376bb00ae20636175b2a70d8c'],1,"            } else if (Intent.ACTION_LOCALE_CHANGED.equals(action)) {
+                mHandler.sendEmptyMessage(MSG_LOCALE_CHANGED);
+"
+22,packages/SystemUI/src/com/android/keyguard/KeyguardUpdateMonitor.java,"['6e3be19b8a58c265a2c3ff4b9cbabdb6a4ae9bf6', '4e4914b22b779e6376bb00ae20636175b2a70d8c', '657230bb5e95ec8560c534360cac5a25fd743129', '1730c08a2fd38f0ff8135692a855ada865130939']",4,"    private static final int MSG_LOCALE_CHANGED = 500;
+"
+23,packages/SystemUI/src/com/android/systemui/ScreenDecorations.java,"['24adcf1303bc4e0f0203c9ea0c691d7faa0c2aba', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a']",2,"        int newRoundedDefault = mContext.getResources().getDimensionPixelSize(
+"
+24,packages/SystemUI/src/com/android/systemui/keyguard/KeyguardViewMediator.java,"['74a21b989f82a6a024f29085ad324e939472bed1', 'edb6252578f9b76151e5125a7fb1b16823a68418']",2,".setOccluded(isOccluded,
+                        (Dependency.get(KeyguardUpdateMonitor.class).isSimPinSecure()?false:animate)
+"
+25,packages/SystemUI/src/com/android/systemui/keyguard/KeyguardViewMediator.java,"['74a21b989f82a6a024f29085ad324e939472bed1', 'b6292e3e1ba3616eac1032737a91925391d94b92']",2,"erLazy.get().setOccluded(isOccluded,
+                        (Dependency.get(KeyguardUpdateMonitor.class).isSimPinSecure()?false:animate)
+"
+26,packages/SystemUI/src/com/android/systemui/qs/QSPanel.java,"['4a30c150e58ec67edb92a7bec5ea48cebd6b90d4', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,"
+        updateResources();
+"
+27,packages/SystemUI/src/com/android/systemui/qs/QSPanel.java,"['587cb520382d349c91bd59ada23fbefcdb44314f', '3933f277a025be704e68ea593536e492831a7e05']",2,"        for (TileRecord r : mRecords) {
+            r.tile.clearState();
+        }
+        "
+28,packages/SystemUI/src/com/android/systemui/qs/tiles/HotspotTile.java,"['2051462f672b5986ef321bf1de3657e7653864e8', '3d2fc559e13b7293212955f1858d443f4fe8234e']",2,"e;
+import android.content.Context;
+"
+29,packages/SystemUI/src/com/android/systemui/statusbar/phone/KeyguardBottomAreaView.java,"['7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2', '337095f9d277c566cb888bc3adbac16576f1ae70', 'fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2']",3,"    private EmergencyCarrierArea mEmergencyCarrierArea;
+"
+30,packages/SystemUI/src/com/android/systemui/statusbar/phone/PanelView.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"        mContext.getContentResolver().registerContentObserver(
+                Settings.System.getUriFor(Settings.System.HAPTIC_FEEDBACK_ENABLED), true,
+                mVibrationObserver);
+        mVibrationObserver.onChange(false /* selfChange */);
+
+        mPerf = new BoostFramework();
+    }
+
+    public void updateHapticFeedBackEnabled() {
+        mVibrationEnabled = Settings.System.getIntForUser(mContext.getContentResolver(),
+                Settings.System.HAPTIC_FEEDBACK_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
+"
+31,packages/SystemUI/src/com/android/systemui/statusbar/phone/PanelView.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"import android.util.BoostFramework;
+"
+32,packages/SystemUI/src/com/android/systemui/statusbar/phone/PanelView.java,['4e4914b22b779e6376bb00ae20636175b2a70d8c'],1,"import com.android.systemui.statusbar.policy.HeadsUpManager;
+import android.util.BoostFramework;
+"
+33,packages/SystemUI/src/com/android/systemui/statusbar/policy/HotspotControllerImpl.java,"['6e3be19b8a58c265a2c3ff4b9cbabdb6a4ae9bf6', 'ddcaa93e851eb5e57692799446f2ef3fe31436ae', '240d78276b3206717587bea012131945c6f60179']",3,"    public void onNumClientsChanged(int numConnectedDevices) {
+        // Do nothing - we don't care about changing anything here.
+    }
+
+    @Override
+    public void onStaConnected(String Macaddr, int numConnectedDevices) {
+        mNumConnectedDevices = numConnectedDevices;
+        fireHotspotChangedCallback("
+34,packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"                int discContentDesc, int dataContentDesc, int dataType, boolean isWide,
+                int qsDataType) {
+                this(name, sbIcons, qsIcons, contentDesc, sbNullState, qsNullState, sbDiscState,
+                        qsDiscState, discContentDesc, dataContentDesc, dataType, isWide,
+                        qsDataType, 0, 0, 0, 0);
+        }
+
+        public MobileIconGroup(String name, int[][] sbIcons, int[][] qsIcons, int[] contentDesc,
+                int sbNullState, int qsNullState, int sbDiscState, int qsDiscState,
+                int discContentDesc, int dataContentDesc, int dataType, boolean isWide,
+                int qsDataType, int singleSignalIcon, int stackedDataIcon,
+                int stackedVoicelIcon, int activityId) {
+"
+35,packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            if (mConfig.readIconsFromXml) {
+                return getIcons().mSingleSignalIcon;
+            }else {
+                return SignalDrawable.getState(level, getNumLevels(),
+                        mCurrentState.inetCondition == 0);
+            }
+"
+36,packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            mQsDataType = qsDataType;
+            mSingleSignalIcon = singleSignalIcon;
+            mStackedDataIcon = stackedDataIcon;
+            mStackedVoiceIcon = stackedVoicelIcon;
+            mActivityId = activityId;
+"
+37,packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java,"['188a21cc8ac704f36fd3f2984b4da86307ab7949', 'fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2', '2b252c526c654de6d04ec0165b4b8f039b37f82b']",3,"        pw.println(""  mFiveGState="" + mFiveGState + "","");
+"
+38,packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java,"['d28a4f6b38dbab44128b4319f665dd65c3e4ec2c', '657230bb5e95ec8560c534360cac5a25fd743129', '6f47ceafbe6febe54aa5c376baed3415cdf848ad', 'edb6252578f9b76151e5125a7fb1b16823a68418']",4,"import android.telephony.ims.ImsMmTelManager;
+import android.telephony.ims.ImsReasonInfo;
+import android.telephony.ims."
+39,packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', 'd28a4f6b38dbab44128b4319f665dd65c3e4ec2c', 'b76115be4efabffaa6febc57cec47acc2f933c79']",3,"import com.android.internal.telephony.PhoneConstants;
+import com.android.internal.telephony.PhoneConstants.DataState;
+"
+40,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            0, 0, false, 0
+    );
+"
+41,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            R.string.accessibility_cell_data_off,
+            TelephonyIcons.ICON_DATA_DISABLED,
+            false,
+            TelephonyIcons.QS_ICON_DATA_DISABLED
+    );
+
+    static final int DATA_TYPE_UNKNOWN = 0;
+    static final int DATA_TYPE_G = 1;
+    static final int DATA_TYPE_E = 2;
+    static final int DATA_TYPE_2G = 3;
+    static final int DATA_TYPE_3G = 4;
+    static final int DATA_TYPE_4G = 5;
+    static final int DATA_TYPE_H = 6;
+    static final int DATA_TYPE_HP = 7;
+    static final int DATA_TYPE_1X = 8;
+    static final int DATA_TYPE_LTE = 9;
+    static final int DATA_TYPE_4G_PLUS = 10;
+
+    static final int SIGNAL_STRENGTH_TYPE_G = 0;
+    static final int SIGNAL_STRENGTH_TYPE_E = 1;
+    static final int SIGNAL_STRENGTH_TYPE_3G = 2;
+    static final int SIGNAL_STRENGTH_TYPE_4G = 3;
+    static final int SIGNAL_STRENGTH_TYPE_H = 4;
+    static final int SIGNAL_STRENGTH_TYPE_HP = 5;
+    static final int SIGNAL_STRENGTH_TYPE_1X = 6;
+    static final int SIGNAL_STRENGTH_TYPE_CDMA = 7;
+    static final int SIGNAL_STRENGTH_TYPE_UMTS = 8;
+    static final int SIGNAL_STRENGTH_TYPE_4G_PLUS = 9;
+
+    static final int DEFAULT_SUB = 0;
+    static final int INET_TYPE_NUM = 2;
+    static final int SIGNAL_LEVEL_NUM = SignalStrength.NUM_SIGNAL_STRENGTH_BINS;
+    static final String TAG = ""TelephonyIcons"";
+    static final String NS = ""com.android.systemui"";
+    static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);;
+
+    static String[] mDataTypeArray, mDataTypeGenerationArray;
+    static String[] mDataTypeDescriptionArray, mDataTypeGenerationDescArray;
+    static String[] mDataActivityArray;
+    static String[] mSignalStrengthArray, mSignalStrengthRoamingArray;
+    static String[] mSignalNullArray;
+    static String[] mSignalStrengthDesc;
+
+    static int[] mSelectedDataTypeIcon;
+    static int[] mSelectedQSDataTypeIcon;
+    static String[] mSelectedDataTypeDesc;
+    static int[] mSelectedDataActivityIndex;
+    static int[] mSelectedSignalStreagthIndex;
+    static SparseArray<Integer> mStacked2SingleIconLookup;
+
+    private static Resources mRes;
+    private static boolean isInitiated = false;
+
+    static void readIconsFromXml(Context context) {
+        if (isInitiated) {
+            log(TAG, ""readIconsFromXml, already read!"");
+            return;
+        }
+
+        mRes = context.getResources();
+        try {
+            mDataTypeArray = mRes.getStringArray(R.array.multi_data_type);
+            mDataTypeDescriptionArray = mRes.getStringArray(
+                    R.array.telephony_data_type_description);
+            mDataTypeGenerationArray = mRes.getStringArray(
+                    R.array.telephony_data_type_generation);
+            mDataTypeGenerationDescArray = mRes.getStringArray(
+                    R.array.telephony_data_type_generation_description);
+            mDataActivityArray = mRes.getStringArray(R.array.multi_data_activity);
+            mSignalStrengthArray = mRes.getStringArray(R.array.multi_signal_strength);
+            mSignalStrengthRoamingArray = mRes.getStringArray(
+                    R.array.multi_signal_strength_roaming);
+            mSignalNullArray = mRes.getStringArray(R.array.multi_signal_null);
+            mSignalStrengthDesc = mRes.getStringArray(R.array.signal_strength_description);
+            initStacked2SingleIconLookup();
+        } catch (android.content.res.Resources.NotFoundException e) {
+            isInitiated = false;
+            log(TAG, ""readIconsFromXml, exception happened: "" + e);
+            return;
+        }
+
+        if (mSelectedDataTypeIcon == null
+                && mDataTypeArray.length != 0) {
+            mSelectedDataTypeIcon = new int[mDataTypeArray.length];
+        }
+        if (mSelectedQSDataTypeIcon == null
+                && mDataTypeArray.length != 0) {
+            mSelectedQSDataTypeIcon = new int[mDataTypeArray.length];
+        }
+        if (mSelectedDataTypeDesc == null
+                && mDataTypeArray.length != 0) {
+            mSelectedDataTypeDesc = new String[mDataTypeArray.length];
+        }
+        if (mSelectedDataActivityIndex == null
+                && mDataActivityArray.length != 0) {
+            mSelectedDataActivityIndex = new int[mDataActivityArray.length];
+        }
+        if (mSelectedSignalStreagthIndex == null
+                && mSignalStrengthArray.length != 0) {
+            mSelectedSignalStreagthIndex = new int[mSignalStrengthArray.length];
+        }
+        isInitiated = true;
+    }
+
+    static void initStacked2SingleIconLookup() {
+        mStacked2SingleIconLookup = new SparseArray<>();
+        TypedArray stackedIcons = mRes.obtainTypedArray(R.array.stacked_signal_icons);
+        TypedArray singleIcons = mRes.obtainTypedArray(R.array.single_signal_icons);
+
+        mStacked2SingleIconLookup.clear();
+        for (int i = 0; i < stackedIcons.length() && i < singleIcons.length(); i++) {
+            mStacked2SingleIconLookup.put(stackedIcons.getResourceId(i,0),
+                    singleIcons.getResourceId(i,0));
+        }
+        stackedIcons.recycle();
+        singleIcons.recycle();
+        log(TAG, ""initStacked2SingleIconLookup: size="" + mStacked2SingleIconLookup.size());
+    }
+
+    static int getSignalNullIcon(int slot) {
+        if (mSignalNullArray == null) {
+            return 0;
+        }
+        String resName = mSignalNullArray[slot];
+        log(TAG, ""null signal icon name: "" + resName);
+        int resId = mRes.getIdentifier(resName, null, NS);
+        return resId;
+    }
+
+    static void updateDataType(int slot, int type, boolean showAtLeast3G,
+                               boolean show4GforLte, boolean hspaDistinguishable, int inet) {
+        log(TAG, ""updateDataType ""
+                + String.format(""slot=%d, type=%d, inetCondition=%d"",
+                slot, type, inet)
+                + "" showAtLeast3G="" + String.valueOf(showAtLeast3G)
+                + "" show4GforLte="" + String.valueOf(show4GforLte)
+                + "" hspaDistinguishable="" + String.valueOf(hspaDistinguishable));
+
+        String resName = mDataTypeArray[slot];
+        int resId = mRes.getIdentifier(resName, null, NS);
+        String[] dataTypeArray = mRes.getStringArray(resId);
+
+        log(TAG, ""data type item name: "" + resName + "" id:"" + resId);
+
+        switch (type) {
+            case TelephonyManager.NETWORK_TYPE_UNKNOWN:
+                if (!showAtLeast3G) {
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = 0;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedDataActivityIndex[slot] = 0;
+                    mSelectedSignalStreagthIndex[slot] = 0;
+                    break;
+                } else {
+                    // fall through
+                }
+            case TelephonyManager.NETWORK_TYPE_EDGE:
+                if (!showAtLeast3G) {
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_E;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_E;
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_E;
+                    break;
+                } else {
+                    // fall through
+                }
+            case TelephonyManager.NETWORK_TYPE_UMTS:
+            case TelephonyManager.NETWORK_TYPE_TD_SCDMA:
+                mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                        dataTypeArray[type], null, NS);
+                mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_UMTS;
+                break;
+            case TelephonyManager.NETWORK_TYPE_HSDPA:
+            case TelephonyManager.NETWORK_TYPE_HSUPA:
+            case TelephonyManager.NETWORK_TYPE_HSPA:
+                if (hspaDistinguishable) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_H;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_H;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_H;
+                } else {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            mDataTypeGenerationArray[0], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeGenerationDescArray[0];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_3G;
+                }
+                break;
+            case TelephonyManager.NETWORK_TYPE_HSPAP:
+                if (hspaDistinguishable) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_HP;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_H;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_HP;
+                } else {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            mDataTypeGenerationArray[0], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeGenerationDescArray[0];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_3G;
+                }
+                break;
+            case TelephonyManager.NETWORK_TYPE_CDMA:
+                if (!showAtLeast3G) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_1X;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_1X;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_CDMA;
+                    break;
+                } else {
+                    // fall through
+                }
+            case TelephonyManager.NETWORK_TYPE_1xRTT:
+                if (!showAtLeast3G) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_1X;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_1X;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_1X;
+                    break;
+                } else {
+                    // fall through
+                }
+            case TelephonyManager.NETWORK_TYPE_EVDO_0: //fall through
+            case TelephonyManager.NETWORK_TYPE_EVDO_A:
+            case TelephonyManager.NETWORK_TYPE_EVDO_B:
+            case TelephonyManager.NETWORK_TYPE_EHRPD:
+                mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                        dataTypeArray[type], null, NS);
+                mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_3G;
+                break;
+            case TelephonyManager.NETWORK_TYPE_LTE:
+            case TelephonyManager.NETWORK_TYPE_LTE_CA:
+                if (show4GforLte) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_4G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            mDataTypeGenerationArray[1], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_4G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeGenerationDescArray[1];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_4G;
+
+                    if ( type == TelephonyManager.NETWORK_TYPE_LTE_CA) {
+                        //Select 4G+ icon.
+                        mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                                mDataTypeGenerationArray[2], null, NS);
+                        mSelectedQSDataTypeIcon[slot] = ICON_4G_PLUS;
+                        mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_4G_PLUS;
+                        mSelectedDataActivityIndex[slot] = DATA_TYPE_4G_PLUS;
+                    }
+                } else {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_LTE;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_LTE;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_4G;
+                }
+                break;
+            case TelephonyManager.NETWORK_TYPE_GPRS:
+            case TelephonyManager.NETWORK_TYPE_GSM:
+                if (!showAtLeast3G) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_G;
+                } else {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            mDataTypeGenerationArray[0], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeGenerationDescArray[0];;
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_3G;
+                }
+                break;
+            default:
+                mSelectedDataActivityIndex[slot] = DATA_TYPE_UNKNOWN;
+                mSelectedDataTypeIcon[slot] = 0;
+                mSelectedQSDataTypeIcon[slot] = 0;
+                mSelectedDataTypeDesc[slot] = """";
+                mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_G;
+                break;
+        }
+        log(TAG, ""updateDataType "" + String.format(
+                ""mSelectedDataTypeIcon[%d]=%d, mSelectedDataActivityIndex=%d"",
+                slot, mSelectedDataTypeIcon[slot], mSelectedDataActivityIndex[slot]));
+    }
+
+
+    static int getQSDataTypeIcon(int slot) {
+        return mSelectedQSDataTypeIcon[slot];
+    }
+
+    static int getDataTypeIcon(int slot) {
+        log(TAG, ""getDataTypeIcon "" + String.format(""sub=%d"", slot));
+        return mSelectedDataTypeIcon[slot];
+    }
+
+    static int getDataTypeDesc(int slot) {
+        return mRes.getIdentifier(mSelectedDataTypeDesc[slot], null, NS);
+    }
+
+    static int getDataActivity(int slot, int activity) {
+        log(TAG, String.format(""getDataActivity, slot=%d, activity=%d"",
+                slot, activity));
+
+        String[] dataActivityArray = mRes.getStringArray(
+                mRes.getIdentifier(mDataActivityArray[slot], null, NS));
+        String[] selectedTypeArray = mRes.getStringArray(mRes.getIdentifier(
+                dataActivityArray[mSelectedDataActivityIndex[slot]], null, NS));
+
+        return mRes.getIdentifier(selectedTypeArray[activity], null, NS);
+    }
+
+    static int getSignalStrengthIcon(int slot, int inet, int level, boolean roaming) {
+        log(TAG, ""getSignalStrengthIcon: "" + String.format(
+                ""slot=%d, inetCondition=%d, level=%d, roaming=%b"", slot, inet, level, roaming));
+
+        String[] signalStrengthArray, selectedTypeArray;
+
+        signalStrengthArray = mRes.getStringArray(mRes.getIdentifier(!roaming ?
+                mSignalStrengthArray[slot] : mSignalStrengthRoamingArray[slot], null, NS));
+        log(TAG, String.format(""signalStrengthArray.length=%d"", signalStrengthArray.length));
+
+        selectedTypeArray = mRes.getStringArray(mRes.getIdentifier(
+                signalStrengthArray[mSelectedSignalStreagthIndex[slot]], null, NS));
+        log(TAG, String.format(""selectedTypeArray.length=%d"", selectedTypeArray.length));
+
+        String[] inetArray = mRes.getStringArray(
+                mRes.getIdentifier(selectedTypeArray[inet], null, NS));
+        log(TAG, String.format(""inetArray.length=%d"", inetArray.length));
+
+        return mRes.getIdentifier(inetArray[level], null, NS);
+    }
+
+
+    static int convertMobileStrengthIcon(int stackedIcon) {
+        if (mStacked2SingleIconLookup == null) {
+            return stackedIcon;
+        }
+        int index = mStacked2SingleIconLookup.indexOfKey(stackedIcon);
+        if (index >= 0) {
+            return mStacked2SingleIconLookup.get(stackedIcon);
+        }
+        return stackedIcon;
+    }
+
+    static int getStackedVoiceIcon(int level) {
+        int retValue = 0;
+        switch(level){
+            case SignalStrength.SIGNAL_STRENGTH_NONE_OR_UNKNOWN:
+                retValue = R.drawable.stat_sys_signal_0_2g;
+                break;
+            case SignalStrength.SIGNAL_STRENGTH_POOR:
+                retValue = R.drawable.stat_sys_signal_1_2g;
+                break;
+            case SignalStrength.SIGNAL_STRENGTH_MODERATE:
+                retValue = R.drawable.stat_sys_signal_2_2g;
+                break;
+            case SignalStrength.SIGNAL_STRENGTH_GOOD:
+                retValue = R.drawable.stat_sys_signal_3_2g;
+                break;
+            case SignalStrength.SIGNAL_STRENGTH_GREAT:
+                retValue = R.drawable.stat_sys_signal_4_2g;
+                break;
+            default:
+                break;
+        }
+        return retValue;
+    }
+
+    static int getRoamingSignalIconId(int level, int inet){
+        return TELEPHONY_SIGNAL_STRENGTH_ROAMING_R[inet][level];
+    }
+
+    static int[]  getSignalStrengthDes(int slot) {
+        int[] resId = new int[SIGNAL_LEVEL_NUM];
+        for (int i = 0; i < SIGNAL_LEVEL_NUM; i++) {
+            resId[i] = mRes.getIdentifier(mSignalStrengthDesc[i], null, NS);
+        }
+        return resId;
+    }
+
+    private static void log(String tag, String str){
+        if (DEBUG) {
+            Log.d(tag, str);
+        }
+    }
+"
+42,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            false,
+            0
+    );
+"
+43,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            false,
+            TelephonyIcons.QS_DATA_"
+44,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            false,
+            TelephonyIcons.QS_DATA_E
+    );
+"
+45,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            false,
+            TelephonyIcons.QS_DATA_G
+    );
+"
+46,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            false,
+            TelephonyIcons.QS_DATA_H
+    );
+"
+47,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            true,
+            TelephonyIcons.QS_DATA_"
+48,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            true,
+            TelephonyIcons.QS_DATA_1X
+    );
+"
+49,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            true,
+            TelephonyIcons.QS_DATA_3G
+    );
+"
+50,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            true,
+            TelephonyIcons.QS_DATA_4G"
+51,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            true,
+            TelephonyIcons.QS_DATA_4G
+    );
+"
+52,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            true,
+            TelephonyIcons.QS_DATA_4G_PLUS
+    );
+"
+53,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            true,
+            TelephonyIcons.QS_DATA_LTE"
+54,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            true,
+            TelephonyIcons.QS_DATA_LTE
+    );
+"
+55,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"            true,
+            TelephonyIcons.QS_DATA_LTE_PLUS
+    );
+"
+56,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,"['2775a5a9b030266a910301e8b464811acafcd5fa', '595572aed3270fda20949d9c19381969d40ecfd4']",2,");
+
+    static final int DATA_TYPE_UNKNOWN = 0;
+    static final int DATA_TYPE_G = 1;
+    static final int DATA_TYPE_E = 2;
+    static final int DATA_TYPE_2G = 3;
+    static final int DATA_TYPE_3G = 4;
+    static final int DATA_TYPE_4G = 5;
+    static final int DATA_TYPE_H = 6;
+    static final int DATA_TYPE_HP = 7;
+    static final int DATA_TYPE_1X = 8;
+    static final int DATA_TYPE_LTE = 9;
+    static final int DATA_TYPE_4G_PLUS = 10;
+
+    static final int SIGNAL_STRENGTH_TYPE_G = 0;
+    static final int SIGNAL_STRENGTH_TYPE_E = 1;
+    static final int SIGNAL_STRENGTH_TYPE_3G = 2;
+    static final int SIGNAL_STRENGTH_TYPE_4G = 3;
+    static final int SIGNAL_STRENGTH_TYPE_H = 4;
+    static final int SIGNAL_STRENGTH_TYPE_HP = 5;
+    static final int SIGNAL_STRENGTH_TYPE_1X = 6;
+    static final int SIGNAL_STRENGTH_TYPE_CDMA = 7;
+    static final int SIGNAL_STRENGTH_TYPE_UMTS = 8;
+    static final int SIGNAL_STRENGTH_TYPE_4G_PLUS = 9;
+
+    static final int DEFAULT_SUB = 0;
+    static final int INET_TYPE_NUM = 2;
+    static final int SIGNAL_LEVEL_NUM = SignalStrength.NUM_SIGNAL_STRENGTH_BINS;
+    static final String TAG = ""TelephonyIcons"";
+    static final String NS = ""com.android.systemui"";
+    static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);;
+
+    static String[] mDataTypeArray, mDataTypeGenerationArray;
+    static String[] mDataTypeDescriptionArray, mDataTypeGenerationDescArray;
+    static String[] mDataActivityArray;
+    static String[] mSignalStrengthArray, mSignalStrengthRoamingArray;
+    static String[] mSignalNullArray;
+    static String[] mSignalStrengthDesc;
+
+    static int[] mSelectedDataTypeIcon;
+    static int[] mSelectedQSDataTypeIcon;
+    static String[] mSelectedDataTypeDesc;
+    static int[] mSelectedDataActivityIndex;
+    static int[] mSelectedSignalStreagthIndex;
+    static SparseArray<Integer> mStacked2SingleIconLookup;
+
+    private static Resources mRes;
+    private static boolean isInitiated = false;
+
+    static void readIconsFromXml(Context context) {
+        if (isInitiated) {
+            log(TAG, ""readIconsFromXml, already read!"");
+            return;
+        }
+
+        mRes = context.getResources();
+        try {
+            mDataTypeArray = mRes.getStringArray(R.array.multi_data_type);
+            mDataTypeDescriptionArray = mRes.getStringArray(
+                    R.array.telephony_data_type_description);
+            mDataTypeGenerationArray = mRes.getStringArray(
+                    R.array.telephony_data_type_generation);
+            mDataTypeGenerationDescArray = mRes.getStringArray(
+                    R.array.telephony_data_type_generation_description);
+            mDataActivityArray = mRes.getStringArray(R.array.multi_data_activity);
+            mSignalStrengthArray = mRes.getStringArray(R.array.multi_signal_strength);
+            mSignalStrengthRoamingArray = mRes.getStringArray(
+                    R.array.multi_signal_strength_roaming);
+            mSignalNullArray = mRes.getStringArray(R.array.multi_signal_null);
+            mSignalStrengthDesc = mRes.getStringArray(R.array.signal_strength_description);
+            initStacked2SingleIconLookup();
+        } catch (android.content.res.Resources.NotFoundException e) {
+            isInitiated = false;
+            log(TAG, ""readIconsFromXml, exception happened: "" + e);
+            return;
+        }
+
+        if (mSelectedDataTypeIcon == null
+                && mDataTypeArray.length != 0) {
+            mSelectedDataTypeIcon = new int[mDataTypeArray.length];
+        }
+        if (mSelectedQSDataTypeIcon == null
+                && mDataTypeArray.length != 0) {
+            mSelectedQSDataTypeIcon = new int[mDataTypeArray.length];
+        }
+        if (mSelectedDataTypeDesc == null
+                && mDataTypeArray.length != 0) {
+            mSelectedDataTypeDesc = new String[mDataTypeArray.length];
+        }
+        if (mSelectedDataActivityIndex == null
+                && mDataActivityArray.length != 0) {
+            mSelectedDataActivityIndex = new int[mDataActivityArray.length];
+        }
+        if (mSelectedSignalStreagthIndex == null
+                && mSignalStrengthArray.length != 0) {
+            mSelectedSignalStreagthIndex = new int[mSignalStrengthArray.length];
+        }
+        isInitiated = true;
+    }
+
+    static void initStacked2SingleIconLookup() {
+        mStacked2SingleIconLookup = new SparseArray<>();
+        TypedArray stackedIcons = mRes.obtainTypedArray(R.array.stacked_signal_icons);
+        TypedArray singleIcons = mRes.obtainTypedArray(R.array.single_signal_icons);
+
+        mStacked2SingleIconLookup.clear();
+        for (int i = 0; i < stackedIcons.length() && i < singleIcons.length(); i++) {
+            mStacked2SingleIconLookup.put(stackedIcons.getResourceId(i,0),
+                    singleIcons.getResourceId(i,0));
+        }
+        stackedIcons.recycle();
+        singleIcons.recycle();
+        log(TAG, ""initStacked2SingleIconLookup: size="" + mStacked2SingleIconLookup.size());
+    }
+
+    static int getSignalNullIcon(int slot) {
+        if (mSignalNullArray == null) {
+            return 0;
+        }
+        String resName = mSignalNullArray[slot];
+        log(TAG, ""null signal icon name: "" + resName);
+        int resId = mRes.getIdentifier(resName, null, NS);
+        return resId;
+    }
+
+    static void updateDataType(int slot, int type, boolean showAtLeast3G,
+                               boolean show4GforLte, boolean hspaDistinguishable, int inet) {
+        log(TAG, ""updateDataType ""
+                + String.format(""slot=%d, type=%d, inetCondition=%d"",
+                slot, type, inet)
+                + "" showAtLeast3G="" + String.valueOf(showAtLeast3G)
+                + "" show4GforLte="" + String.valueOf(show4GforLte)
+                + "" hspaDistinguishable="" + String.valueOf(hspaDistinguishable));
+
+        String resName = mDataTypeArray[slot];
+        int resId = mRes.getIdentifier(resName, null, NS);
+        String[] dataTypeArray = mRes.getStringArray(resId);
+
+        log(TAG, ""data type item name: "" + resName + "" id:"" + resId);
+
+        switch (type) {
+            case TelephonyManager.NETWORK_TYPE_UNKNOWN:
+                if (!showAtLeast3G) {
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = 0;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedDataActivityIndex[slot] = 0;
+                    mSelectedSignalStreagthIndex[slot] = 0;
+                    break;
+                } else {
+                    // fall through
+                }
+            case TelephonyManager.NETWORK_TYPE_EDGE:
+                if (!showAtLeast3G) {
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_E;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_E;
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_E;
+                    break;
+                } else {
+                    // fall through
+                }
+            case TelephonyManager.NETWORK_TYPE_UMTS:
+            case TelephonyManager.NETWORK_TYPE_TD_SCDMA:
+                mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                        dataTypeArray[type], null, NS);
+                mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_UMTS;
+                break;
+            case TelephonyManager.NETWORK_TYPE_HSDPA:
+            case TelephonyManager.NETWORK_TYPE_HSUPA:
+            case TelephonyManager.NETWORK_TYPE_HSPA:
+                if (hspaDistinguishable) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_H;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_H;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_H;
+                } else {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            mDataTypeGenerationArray[0], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeGenerationDescArray[0];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_3G;
+                }
+                break;
+            case TelephonyManager.NETWORK_TYPE_HSPAP:
+                if (hspaDistinguishable) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_HP;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_H;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_HP;
+                } else {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            mDataTypeGenerationArray[0], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeGenerationDescArray[0];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_3G;
+                }
+                break;
+            case TelephonyManager.NETWORK_TYPE_CDMA:
+                if (!showAtLeast3G) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_1X;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_1X;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_CDMA;
+                    break;
+                } else {
+                    // fall through
+                }
+            case TelephonyManager.NETWORK_TYPE_1xRTT:
+                if (!showAtLeast3G) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_1X;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_1X;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_1X;
+                    break;
+                } else {
+                    // fall through
+                }
+            case TelephonyManager.NETWORK_TYPE_EVDO_0: //fall through
+            case TelephonyManager.NETWORK_TYPE_EVDO_A:
+            case TelephonyManager.NETWORK_TYPE_EVDO_B:
+            case TelephonyManager.NETWORK_TYPE_EHRPD:
+                mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                        dataTypeArray[type], null, NS);
+                mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_3G;
+                break;
+            case TelephonyManager.NETWORK_TYPE_LTE:
+            case TelephonyManager.NETWORK_TYPE_LTE_CA:
+                if (show4GforLte) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_4G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            mDataTypeGenerationArray[1], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_4G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeGenerationDescArray[1];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_4G;
+
+                    if ( type == TelephonyManager.NETWORK_TYPE_LTE_CA) {
+                        //Select 4G+ icon.
+                        mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                                mDataTypeGenerationArray[2], null, NS);
+                        mSelectedQSDataTypeIcon[slot] = ICON_4G_PLUS;
+                        mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_4G_PLUS;
+                        mSelectedDataActivityIndex[slot] = DATA_TYPE_4G_PLUS;
+                    }
+                } else {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_LTE;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_LTE;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_4G;
+                }
+                break;
+            case TelephonyManager.NETWORK_TYPE_GPRS:
+            case TelephonyManager.NETWORK_TYPE_GSM:
+                if (!showAtLeast3G) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_G;
+                } else {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            mDataTypeGenerationArray[0], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeGenerationDescArray[0];;
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_3G;
+                }
+                break;
+            default:
+                mSelectedDataActivityIndex[slot] = DATA_TYPE_UNKNOWN;
+                mSelectedDataTypeIcon[slot] = 0;
+                mSelectedQSDataTypeIcon[slot] = 0;
+                mSelectedDataTypeDesc[slot] = """";
+                mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_G;
+                break;
+        }
+        log(TAG, ""updateDataType "" + String.format(
+                ""mSelectedDataTypeIcon[%d]=%d, mSelectedDataActivityIndex=%d"",
+                slot, mSelectedDataTypeIcon[slot], mSelectedDataActivityIndex[slot]));
+    }
+
+
+    static int getQSDataTypeIcon(int slot) {
+        return mSelectedQSDataTypeIcon[slot];
+    }
+
+    static int getDataTypeIcon(int slot) {
+        log(TAG, ""getDataTypeIcon "" + String.format(""sub=%d"", slot));
+        return mSelectedDataTypeIcon[slot];
+    }
+
+    static int getDataTypeDesc(int slot) {
+        return mRes.getIdentifier(mSelectedDataTypeDesc[slot], null, NS);
+    }
+
+    static int getDataActivity(int slot, int activity) {
+        log(TAG, String.format(""getDataActivity, slot=%d, activity=%d"",
+                slot, activity));
+
+        String[] dataActivityArray = mRes.getStringArray(
+                mRes.getIdentifier(mDataActivityArray[slot], null, NS));
+        String[] selectedTypeArray = mRes.getStringArray(mRes.getIdentifier(
+                dataActivityArray[mSelectedDataActivityIndex[slot]], null, NS));
+
+        return mRes.getIdentifier(selectedTypeArray[activity], null, NS);
+    }
+
+    static int getSignalStrengthIcon(int slot, int inet, int level, boolean roaming) {
+        log(TAG, ""getSignalStrengthIcon: "" + String.format(
+                ""slot=%d, inetCondition=%d, level=%d, roaming=%b"", slot, inet, level, roaming));
+
+        String[] signalStrengthArray, selectedTypeArray;
+
+        signalStrengthArray = mRes.getStringArray(mRes.getIdentifier(!roaming ?
+                mSignalStrengthArray[slot] : mSignalStrengthRoamingArray[slot], null, NS));
+        log(TAG, String.format(""signalStrengthArray.length=%d"", signalStrengthArray.length));
+
+        selectedTypeArray = mRes.getStringArray(mRes.getIdentifier(
+                signalStrengthArray[mSelectedSignalStreagthIndex[slot]], null, NS));
+        log(TAG, String.format(""selectedTypeArray.length=%d"", selectedTypeArray.length));
+
+        String[] inetArray = mRes.getStringArray(
+                mRes.getIdentifier(selectedTypeArray[inet], null, NS));
+        log(TAG, String.format(""inetArray.length=%d"", inetArray.length));
+
+        return mRes.getIdentifier(inetArray[level], null, NS);
+    }
+
+
+    static int convertMobileStrengthIcon(int stackedIcon) {
+        if (mStacked2SingleIconLookup == null) {
+            return stackedIcon;
+        }
+        int index = mStacked2SingleIconLookup.indexOfKey(stackedIcon);
+        if (index >= 0) {
+            return mStacked2SingleIconLookup.get(stackedIcon);
+        }
+        return stackedIcon;
+    }
+
+    static int getStackedVoiceIcon(int level) {
+        int retValue = 0;
+        switch(level){
+            case SignalStrength.SIGNAL_STRENGTH_NONE_OR_UNKNOWN:
+                retValue = R.drawable.stat_sys_signal_0_2g;
+                break;
+            case SignalStrength.SIGNAL_STRENGTH_POOR:
+                retValue = R.drawable.stat_sys_signal_1_2g;
+                break;
+            case SignalStrength.SIGNAL_STRENGTH_MODERATE:
+                retValue = R.drawable.stat_sys_signal_2_2g;
+                break;
+            case SignalStrength.SIGNAL_STRENGTH_GOOD:
+                retValue = R.drawable.stat_sys_signal_3_2g;
+                break;
+            case SignalStrength.SIGNAL_STRENGTH_GREAT:
+                retValue = R.drawable.stat_sys_signal_4_2g;
+                break;
+            default:
+                break;
+        }
+        return retValue;
+    }
+
+    static int getRoamingSignalIconId(int level, int inet){
+        return TELEPHONY_SIGNAL_STRENGTH_ROAMING_R[inet][level];
+    }
+
+    static int[]  getSignalStrengthDes(int slot) {
+        int[] resId = new int[SIGNAL_LEVEL_NUM];
+        for (int i = 0; i < SIGNAL_LEVEL_NUM; i++) {
+            resId[i] = mRes.getIdentifier(mSignalStrengthDesc[i], null, NS);
+        }
+        return resId;
+    }
+
+    private static void log(String tag, String str){
+        if (DEBUG) {
+            Log.d(tag, str);
+        }
+    }
+"
+57,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"e,
+            TelephonyIcons.QS_DATA_"
+58,packages/SystemUI/src/com/android/systemui/util/sensors/AsyncSensorManager.java,"['8abdf0e95a5d15a310b6df69d33a4510a0b44b4a', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,"        if ( sensor == null ) {
+            Log.e(TAG, ""sensor cannot be null \n"" + Log.getStackTraceString(new Throwable()));
+            return false;
+"
+59,packages/SystemUI/tests/src/com/android/systemui/statusbar/policy/NetworkControllerBaseTest.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', '2775a5a9b030266a910301e8b464811acafcd5fa']",2,"                    ArgumentCaptor.forClass(Integer.class).capture(),
+                    anyString(), anyString(), anyBoolean(), anyInt(), anyBoolean());
+"
+60,packages/SystemUI/tests/src/com/android/systemui/statusbar/policy/NetworkControllerBaseTest.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', '2775a5a9b030266a910301e8b464811acafcd5fa']",2,"                ArgumentCaptor.forClass(Integer.class).capture(),
+                "
+61,services/core/java/com/android/server/BluetoothManagerService.java,"['7fd6edc3a3ff37a750641d5e192835fe217f6050', '82ca638edd627c1b70aae1505f06c8ddaef731d2']",2,"        if (isBluetoothAvailableForBinding() == false) {
+            Slog.w(TAG, ""bindBluetoothProfileService:Trying to bind to profile: ""
+                       + bluetoothProfile + "", while Bluetooth is disabled"");
+"
+62,services/core/java/com/android/server/BluetoothManagerService.java,"['24adcf1303bc4e0f0203c9ea0c691d7faa0c2aba', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",2,"    private static final String BLUETOOTH_PRIVILEGED_PERM = android.Manifest.permission.BLUETOOTH_PRIVILEGED;
+"
+63,services/core/java/com/android/server/ConnectivityService.java,"['8d21ad0d966c1e9f96e5a65144efad2582391957', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",2,"    private void updateTcpBufferSizes(NetworkAgentInfo nai) {
+        if (isDefaultNetwork(nai) == false) {
+            return;
+        }
+
+        String tcpBufferSizes = nai.linkProperties.getTcpBufferSizes();
+        if(nai.networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)){
+            tcpBufferSizes = NetPluginDelegate.get5GTcpBuffers(tcpBufferSizes,
+                nai.networkCapabilities.getNetworkSpecifier());
+        }
+"
+64,services/core/java/com/android/server/Watchdog.java,"['8faa0d981413f18b2468dde1b1fe71e248df0df1', '71998c3d8b36220df1be12fe6e1ba7eda81cde41', '21cdef883cc867db55340b25d5c95e19b12ab383']",3,"                                    subject, "
+65,services/core/java/com/android/server/Watchdog.java,"['6e44ad255823e1b7f2b23386d61af655c19adb49', '8faa0d981413f18b2468dde1b1fe71e248df0df1']",2,"                                subject, "
+66,services/core/java/com/android/server/Watchdog.java,"['6e44ad255823e1b7f2b23386d61af655c19adb49', '71998c3d8b36220df1be12fe6e1ba7eda81cde41']",2,"                                subject, null, finalStack, null);
+"
+67,services/core/java/com/android/server/Watchdog.java,"['8faa0d981413f18b2468dde1b1fe71e248df0df1', '1581c348fc5d6cbf1673b3dbc5960637f891d488']",2,"import java.io.BufferedReader;
+"
+68,services/core/java/com/android/server/am/ActiveServices.java,"['81b587a542e8381268a9ba8e7461712ef23cd11f', 'e85435d4d9a2f7122bd5c97ad0a25c768d124a0e']",2,"
+
+                boolean isPersistent
+                        = !((r.serviceInfo.applicationInfo.flags&ApplicationInfo.FLAG_PERSISTENT) == 0);
+                if(top_rc != null) {
+                    if(top_rc.launching && !r.shortInstanceName.contains(top_rc.packageName)
+                            && !isPersistent) {
+                        shouldDelay = true;
+                    }
+                }
+                if(!shouldDelay) {
+                    bringUpServiceLocked(r, r.intent.getIntent().getFlags(), r.createdFromFg, true, false);
+                } else {
+                    if (DEBUG_DELAYED_SERVICE) {
+                        Slog.v(TAG, ""Reschedule service restart due to app launch""
+                              +"" r.shortInstanceName ""+r.shortInstanceName+"" r.app = ""+r.app);
+                    }
+                    r.resetRestartCounter();
+                    scheduleServiceRestartLocked(r, true);
+                }
+            } else {
+                bringUpServiceLocked(r, r.intent.getIntent().getFlags(), r.createdFromFg, true, false);
+            }
+"
+69,services/core/java/com/android/server/am/ActiveServices.java,"['62f4dee264cabcd5595e6e4c0a6ab3228281d3e0', '337095f9d277c566cb888bc3adbac16576f1ae70', '1581c348fc5d6cbf1673b3dbc5960637f891d488']",3,"                    r.app = null;
+                    if (SERVICE_RESCHEDULE && DEBUG_DELAYED_SERVICE) {
+                    Slog.w(TAG, "" Failed to create Service !!!! .""
+                           +""This will introduce huge delay...  ""
+                           +r.short"
+70,services/core/java/com/android/server/am/ActiveServices.java,"['fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2', 'b76115be4efabffaa6febc57cec47acc2f933c79']",2,"Name + "" in "" + r.restartDelay + ""ms"");
+
+        if (SERVICE_RESCHEDULE && DEBUG_DELAYED_SERVICE) {
+            for (int i=mRestartingServices.size()-1; i>=0; i--) {
+                ServiceRecord r2 = mRestartingServices.get(i);
+                Slog.w(TAG,""Restarting list - i ""+i+"" r2.nextRestartTime ""
+                           +r2.nextRestartTime+"" r2.name ""+r2.name);
+            }
+        }
+
+"
+71,services/core/java/com/android/server/am/ActiveServices.java,"['62f4dee264cabcd5595e6e4c0a6ab3228281d3e0', '337095f9d277c566cb888bc3adbac16576f1ae70']",2,"e(r);
+                    r.app = null;
+                    if (SERVICE_RESCHEDULE && DEBUG_DELAYED_SERVICE) {
+                    Slog.w(TAG, "" Failed to create Service !!!! .""
+                           +""This will introduce huge delay...  ""
+                           +r.shortInstanceName + "" in "" + r.restartDelay + ""ms"");
+                    }
+"
+72,services/core/java/com/android/server/am/ActivityManagerConstants.java,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', 'b6292e3e1ba3616eac1032737a91925391d94b92']",2,"import android.os.Process;
+import android.os.SystemProperties;
+"
+73,services/core/java/com/android/server/am/ActivityManagerConstants.java,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '3d2fc559e13b7293212955f1858d443f4fe8234e', '567b4cf7b54062947b5eabe6ecef7b70fbb7301b']",3,"import android.os.SystemProperties;
+"
+74,services/core/java/com/android/server/am/ActivityManagerConstants.java,"['3d2fc559e13b7293212955f1858d443f4fe8234e', '567b4cf7b54062947b5eabe6ecef7b70fbb7301b']",2,"import android.os.SystemProperties;
+import android.os.Process;
+"
+75,services/core/java/com/android/server/am/ActivityManagerService.java,"['4a30c150e58ec67edb92a7bec5ea48cebd6b90d4', '88b45c586d461df38b866d529bc98d1dfa3e8838', '6fc85c43e31aad55eecd51d3b0de34715ae03810']",3,"    /* Freq Aggr boost objects */
+    public static BoostFramework mPerfServiceStartHint = null;
+    /* UX perf event object */
+    public static BoostFramework mUxPerf = new BoostFramework();
+"
+76,services/core/java/com/android/server/am/ActivityManagerService.java,"['e85435d4d9a2f7122bd5c97ad0a25c768d124a0e', '2775a5a9b030266a910301e8b464811acafcd5fa']",2,"import com.android.internal.app.ActivityTrigger;
+"
+77,services/core/java/com/android/server/am/ActivityStack.java,['595572aed3270fda20949d9c19381969d40ecfd4'],1,"
+        if (mActivityTrigger != null) {
+            mActivityTrigger.activityPauseTrigger(prev.intent, prev.info, prev.appInfo);
+        }
+
+        mResumedActivity = null;
+"
+78,services/core/java/com/android/server/am/CachedAppOptimizer.java,"['24adcf1303bc4e0f0203c9ea0c691d7faa0c2aba', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",2,"        Process.setThreadGroupAndCpuset(mCachedAppOptimizerThread.getThreadId(),
+                Process.THREAD_GROUP_SYSTEM);
+        setAppCompactProperties();
+    }
+
+    private void setAppCompactProperties() {
+        boolean useCompaction =
+                    Boolean.valueOf(mPerf.perfGetProp(""vendor.appcompact.enable_app_compact"",
+                        ""false""));
+        int someCompactionType =
+                    Integer.valueOf(mPerf.perfGetProp(""vendor.appcompact.some_compact_type"",
+                        String.valueOf(COMPACT_ACTION_ANON_FLAG)));
+        int fullCompactionType =
+                    Integer.valueOf(mPerf.perfGetProp(""vendor.appcompact.full_compact_type"",
+                        String.valueOf(COMPACT_ACTION_ANON_FLAG)));
+        int compactThrottleSomeSome =
+                    Integer.valueOf(mPerf.perfGetProp(""vendor.appcompact.compact_throttle_somesome"",
+                        String.valueOf(DEFAULT_COMPACT_THROTTLE_1)));
+        int compactThrottleSomeFull =
+                    Integer.valueOf(mPerf.perfGetProp(""vendor.appcompact.compact_throttle_somefull"",
+                        String.valueOf(DEFAULT_COMPACT_THROTTLE_2)));
+        int compactThrottleFullSome =
+                    Integer.valueOf(mPerf.perfGetProp(""vendor.appcompact.compact_throttle_fullsome"",
+                        String.valueOf(DEFAULT_COMPACT_THROTTLE_3)));
+        int compactThrottleFullFull =
+                    Integer.valueOf(mPerf.perfGetProp(""vendor.appcompact.compact_throttle_fullfull"",
+                        String.valueOf(DEFAULT_COMPACT_THROTTLE_4)));
+        int compactThrottleBfgs =
+                    Integer.valueOf(mPerf.perfGetProp(""vendor.appcompact.compact_throttle_bfgs"",
+                        String.valueOf(DEFAULT_COMPACT_THROTTLE_5)));
+        int compactThrottlePersistent =
+                    Integer.valueOf(mPerf.perfGetProp(""vendor.appcompact.compact_throttle_persistent"",
+                        String.valueOf(DEFAULT_COMPACT_THROTTLE_6)));
+        int fullRssThrottleKB =
+                    Integer.valueOf(mPerf.perfGetProp(""vendor.appcompact.rss_throttle_kb"",
+                        String.valueOf(DEFAULT_COMPACT_FULL_RSS_THROTTLE_KB)));
+        int deltaRssThrottleKB =
+                    Integer.valueOf(mPerf.perfGetProp(""vendor.appcompact.delta_rss_throttle_kb"",
+                        String.valueOf(DEFAULT_COMPACT_FULL_DELTA_RSS_THROTTLE_KB)));
+
+        DeviceConfig.setProperty(
+                    DeviceConfig.NAMESPACE_ACTIVITY_MANAGER, KEY_COMPACT_ACTION_1,
+                        String.valueOf(someCompactionType), true);
+        DeviceConfig.setProperty(
+                    DeviceConfig.NAMESPACE_ACTIVITY_MANAGER, KEY_COMPACT_ACTION_2,
+                        String.valueOf(fullCompactionType), true);
+        DeviceConfig.setProperty(
+                    DeviceConfig.NAMESPACE_ACTIVITY_MANAGER, KEY_COMPACT_THROTTLE_1,
+                        String.valueOf(compactThrottleSomeSome), true);
+        DeviceConfig.setProperty(
+                    DeviceConfig.NAMESPACE_ACTIVITY_MANAGER, KEY_COMPACT_THROTTLE_2,
+                        String.valueOf(compactThrottleSomeFull), true);
+        DeviceConfig.setProperty(
+                    DeviceConfig.NAMESPACE_ACTIVITY_MANAGER, KEY_COMPACT_THROTTLE_3,
+                        String.valueOf(compactThrottleFullSome), true);
+        DeviceConfig.setProperty(
+                    DeviceConfig.NAMESPACE_ACTIVITY_MANAGER, KEY_COMPACT_THROTTLE_4,
+                        String.valueOf(compactThrottleFullFull), true);
+        DeviceConfig.setProperty(
+                    DeviceConfig.NAMESPACE_ACTIVITY_MANAGER, KEY_COMPACT_THROTTLE_5,
+                        String.valueOf(compactThrottleBfgs), true);
+        DeviceConfig.setProperty(
+                    DeviceConfig.NAMESPACE_ACTIVITY_MANAGER, KEY_COMPACT_THROTTLE_6,
+                        String.valueOf(compactThrottlePersistent), true);
+        DeviceConfig.setProperty(
+                    DeviceConfig.NAMESPACE_ACTIVITY_MANAGER, KEY_COMPACT_FULL_RSS_THROTTLE_KB,
+                        String.valueOf(fullRssThrottleKB), true);
+        DeviceConfig.setProperty(
+                    DeviceConfig.NAMESPACE_ACTIVITY_MANAGER, KEY_COMPACT_FULL_DELTA_RSS_THROTTLE_KB,
+                        String.valueOf(deltaRssThrottleKB), true);
+        DeviceConfig.setProperty(
+                    DeviceConfig.NAMESPACE_ACTIVITY_MANAGER, KEY_USE_COMPACTION,
+                        String.valueOf(useCompaction), true);
+"
+79,services/core/java/com/android/server/am/OomAdjuster.java,"['7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2', '337095f9d277c566cb888bc3adbac16576f1ae70']",2,")
+                && (selectedAppRecord != null)) {
+            ProcessList.setOomAdj(selectedAppRecord.pid, selectedAppRecord.info.uid,
+                    ProcessList.CACHED_APP_MAX_ADJ);
+            selectedAppRecord.setAdj = selectedAppRecord.curAdj;
+            if (DEBUG_OOM_ADJ) Slog.d(TAG,""app.processName = "" + selectedAppRecord.processName
+                        + "" app.pid = "" + selectedAppRecord.pid + "" is moved to higher adj"");
+        }
+
+        m"
+80,services/core/java/com/android/server/am/ProcessList.java,"['43ceded8caaffead0a2a1967f42a4ef4bb658ced', '337095f9d277c566cb888bc3adbac16576f1ae70']",2,"    /**
+     * BoostFramework Object
+     */
+    public static BoostFramework mPerfServiceStartHint = new BoostFramework();
+"
+81,services/core/java/com/android/server/am/ProcessList.java,"['d28a4f6b38dbab44128b4319f665dd65c3e4ec2c', '337095f9d277c566cb888bc3adbac16576f1ae70']",2,"import android.util.BoostFramework;
+"
+82,services/core/java/com/android/server/audio/AudioDeviceBroker.java,"['ae1b3a8f3221dbe692fd90d414cfe5040538c264', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",3,"                case MSG_L_A2DP_ACTIVE_DEVICE_CHANGE_EXT: {
+                    final BtDeviceConnectionInfo info = (BtDeviceConnectionInfo) msg.obj;
+                    AudioService.sDeviceLogger.log((new AudioEventLogger.StringEvent(
+                    ""handleBluetoothA2dpActiveDeviceChangeExt ""
+                           + "" state="" + info.mState
+                           // only querying address as this is the only readily available
+                           // field on the device
+                           + "" addr="" + info.mDevice.getAddress()
+                           + "" prof="" + info.mProfile + "" supprNoisy="" + info.mSupprNoisy
+                           + "" vol="" + info.mVolume)).printLog(TAG));
+                    synchronized (mDeviceStateLock) {
+                        mDeviceInventory.handleBluetoothA2dpActiveDeviceChangeExt(
+                                info.mDevice, info.mState, info.mProfile,
+                                info.mSupprNoisy, info.mVolume);
+                    }
+"
+83,services/core/java/com/android/server/audio/AudioDeviceBroker.java,"['7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2', 'fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2', '449f659b21d039b8692602294b040038ac1e6ccb']",3,"            if (AudioService.DEBUG_SCO) {
+                Log.i(TAG, ""In isSpeakerphoneOn(), mForcedUseForCommExt: "" +mForcedUseForCommExt);
+            }
+"
+84,services/core/java/com/android/server/audio/AudioDeviceBroker.java,"['dfd2f7fed77160af2c57edfa20f1768b42aaa8da', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",2,"    // process external command to (dis)connect or change active A2DP device
+    private static final int MSG_L_A2DP_ACTIVE_DEVICE_CHANGE_EXT = "
+85,services/core/java/com/android/server/audio/AudioDeviceInventory.java,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",2,"            delay = SystemProperties.getInt(""audio.sys.noisy.broadcast.delay"", 700);
+"
+86,services/core/java/com/android/server/audio/AudioService.java,"['24adcf1303bc4e0f0203c9ea0c691d7faa0c2aba', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",2,"            Log.i(TAG, ""In binderDied(), calling setModeOwnerPid()"");
+            mDeviceBroker.postSetModeOwnerPid(newModeOwnerPid);
+"
+87,services/core/java/com/android/server/audio/AudioService.java,"['7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2', '567b4cf7b54062947b5eabe6ecef7b70fbb7301b']",2,"            Log.i(TAG, ""In setMode(), calling disconnectBluetoothSco()"");
+"
+88,services/core/java/com/android/server/audio/AudioService.java,"['bb9ded46832af38a453b78b92ad2de32ef1cf845', '2775a5a9b030266a910301e8b464811acafcd5fa', '449f659b21d039b8692602294b040038ac1e6ccb']",3,"        Log.i(TAG, ""In setSpeakerphoneOn(), on: "" + on + "", eventSource: "" + eventSource);
+
+        "
+89,services/core/java/com/android/server/audio/AudioService.java,"['bb9ded46832af38a453b78b92ad2de32ef1cf845', '449f659b21d039b8692602294b040038ac1e6ccb']",2,"        Log.i(TAG, ""In setSpeakerphoneOn(), on: "" + on + "", eventSource: "" + eventSource);
+
+        final boolean stateChanged = mDeviceBroker.setSpeakerphoneOn("
+90,services/core/java/com/android/server/audio/AudioService.java,"['62f4dee264cabcd5595e6e4c0a6ab3228281d3e0', '3e8cb98421761bb7dfafe59a22a15fe2e176f272', '567b4cf7b54062947b5eabe6ecef7b70fbb7301b']",3,"        Log.i(TAG, ""In startBluetoothSco"
+91,services/core/java/com/android/server/audio/AudioService.java,"['62f4dee264cabcd5595e6e4c0a6ab3228281d3e0', '3e8cb98421761bb7dfafe59a22a15fe2e176f272']",2,"        Log.i(TAG, ""In startBluetoothSco()"");
+        BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
+        if ((adapter == null) || (adapter.getState() != BluetoothAdapter.STATE_ON)) {
+             Log.i(TAG, ""startBluetoothSco(), BT is not turned ON or adapter is null"");
+             return;
+        }
+"
+92,services/core/java/com/android/server/audio/AudioService.java,"['62f4dee264cabcd5595e6e4c0a6ab3228281d3e0', '3e8cb98421761bb7dfafe59a22a15fe2e176f272']",2,"        Log.i(TAG, ""In startBluetoothScoVirtualCall()"");
+"
+93,services/core/java/com/android/server/audio/AudioService.java,"['24818fca475a6726f5ef0cae42149615079af6e9', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2', 'af02bd5317cc0cced0a7646d5bbf407a181dda9c', 'fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2']",4,"        Log.i(TAG, ""setMode(mode = "" + mode + "", callingPackage = "" +
+                  callingPackage + "", Process ID: "" + Binder.getCallingPid());
+"
+94,services/core/java/com/android/server/audio/AudioService.java,"['74a21b989f82a6a024f29085ad324e939472bed1', '449f659b21d039b8692602294b040038ac1e6ccb']",2,"    /** debug SCO modes */
+    protected static final boolean DEBUG_SCO = true;
+"
+95,services/core/java/com/android/server/connectivity/NetworkAgentInfo.java,"['3d2fc559e13b7293212955f1858d443f4fe8234e', '88b45c586d461df38b866d529bc98d1dfa3e8838', '24f36fd2514856aaafe6a32a99050e272a6bd361']",3,"import static android.net.NetworkCapabilities.NET_CAPABILITY_INTERNET;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_MMS;
+"
+96,services/core/java/com/android/server/connectivity/NetworkAgentInfo.java,"['88b45c586d461df38b866d529bc98d1dfa3e8838', '8faa0d981413f18b2468dde1b1fe71e248df0df1']",2,"import static android.net.NetworkCapabilities.NET_CAPABILITY_INTERNET;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_MMS;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_"
+97,services/core/java/com/android/server/connectivity/NetworkAgentInfo.java,"['88b45c586d461df38b866d529bc98d1dfa3e8838', 'af02bd5317cc0cced0a7646d5bbf407a181dda9c']",2,"import static android.net.NetworkCapabilities.NET_CAPABILITY_INTERNET;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_MMS;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_VALIDATED;
+"
+98,services/core/java/com/android/server/connectivity/NetworkAgentInfo.java,"['88b45c586d461df38b866d529bc98d1dfa3e8838', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",2,"import static android.net.NetworkCapabilities.NET_CAPABILITY_INTERNET;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_MMS;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_VALIDATED;
+
+"
+99,services/core/java/com/android/server/display/LocalDisplayAdapter.java,"['3d2fc559e13b7293212955f1858d443f4fe8234e', '26017c68ee11d3f2d54ca731119c8dc4ddb842cf']",2,";
+                    mInfo.touch = DisplayDeviceInfo.TOUCH_INTERNAL;
+                    mInfo.name = getContext().getResources().getString(
+                            com.android.internal.R.string.display_manager_built_in_display_name);
+                    mInfo.flags |= DisplayDeviceInfo.FLAG_ROTATES_WITH_CONTENT;
+
+                    if (SystemProperties.getBoolean(
+                                    ""vendor.display.builtin_presentation"", false)) {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_PRESENTATION;
+                    } else {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_PRIVATE;
+                    }
+
+                    if (!SystemProperties.getBoolean(
+                                    ""vendor.display.builtin_mirroring"", false)) {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_OWN_CONTENT_ONLY;
+                    }
+
+                    mInfo.setAssumedDensityForExternalDisplay("
+100,services/core/java/com/android/server/display/LocalDisplayAdapter.java,"['3d2fc559e13b7293212955f1858d443f4fe8234e', '337095f9d277c566cb888bc3adbac16576f1ae70']",2,";
+                    mInfo.touch = DisplayDeviceInfo.TOUCH_INTERNAL;
+                    mInfo.name = getContext().getResources().getString(
+                            com.android.internal.R.string.display_manager_built_in_display_name);
+                    mInfo.flags |= DisplayDeviceInfo.FLAG_ROTATES_WITH_CONTENT;
+
+                    if (SystemProperties.getBoolean(
+                                    ""vendor.display.builtin_presentation"", false)) {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_PRESENTATION;
+                    } else {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_PRIVATE;
+                    }
+
+                    if (!SystemProperties.getBoolean(
+                                    ""vendor.display.builtin_mirroring"", false)) {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_OWN_CONTENT_ONLY;
+                    }
+
+                    mInfo.setAssumedDensityForExternalDisplay(config.width, config.height);
+"
+101,services/core/java/com/android/server/locksettings/LockSettingsService.java,"['4a30c150e58ec67edb92a7bec5ea48cebd6b90d4', '71998c3d8b36220df1be12fe6e1ba7eda81cde41']",2,"            clearUserKeyAuth(userId, null, auth.deriveDiskEncryptionKey());
+"
+102,services/core/java/com/android/server/locksettings/LockSettingsService.java,"['3a5272699e3e16fbfdc397480898bb27abeb2caa', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",2,"    private void clearUserKeyAuth(int userId, byte[] token, byte[] secret) throws RemoteException {
+        if (DEBUG) Slog.d(TAG, ""clearUserKeyProtection user="" + userId);
+        final UserInfo userInfo = mUserManager.getUserInfo(userId);
+        final IStorageManager storageManager = mInjector.getStorageManager();
+        final long callingId = Binder.clearCallingIdentity();
+        try {
+            storageManager.clearUserKeyAuth(userId, userInfo.serialNumber, token, secret);
+        } finally {
+            Binder.restoreCallingIdentity(callingId);
+        }
+    }
+
+    private static byte[] secretFromCredential("
+103,services/core/java/com/android/server/locksettings/LockSettingsService.java,"['2051462f672b5986ef321bf1de3657e7653864e8', '3a5272699e3e16fbfdc397480898bb27abeb2caa', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",3,"    public void retainPassword(String password) {
+        if (LockPatternUtils.isDeviceEncryptionEnabled()) {
+            if (password != null)
+                mSavePassword = password;
+            else
+                mSavePassword = DEFAULT_PASSWORD;
+        }
+    }
+
+    public void sanitizePassword() {
+        if (LockPatternUtils.isDeviceEncryptionEnabled()) {
+            mSavePassword = DEFAULT_PASSWORD;
+        }
+    }
+
+    private boolean checkCryptKeeperPermissions() {
+        boolean permission_err = false;
+        try {
+            mContext.enforceCallingOrSelfPermission(
+                       android.Manifest.permission.CRYPT_KEEPER,
+                       ""no permission to get the password"");
+        } catch (SecurityException e) {
+            permission_err = true;
+        }
+        return permission_err;
+    }
+
+    public String getPassword() {
+       /** if calling process does't have crypt keeper or admin permissions,
+         * throw the exception.
+         */
+       if (checkCryptKeeperPermissions())
+            mContext.enforceCallingOrSelfPermission(
+                    android.Manifest.permission."
+104,services/core/java/com/android/server/locksettings/LockSettingsService.java,"['3a5272699e3e16fbfdc397480898bb27abeb2caa', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",2,"    public void retainPassword(String password) {
+        if (LockPatternUtils.isDeviceEncryptionEnabled()) {
+            if (password != null)
+                mSavePassword = password;
+            else
+                mSavePassword = DEFAULT_PASSWORD;
+        }
+    }
+
+    public void sanitizePassword() {
+        if (LockPatternUtils.isDeviceEncryptionEnabled()) {
+            mSavePassword = DEFAULT_PASSWORD;
+        }
+    }
+
+    private boolean checkCryptKeeperPermissions() {
+        boolean permission_err = false;
+        try {
+            mContext.enforceCallingOrSelfPermission(
+                       android.Manifest.permission.CRYPT_KEEPER,
+                       ""no permission to get the password"");
+        } catch (SecurityException e) {
+            permission_err = true;
+        }
+        return permission_err;
+    }
+
+    public String getPassword() {
+       /** if calling process does't have crypt keeper or admin permissions,
+         * throw the exception.
+         */
+       if (checkCryptKeeperPermissions())
+            mContext.enforceCallingOrSelfPermission(
+                    android.Manifest.permission.MANAGE_DEVICE_ADMINS,
+                    ""no crypt_keeper or admin permission to get the password"");
+
+       return mSavePassword;
+    }
+
+"
+105,services/core/java/com/android/server/locksettings/LockSettingsService.java,"['7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2', '3a5272699e3e16fbfdc397480898bb27abeb2caa']",2," {
+        if (DEBUG) Slog.d(TAG, ""clearUserKeyProtection user="" + userId);
+        final UserInfo userInfo = mUserManager.getUserInfo(userId);
+        final IStorageManager storageManager = mInjector.getStorageManager();
+        final long callingId = Binder.clearCallingIdentity();
+        try {
+            storageManager.clearUserKeyAuth(userId, userInfo.serialNumber, token, secret);
+        } "
+106,services/core/java/com/android/server/pm/PackageManagerService.java,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",2,"        if (pkgName != null)
+            acquireUxPerfLock(BoostFramework.UXE_EVENT_PKG_INSTALL, pkgName, 0);
+"
+107,services/core/java/com/android/server/pm/PackageManagerService.java,"['ae1b3a8f3221dbe692fd90d414cfe5040538c264', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",2,");
+        if (pkgName != null)
+            acquireUxPerfLock(BoostFramework.UXE_EVENT_PKG_INSTALL, pkgName, 0);
+"
+108,services/core/java/com/android/server/wm/ActivityRecord.java,"['24818fca475a6726f5ef0cae42149615079af6e9', 'af02bd5317cc0cced0a7646d5bbf407a181dda9c', '71998c3d8b36220df1be12fe6e1ba7eda81cde41']",3,"
+        if (mPerf == null)
+            mPerf = new BoostFramework();
+"
+109,services/core/java/com/android/server/wm/ActivityRecord.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', 'b03d6d43646266d456c22154a1f6fd945bf79f83', '71998c3d8b36220df1be12fe6e1ba7eda81cde41']",3,"        if (mPerf == null)
+            mPerf = new BoostFramework();
+"
+110,services/core/java/com/android/server/wm/ActivityRecord.java,"['d28a4f6b38dbab44128b4319f665dd65c3e4ec2c', '3933f277a025be704e68ea593536e492831a7e05']",2," // have we told the activity to sleep?
+    public boolean launching;      // is activity launch in progress?
+"
+111,services/core/java/com/android/server/wm/ActivityRecord.java,"['ae1b3a8f3221dbe692fd90d414cfe5040538c264', 'ac442e0398fe7344f66cbbd4d2af15b1bfdbf46b']",2,").app);
+            try {
+                mStackSupervisor.new PreferredAppsTask().execute();
+            } catch (Exception e) {
+                Slog.v (TAG, ""Exception: "" + e);
+            }
+"
+112,services/core/java/com/android/server/wm/ScreenRotationAnimation.java,"['6f47ceafbe6febe54aa5c376baed3415cdf848ad', '2edeff882ab756e76b3a028a1568d8774ddc0257']",2,"import android.util.BoostFramework;
+"
+113,services/core/java/com/android/server/wm/TaskDisplayArea.java,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '69bee5bb55994d647b678b2cb2ce1becd3d77b32']",2,"    public static boolean mPerfSendTapHint = false;
+    public static boolean mIsPerfBoostAcquired = false;
+    public static int mPerfHandle = -1;
+    public BoostFramework mPerfBoost = null;
+    public BoostFramework mUxPerf = null;
+"
+114,services/core/java/com/android/server/wm/TaskDisplayArea.java,"['69bee5bb55994d647b678b2cb2ce1becd3d77b32', '449f659b21d039b8692602294b040038ac1e6ccb']",2,"    public static boolean mPerfSendTapHint = false;
+    public static boolean mIsPerfBoostAcquired = false;
+    public static int mPerfHandle = -1;
+    public BoostFramework mPerfBoost = null;
+    public BoostFramework mUxPerf = null;
+
+"
+115,services/core/java/com/android/server/wm/WindowManagerService.java,"['fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2', '26017c68ee11d3f2d54ca731119c8dc4ddb842cf']",2,"    static WindowState mFocusingWindow;
+    String mFocusingActivity;
+"
+116,services/java/com/android/server/SystemServer.java,"['2775a5a9b030266a910301e8b464811acafcd5fa', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",2,"            if (enableWigig) {
+                try {
+                    Slog.i(TAG, ""Wigig Service"");
+                    String wigigClassPath =
+                        ""/system/framework/wigig-service.jar"" + "":"" +
+                        ""/system/product/framework/vendor.qti.hardware.wigig.supptunnel-V1.0-java.jar"" + "":"" +
+                        ""/system/product/framework/vendor.qti.hardware.wigig.netperftuner-V1.0-java.jar"" + "":"" +
+                        ""/system/product/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar"";
+                    PathClassLoader wigigClassLoader =
+                            new PathClassLoader(wigigClassPath, getClass().getClassLoader());
+                    Class wigigP2pClass = wigigClassLoader.loadClass(
+                        ""com.qualcomm.qti.server.wigig.p2p.WigigP2pServiceImpl"");
+                    Constructor<Class> ctor = wigigP2pClass.getConstructor(Context.class);
+                    wigigP2pService = ctor.newInstance(context);
+                    Slog.i(TAG, ""Successfully loaded WigigP2pServiceImpl class"");
+                    ServiceManager.addService(""wigigp2p"", (IBinder) wigigP2pService);
+
+                    Class wigigClass = wigigClassLoader.loadClass(
+                        ""com.qualcomm.qti.server.wigig.WigigService"");
+                    ctor = wigigClass.getConstructor(Context.class);
+                    wigigService = ctor.newInstance(context);
+                    Slog.i(TAG, ""Successfully loaded WigigService class"");
+                    ServiceManager.addService(""wigig"", (IBinder) wigigService);
+                } catch (Throwable e) {
+                    reportWtf(""starting WigigService"", e);
+                }
+            }
+
+"
+117,services/usb/java/com/android/server/usb/UsbDeviceManager.java,['0d68733d6363c270aed49b9be40c2b8ca41c3c52'],1,"                functions = SystemProperties.get(getPersistProp(true),
+                            UsbManager.USB_FUNCTION_NONE);
+
+                if (functions.equals(UsbManager.USB_FUNCTION_NONE))
+                    functions = getChargingFunctions();
+"
+118,services/usb/java/com/android/server/usb/UsbDeviceManager.java,['af01b38e0a0664bc87b649248b0c13fbe0925193'],1,"        private String getChargingFunctions() {
+            String func = SystemProperties.get(getPersistProp(true),
+                    UsbManager.USB_FUNCTION_NONE);
+            if (UsbManager.USB_FUNCTION_NONE.equals(func)) {
+                func = UsbManager.USB_FUNCTION_MTP;
+"
+119,telecomm/java/android/telecom/Call.java,['4e4914b22b779e6376bb00ae20636175b2a70d8c'],1,"            if (can(capabilities, CAPABILITY_ADD_PARTICIPANT)) {
+                builder.append("" CAPABILITY_ADD_PARTICIPANT"");
+"
+120,telecomm/java/android/telecom/Call.java,['4e4914b22b779e6376bb00ae20636175b2a70d8c'],1,"        /**
+         * Add participant in an active or conference call option
+         * @hide
+         */
+        public static final int CAPABILITY_ADD_PARTICIPANT = 0x01000000;
+"
+121,telecomm/java/android/telecom/Connection.java,['4e4914b22b779e6376bb00ae20636175b2a70d8c'],1,"    /**
+     * Add participant in an active or conference call option
+     *
+     * @hide
+     */
+    public static final int CAPABILITY_ADD_PARTICIPANT = 0x02000000;
+
+"
+122,telecomm/java/android/telecom/ConnectionService.java,"['d28a4f6b38dbab44128b4319f665dd65c3e4ec2c', '4e4914b22b779e6376bb00ae20636175b2a70d8c', 'af02bd5317cc0cced0a7646d5bbf407a181dda9c', '3d2fc559e13b7293212955f1858d443f4fe8234e']",4,"    //Proprietary values starts after this.
+    private static final int MSG_ADD_PARTICIPANT_WITH_CONFERENCE = 40;
+"
+123,telephony/java/android/telephony/DisconnectCause.java,"['ddcaa93e851eb5e57692799446f2ef3fe31436ae', 'b76115be4efabffaa6febc57cec47acc2f933c79', '18970c4d9d55a44040fe6fb762dac93a077c64b5', '6fc85c43e31aad55eecd51d3b0de34715ae03810', '71998c3d8b36220df1be12fe6e1ba7eda81cde41', '7fe8671fd7b5388dd9be6295dbea6d31209468f9']",6,"        case NETWORK_OUT_OF_ORDER:
+            return ""NETWORK_OUT_OF_ORDER"";
+        case TEMPORARY_FAILURE:
+            return ""TEMPORARY_FAILURE"";
+        case SWITCHING_EQUIPMENT_CONGESTION:
+            return ""SWITCHING_EQUIPMENT_CONGESTION"";
+        case ACCESS_INFORMATION_DISCARDED:
+            return ""ACCESS_INFORMATION_DISCARDED"";
+        case REQUESTED_CIRCUIT_OR_CHANNEL_NOT_AVAILABLE:
+            return ""REQUESTED_CIRCUIT_OR_CHANNEL_NOT_AVAILABLE"";
+        case RESOURCES_UNAVAILABLE_OR_UNSPECIFIED:
+            return ""RESOURCES_UNAVAILABLE_OR_UNSPECIFIED"";
+        case QOS_UNAVAILABLE:
+            return ""QOS_UNAVAILABLE"";
+        case REQUESTED_FACILITY_NOT_SUBSCRIBED:
+            return ""REQUESTED_FACILITY_NOT_SUBSCRIBED"";
+        case INCOMING_CALLS_BARRED_WITHIN_CUG:
+            return ""INCOMING_CALLS_BARRED_WITHIN_CUG"";
+        case BEARER_CAPABILITY_UNAVAILABLE:
+            return ""BEARER_CAPABILITY_UNAVAILABLE"";
+        case SERVICE_OPTION_NOT_AVAILABLE:
+            return ""SERVICE_OPTION_NOT_AVAILABLE"";
+        case BEARER_SERVICE_NOT_IMPLEMENTED:
+            return ""BEARER_SERVICE_NOT_IMPLEMENTED"";
+        case REQUESTED_FACILITY_NOT_IMPLEMENTED:
+            return ""REQUESTED_FACILITY_NOT_IMPLEMENTED"";
+        case ONLY_DIGITAL_INFORMATION_BEARER_AVAILABLE:
+            return ""ONLY_DIGITAL_INFORMATION_BEARER_AVAILABLE"";
+        case SERVICE_OR_OPTION_NOT_IMPLEMENTED:
+            return ""SERVICE_OR_OPTION_NOT_IMPLEMENTED"";
+        case INVALID_TRANSACTION_IDENTIFIER:
+            return ""INVALID_TRANSACTION_IDENTIFIER"";
+        case USER_NOT_MEMBER_OF_CUG:
+            return ""USER_NOT_MEMBER_OF_CUG"";
+        case INCOMPATIBLE_DESTINATION:
+            return ""INCOMPATIBLE_DESTINATION"";
+        case INVALID_TRANSIT_NW_SELECTION:
+            return ""INVALID_TRANSIT_NW_SELECTION"";
+        case SEMANTICALLY_INCORRECT_MESSAGE:
+            return ""SEMANTICALLY_INCORRECT_MESSAGE"";
+        case INVALID_MANDATORY_INFORMATION:
+            return ""INVALID_MANDATORY_INFORMATION"";
+        case MESSAGE_TYPE_NON_IMPLEMENTED:
+            return ""MESSAGE_TYPE_NON_IMPLEMENTED"";
+        case MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE:
+            return ""MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE"";
+        case INFORMATION_ELEMENT_NON_EXISTENT:
+            return ""INFORMATION_ELEMENT_NON_EXISTENT"";
+        case CONDITIONAL_IE_ERROR:
+            return ""CONDITIONAL_IE_ERROR"";
+        case MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE:
+            return ""MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE"";
+        case RECOVERY_ON_TIMER_EXPIRED:
+            return ""RECOVERY_ON_TIMER_EXPIRED"";
+        case PROTOCOL_ERROR_UNSPECIFIED:
+            return ""PROTOCOL_ERROR_UNSPECIFIED"";
+        case INTERWORKING_UNSPECIFIED:
+            return ""INTERWORKING_UNSPECIFIED"";
+        case LOCAL_LOW_BATTERY:
+            return ""LOCAL_LOW_BATTERY"";
+        case HO_NOT_FEASIBLE:
+            return ""HO_NOT_FEASIBLE"";
+        case NON_SELECTED_USER_CLEARING:
+            return ""NON_SELECTED_USER_CLEARING"";
+"
+124,telephony/java/com/android/internal/telephony/uicc/IccUtils.java,"['24818fca475a6726f5ef0cae42149615079af6e9', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,"import java.nio.charset.Charset;
+"
+125,wifi/java/android/net/wifi/WifiConfiguration.java,"['43ceded8caaffead0a2a1967f42a4ef4bb658ced', '8faa0d981413f18b2468dde1b1fe71e248df0df1', 'b76115be4efabffaa6febc57cec47acc2f933c79']",3,"        } else if (allowedKeyManagement.get(KeyMgmt.DPP)) {
+            "

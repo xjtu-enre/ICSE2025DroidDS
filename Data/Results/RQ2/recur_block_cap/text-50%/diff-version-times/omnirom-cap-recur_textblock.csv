@@ -1,0 +1,242 @@
+id,file,merge_commitid,times,recur_segment
+1,packages/SystemUI/src/com/android/systemui/Dependency.java,"['20b50bcf2cdd722955040b713056399f0ec17bd2', 'd1ffad806502fc4ff57f88b4eb543cc81fc601a1', 'e15313dd5c01373f4e046366a36472a1913e3e39']",3,"    @Inject Lazy<OmniSettingsService> mOmniSettingsService;
+"
+2,packages/SystemUI/src/com/android/systemui/statusbar/notification/row/wrapper/NotificationMediaTemplateViewWrapper.java,"['160034a542fd4cfe183b93b3a4888dc7c4f68b65', 'efe5cc44da2c1772c733a6740a761b3b42969db4', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",3,"        addOnPreDrawListener();
+    }
+
+
+    private void addOnPreDrawListener() {
+        if ( !mOnPreDrawListenerRegistered ) {
+            mOnPreDrawListenerRegistered = true;
+            mSeekBarView.getViewTreeObserver().addOnPreDrawListener(mPreDrawListener);
+        }
+    }
+
+    private void removeOnPreDrawListener() {
+        if ( mOnPreDrawListenerRegistered ) {
+            mSeekBarView.getViewTreeObserver().removeOnPreDrawListener(mPreDrawListener);
+            mHandler.postDelayed(mOnUpdateTimerTick, PROGRESS_UPDATE_INTERVAL);
+            mOnPreDrawListenerRegistered = false;
+"
+3,packages/SystemUI/src/com/android/systemui/statusbar/notification/row/wrapper/NotificationMediaTemplateViewWrapper.java,"['160034a542fd4cfe183b93b3a4888dc7c4f68b65', 'efe5cc44da2c1772c733a6740a761b3b42969db4', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",3,"    private boolean mOnPreDrawListenerRegistered = false;
+"
+4,packages/SystemUI/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout.java,"['160034a542fd4cfe183b93b3a4888dc7c4f68b65', 'efe5cc44da2c1772c733a6740a761b3b42969db4', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",3,"        boolean shiftPulsingWithFirst = mAmbientPulseManager.getAllEntries().count() <= 1;
+"
+5,packages/SystemUI/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout.java,"['160034a542fd4cfe183b93b3a4888dc7c4f68b65', 'efe5cc44da2c1772c733a6740a761b3b42969db4']",2,"        if ((!mPulsing || mPulseReason == DozeLog.PULSE_REASON_DOCKING)
+                && mAmbientState.isFullyDark()) {
+            setClipBounds(null);
+        } else if (mAmbientState.isDarkAtAll()) {
+"
+6,packages/SystemUI/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout.java,"['160034a542fd4cfe183b93b3a4888dc7c4f68b65', 'efe5cc44da2c1772c733a6740a761b3b42969db4']",2,"    private int mPulseReason;
+"
+7,packages/SystemUI/src/com/android/systemui/statusbar/phone/LockIcon.java,"['160034a542fd4cfe183b93b3a4888dc7c4f68b65', 'efe5cc44da2c1772c733a6740a761b3b42969db4', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",3,"        if (state != mLastState || mLastDozing != mDozing || mLastPulsing != mPulsing
+                || mLastBouncerVisible != mBouncerVisible || force) {
+            int iconAnimRes = getAnimationResForTransition(mLastState, state, mLastPulsing,
+                    mPulsing, mLastDozing, mDozing, mBouncerVisible);
+            boolean isAnim = false; // iconAnimRes != -1;
+
+            int iconRes = isAnim ? iconAnimRes : getIconForState(state);
+            if (iconRes != mIconRes) {
+                mIconRes = iconRes;
+
+                Drawable icon = mContext.getDrawable(iconRes);
+                final AnimatedVectorDrawable animation = icon instanceof AnimatedVectorDrawable
+                        ? (AnimatedVectorDrawable) icon
+                        : null;
+                setImageDrawable(icon, false"
+8,packages/SystemUI/src/com/android/systemui/statusbar/phone/StatusBar.java,"['160034a542fd4cfe183b93b3a4888dc7c4f68b65', 'efe5cc44da2c1772c733a6740a761b3b42969db4', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",3,"                new Handler(), mKeyguardUpdateMonitor, Dependency.get(TunerService.class));
+"
+9,services/core/java/com/android/server/am/ActivityManagerService.java,"['6e3be19b8a58c265a2c3ff4b9cbabdb6a4ae9bf6', '7100a7fa7244d86adf9e33b9079ce2a355e2a525']",2,"
+        // When an app process is removed, activities from the process may be relaunched. In the
+        // case of forceStopPackageLocked the activities are finished before any window is drawn,
+        // and the launch time is not cleared. This will be incorrectly used to calculate launch
+        // time for the next launched activity launched in the same windowing mode.
+        if (clearLaunchStartTime) {
+            final LaunchTimeTracker.Entry entry = mStackSupervisor
+                    .getLaunchTimeTracker().getEntry(mStackSupervisor.getWindowingMode());
+            if (entry != null) {
+                entry.mLaunchStartTime = 0;
+            }
+        }
+"
+10,services/core/java/com/android/server/locksettings/LockSettingsService.java,"['160034a542fd4cfe183b93b3a4888dc7c4f68b65', 'efe5cc44da2c1772c733a6740a761b3b42969db4', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",3,"        VerifyCredentialResponse response = doVerifyCredential(credential, type,
+                                        false, 0, userId, progressCallback);
+        if ((response.getResponseCode() == VerifyCredentialResponse.RESPONSE_OK) &&
+                                           (userId == UserHandle.USER_OWNER)) {
+                //TODO(b/127810705): Update to credentials to use byte[]
+                String credentialString = credential == null ? null : new String(credential);
+                retainPassword(credentialString);
+        }
+        return response;
+"
+11,services/core/java/com/android/server/locksettings/LockSettingsService.java,"['160034a542fd4cfe183b93b3a4888dc7c4f68b65', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,", 0, userId, progressCallback);
+        if ((response.getResponseCode() == VerifyCredentialResponse.RESPONSE_OK) &&
+                                           (userId == UserHandle.USER_OWNER)) {
+                //TODO(b/127810705): Update to credentials to use byte[]
+                String credentialString = credential == null ? null : new String(credential);
+                retainPassword(credentialString);
+        }
+        return response;
+"
+12,telephony/java/android/telephony/DisconnectCause.java,"['6fc85c43e31aad55eecd51d3b0de34715ae03810', '71998c3d8b36220df1be12fe6e1ba7eda81cde41', 'ddcaa93e851eb5e57692799446f2ef3fe31436ae', '160034a542fd4cfe183b93b3a4888dc7c4f68b65', 'efe5cc44da2c1772c733a6740a761b3b42969db4', '18970c4d9d55a44040fe6fb762dac93a077c64b5', '7fe8671fd7b5388dd9be6295dbea6d31209468f9', 'b76115be4efabffaa6febc57cec47acc2f933c79']",8,"        case NETWORK_OUT_OF_ORDER:
+            return ""NETWORK_OUT_OF_ORDER"";
+        case TEMPORARY_FAILURE:
+            return ""TEMPORARY_FAILURE"";
+        case SWITCHING_EQUIPMENT_CONGESTION:
+            return ""SWITCHING_EQUIPMENT_CONGESTION"";
+        case ACCESS_INFORMATION_DISCARDED:
+            return ""ACCESS_INFORMATION_DISCARDED"";
+        case REQUESTED_CIRCUIT_OR_CHANNEL_NOT_AVAILABLE:
+            return ""REQUESTED_CIRCUIT_OR_CHANNEL_NOT_AVAILABLE"";
+        case RESOURCES_UNAVAILABLE_OR_UNSPECIFIED:
+            return ""RESOURCES_UNAVAILABLE_OR_UNSPECIFIED"";
+        case QOS_UNAVAILABLE:
+            return ""QOS_UNAVAILABLE"";
+        case REQUESTED_FACILITY_NOT_SUBSCRIBED:
+            return ""REQUESTED_FACILITY_NOT_SUBSCRIBED"";
+        case INCOMING_CALLS_BARRED_WITHIN_CUG:
+            return ""INCOMING_CALLS_BARRED_WITHIN_CUG"";
+        case BEARER_CAPABILITY_UNAVAILABLE:
+            return ""BEARER_CAPABILITY_UNAVAILABLE"";
+        case SERVICE_OPTION_NOT_AVAILABLE:
+            return ""SERVICE_OPTION_NOT_AVAILABLE"";
+        case BEARER_SERVICE_NOT_IMPLEMENTED:
+            return ""BEARER_SERVICE_NOT_IMPLEMENTED"";
+        case REQUESTED_FACILITY_NOT_IMPLEMENTED:
+            return ""REQUESTED_FACILITY_NOT_IMPLEMENTED"";
+        case ONLY_DIGITAL_INFORMATION_BEARER_AVAILABLE:
+            return ""ONLY_DIGITAL_INFORMATION_BEARER_AVAILABLE"";
+        case SERVICE_OR_OPTION_NOT_IMPLEMENTED:
+            return ""SERVICE_OR_OPTION_NOT_IMPLEMENTED"";
+        case INVALID_TRANSACTION_IDENTIFIER:
+            return ""INVALID_TRANSACTION_IDENTIFIER"";
+        case USER_NOT_MEMBER_OF_CUG:
+            return ""USER_NOT_MEMBER_OF_CUG"";
+        case INCOMPATIBLE_DESTINATION:
+            return ""INCOMPATIBLE_DESTINATION"";
+        case INVALID_TRANSIT_NW_SELECTION:
+            return ""INVALID_TRANSIT_NW_SELECTION"";
+        case SEMANTICALLY_INCORRECT_MESSAGE:
+            return ""SEMANTICALLY_INCORRECT_MESSAGE"";
+        case INVALID_MANDATORY_INFORMATION:
+            return ""INVALID_MANDATORY_INFORMATION"";
+        case MESSAGE_TYPE_NON_IMPLEMENTED:
+            return ""MESSAGE_TYPE_NON_IMPLEMENTED"";
+        case MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE:
+            return ""MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE"";
+        case INFORMATION_ELEMENT_NON_EXISTENT:
+            return ""INFORMATION_ELEMENT_NON_EXISTENT"";
+        case CONDITIONAL_IE_ERROR:
+            return ""CONDITIONAL_IE_ERROR"";
+        case MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE:
+            return ""MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE"";
+        case RECOVERY_ON_TIMER_EXPIRED:
+            return ""RECOVERY_ON_TIMER_EXPIRED"";
+        case PROTOCOL_ERROR_UNSPECIFIED:
+            return ""PROTOCOL_ERROR_UNSPECIFIED"";
+        case INTERWORKING_UNSPECIFIED:
+            return ""INTERWORKING_UNSPECIFIED"";
+        case LOCAL_LOW_BATTERY:
+            return ""LOCAL_LOW_BATTERY"";
+        case HO_NOT_FEASIBLE:
+            return ""HO_NOT_FEASIBLE"";
+        case NON_SELECTED_USER_CLEARING:
+            return ""NON_SELECTED_USER_CLEARING"";
+"
+13,telephony/java/android/telephony/DisconnectCause.java,"['160034a542fd4cfe183b93b3a4888dc7c4f68b65', 'efe5cc44da2c1772c733a6740a761b3b42969db4', '7fe8671fd7b5388dd9be6295dbea6d31209468f9']",3,"    /** @hide */
+    public static final int QOS_UNAVAILABLE = 77;
+    /** @hide */
+    public static final int REQUESTED_FACILITY_NOT_SUBSCRIBED = 78;
+    /** @hide */
+    public static final int INCOMING_CALLS_BARRED_WITHIN_CUG = 79;
+    /** @hide */
+    public static final int BEARER_CAPABILITY_UNAVAILABLE = 80;
+    /** @hide */
+    public static final int SERVICE_OPTION_NOT_AVAILABLE = 81;
+    /** @hide */
+    public static final int BEARER_SERVICE_NOT_IMPLEMENTED = 82;
+    /** @hide */
+    public static final int REQUESTED_FACILITY_NOT_IMPLEMENTED = 83;
+    /** @hide */
+    public static final int ONLY_DIGITAL_INFORMATION_BEARER_AVAILABLE = 84;
+    /** @hide */
+    public static final int SERVICE_OR_OPTION_NOT_IMPLEMENTED = 85;
+    /** @hide */
+    public static final int INVALID_TRANSACTION_IDENTIFIER = 86;
+    /** @hide */
+    public static final int USER_NOT_MEMBER_OF_CUG = 87;
+    /** @hide */
+    public static final int INCOMPATIBLE_DESTINATION = 88;
+    /** @hide */
+    public static final int INVALID_TRANSIT_NW_SELECTION = 89;
+    /** @hide */
+    public static final int SEMANTICALLY_INCORRECT_MESSAGE = 90;
+    /** @hide */
+    public static final int INVALID_MANDATORY_INFORMATION = 91;
+    /** @hide */
+    public static final int MESSAGE_TYPE_NON_IMPLEMENTED = 92;
+    /** @hide */
+    public static final int MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE = 93;
+    /** @hide */
+    public static final int INFORMATION_ELEMENT_NON_EXISTENT = 94;
+    /** @hide */
+    public static final int CONDITIONAL_IE_ERROR = 95;
+    /** @hide */
+    public static final int MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE = 96;
+    /** @hide */
+    public static final int RECOVERY_ON_TIMER_EXPIRED = 97;
+    /** @hide */
+    public static final int PROTOCOL_ERROR_UNSPECIFIED = 98;
+    /** @hide */
+    public static final int INTERWORKING_UNSPECIFIED = 99;
+    /** @hide */
+    public static final int LOCAL_LOW_BATTERY = 100;
+    /** @hide */
+    public static final int NO_CIRCUIT_AVAIL = 101;
+    /** @hide */
+    public static final int NO_ROUTE_TO_DESTINATION = 102;
+    /** @hide */
+    public static final int OPERATOR_DETERMINED_BARRING = 103;
+    /** @hide */
+    public static final int CALL_FAIL_NO_USER_RESPONDING = 104;
+    /** @hide */
+    public static final int CALL_FAIL_NO_ANSWER_FROM_USER = 105;
+    /** @hide */
+    public static final int CALL_FAIL_DESTINATION_OUT_OF_ORDER = 106;
+    /** @hide */
+    public static final int BEARER_CAPABILITY_NOT_AUTHORIZED = 107;
+    /** @hide */
+    public static final int CHANNEL_UNACCEPTABLE = 108;
+    /** @hide */
+    public static final int CALL_REJECTED = 109;
+    /** @hide */
+    public static final int NUMBER_CHANGED = 110;
+    /** @hide */
+    public static final int PREEMPTION = 111;
+    /** @hide */
+    public static final int FACILITY_REJECTED = 112;
+    /** @hide */
+    public static final int RESP_TO_STATUS_ENQUIRY = 113;
+    /** @hide */
+    public static final int NETWORK_OUT_OF_ORDER = 114;
+    /** @hide */
+    public static final int TEMPORARY_FAILURE = 115;
+    /** @hide */
+    public static final int SWITCHING_EQUIPMENT_CONGESTION = 116;
+    /** @hide */
+    public static final int ACCESS_INFORMATION_DISCARDED = 117;
+    /** @hide */
+    public static final int REQUESTED_CIRCUIT_OR_CHANNEL_NOT_AVAILABLE = 118;
+    /** @hide */
+    public static final int RESOURCES_UNAVAILABLE_OR_UNSPECIFIED = 119;
+
+    /**
+     * call failed due to LTE to 3G/2G handover not feasible
+     * @hide
+     */
+    public static final int HO_NOT_FEASIBLE = 120;
+    /** @hide */
+    public static final int NON_SELECTED_USER_CLEARING = 121;
+"
+14,telephony/java/android/telephony/ServiceState.java,"['799030b703da27e7117eba75c2ca753b0e976a8d', 'b7ff81acc796b2957f68c9412cef71b9b47e67de', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",3,"                rtString = ""NR"";
+"

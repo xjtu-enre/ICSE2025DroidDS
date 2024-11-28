@@ -1,0 +1,22 @@
+id,merge_commitid,file,Loc_details,block_text_1,block_text_2,recur_segment,proportion
+1,"['20b50bcf2cdd722955040b713056399f0ec17bd2', 'f2b53072aa24c3f9f84e762d313f85f5f179e4a4']",packages/SystemUI/src/com/android/systemui/dagger/SystemUIModule.java,"[(49, 49, 1), (48, 48, 1)]","import com.android.systemui.omni.dagger.OmniModule;
+","import com.android.systemui.omni.dagger.OmniModule;
+","import com.android.systemui.omni.dagger.OmniModule;
+","[1.0, 1.0]"
+2,"['20b50bcf2cdd722955040b713056399f0ec17bd2', 'f2b53072aa24c3f9f84e762d313f85f5f179e4a4']",services/core/java/com/android/server/dreams/DreamManagerService.java,"[(908, 909, 2), (689, 689, 1)]","        public boolean isDozing() {
+            return isDozingInternal();
+","                return isDozingInternal();
+","            return isDozingInternal();
+","[0.52, 0.907]"
+3,"['20b50bcf2cdd722955040b713056399f0ec17bd2', 'f2b53072aa24c3f9f84e762d313f85f5f179e4a4']",services/core/java/com/android/server/dreams/DreamManagerService.java,"[(908, 909, 2), (824, 825, 2)]","        public boolean isDozing() {
+            return isDozingInternal();
+","        public boolean isDozing() {
+            return isDozingInternal();
+","        public boolean isDozing() {
+            return isDozingInternal();
+","[1.0, 1.0]"
+4,"['e9fa89ccc721890c1d006a243a7376de4147d6d8', 'f2b53072aa24c3f9f84e762d313f85f5f179e4a4']",packages/SystemUI/src/com/android/systemui/qs/QSPanelControllerBase.java,"[(27, 28, 2), (27, 27, 1)]","import android.provider.Settings;
+import android.util.Log;
+","import android.provider.Settings;
+","import android.provider.Settings;
+","[0.576, 1.0]"

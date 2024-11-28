@@ -1,0 +1,2 @@
+Unnamed: 0,Merge,Conf_details,Conf_methods,Loc,Block,Loc_details,is_in_aff_files
+0,c5b9da0f6b5ab4da9e1ee4b8dfb3de427cdac2d9,core/java/com/android/internal/app/ChooserActivity.java,['int com.android.internal.app.ChooserActivity.getMaxRankedTargets()'],1,1,"[(2828, 2828, 1)]",True

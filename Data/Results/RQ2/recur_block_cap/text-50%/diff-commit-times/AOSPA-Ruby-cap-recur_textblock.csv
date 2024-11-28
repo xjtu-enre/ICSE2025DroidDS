@@ -1,0 +1,677 @@
+id,file,merge_commitid,times,recur_segment
+1,core/java/android/app/ActivityManagerInternal.java,"['d28a4f6b38dbab44128b4319f665dd65c3e4ec2c', 'df73284a33506ba26aadbd20a1dbd01353820200', 'a9736185db896fe2edde0281d71102b35327b7f8']",3,"    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+"
+2,core/java/android/content/ContentResolver.java,"['5358a994b854c7a6627858c48d6947e8acff6ea9', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,"        android.util.SeempLog.record_uri(37, url);
+"
+3,core/java/android/content/pm/ApplicationInfo.java,"['a33382db0bb0bc29bab84f1e5ee36d682bea593e', '6f47ceafbe6febe54aa5c376baed3415cdf848ad']",2,"    /** {@hide} */ public void setOverrideRes(int overrideResolution) { overrideRes = overrideResolution; }
+"
+4,core/java/android/os/Process.java,"['d28a4f6b38dbab44128b4319f665dd65c3e4ec2c', '6aa497092f6337fbafb5b9858a3ec8f28c9d3caf']",2,"     * Sets the scheduling group for processes in the same cgroup.procs of uid and pid
+     * @hide
+     * @param uid The user identifier of the process to change.
+     * @param pid The identifier of the process to change.
+     * @param group The target group for this process from THREAD_GROUP_*.
+     *
+     * @throws IllegalArgumentException Throws IllegalArgumentException if
+     * <var>tid</var> does not exist.
+     * @throws SecurityException Throws SecurityException if your process does
+     * not have permission to modify the given thread, or to use the given
+     * priority.
+     *
+     * group == THREAD_GROUP_DEFAULT means to move all non-background priority
+     * threads to the foreground scheduling group, but to leave background
+     * priority threads alone.  group == THREAD_GROUP_BG_NONINTERACTIVE moves all
+     * threads, regardless of priority, to the background scheduling group.
+     * group == THREAD_GROUP_FOREGROUND is not allowed.
+     *
+     * Always sets cpusets.
+     */
+    public static final native void setCgroupProcsProcessGroup(int uid, int pid, int group)
+            throws IllegalArgumentException, SecurityException;
+"
+5,core/java/android/view/InputEventReceiver.java,"['c77ad764fad2451538f140b31601e7b8c6c59fa2', '71998c3d8b36220df1be12fe6e1ba7eda81cde41']",2,"    // Called from native code.
+    @SuppressWarnings(""unused"")
+    private void dispatchMotionEventInfo(int motionEventType, int touchMoveNum) {
+        try {
+            if (mChoreographer == null)
+                mChoreographer = Choreographer.getInstance();
+
+            if (mChoreographer != null)
+                mChoreographer.setMotionEventInfo(motionEventType, touchMoveNum);
+        } catch (Exception e) {
+            Log.e(TAG, ""cannot invoke setMotionEventInfo."");
+        }
+    }
+"
+6,core/java/android/view/ViewRootImpl.java,"['24f36fd2514856aaafe6a32a99050e272a6bd361', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",2,"    boolean mHaveMoveEvent = false;
+"
+7,core/java/com/android/ims/internal/uce/common/CapInfo.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', '71998c3d8b36220df1be12fe6e1ba7eda81cde41']",2,"     /** Standalone Chatbot communication support. */
+    private boolean mSmChatbotSupported = false;
+     /** MMtel based call composer support. */
+"
+8,core/java/com/android/ims/internal/uce/common/CapInfo.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', '71998c3d8b36220df1be12fe6e1ba7eda81cde41']",2,"    @UnsupportedAppUsage
+"
+9,location/java/android/location/LocationManager.java,"['edb6252578f9b76151e5125a7fb1b16823a68418', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,"    public boolean addNmeaListener(GpsStatus.NmeaListener listener) {
+        android.util.SeempLog.record(44);
+"
+10,packages/SettingsLib/src/com/android/settingslib/bluetooth/A2dpProfile.java,"['b6292e3e1ba3616eac1032737a91925391d94b92', '6aa497092f6337fbafb5b9858a3ec8f28c9d3caf']",2,"        if (V) Log.d(TAG, "" execute isHighQualityAudioEnabled()"");
+        if (mService == null) {
+            if (V) Log.d(TAG,""mService is null."");
+            return false;
+        }
+        "
+11,packages/SettingsLib/src/com/android/settingslib/bluetooth/A2dpProfile.java,"['b6292e3e1ba3616eac1032737a91925391d94b92', '6aa497092f6337fbafb5b9858a3ec8f28c9d3caf']",2,"        if (V) Log.d(TAG, "" execute setHighQualityAudioEnabled()"");
+        int prefValue = enabled
+                ? BluetoothA2dp.OPTIONAL_CODECS_PREF_ENABLED
+                : BluetoothA2dp.OPTIONAL_CODECS_PREF_DISABLED;
+        if (mService == null) {
+            if (V) Log.d(TAG,""mService is null."");
+            return;
+        }
+        "
+12,packages/SettingsLib/src/com/android/settingslib/bluetooth/A2dpProfile.java,"['b6292e3e1ba3616eac1032737a91925391d94b92', '6aa497092f6337fbafb5b9858a3ec8f28c9d3caf']",2,"        if (V) Log.d(TAG, "" execute supportsHighQualityAudio()"");
+        if (mService == null) {
+            if (V) Log.d(TAG,""mService is null."");
+            return false;
+        }
+        "
+13,packages/SystemUI/src/com/android/systemui/keyguard/KeyguardViewMediator.java,"['edb6252578f9b76151e5125a7fb1b16823a68418', 'b6292e3e1ba3616eac1032737a91925391d94b92']",2,".setOccluded(isOccluded,
+                        (Dependency.get(KeyguardUpdateMonitor.class).isSimPinSecure()?false:animate)
+"
+14,packages/SystemUI/src/com/android/systemui/statusbar/phone/KeyguardBottomAreaView.java,"['fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,"    private EmergencyCarrierArea mEmergencyCarrierArea;
+"
+15,packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBarPolicy.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '8faa0d981413f18b2468dde1b1fe71e248df0df1']",2,"        filter.addAction(Intent.ACTION_BOOT_COMPLETED);
+        broadcastDispatcher.registerReceiver"
+16,packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBarPolicy.java,"['ddc3dc79034f4570388245270b50ddad964c11f0', 'a9736185db896fe2edde0281d71102b35327b7f8']",2,"    private void updateHotspotIcon(int standard) {
+        if (standard == ScanResult.WIFI_STANDARD_11AX) {
+            mIconController.setIcon(mSlotHotspot, R.drawable.stat_sys_wifi_6_hotspot,
+                mResources.getString(R.string.accessibility_status_bar_hotspot));
+        } else if (standard == ScanResult.WIFI_STANDARD_11AC) {
+            mIconController.setIcon(mSlotHotspot, R.drawable.stat_sys_wifi_5_hotspot,
+                mResources.getString(R.string.accessibility_status_bar_hotspot));
+        } else if (standard == ScanResult.WIFI_STANDARD_11N) {
+            mIconController.setIcon(mSlotHotspot, R.drawable.stat_sys_wifi_4_hotspot,
+                mResources.getString(R.string.accessibility_status_bar_hotspot));
+        } else {
+            mIconController.setIcon(mSlotHotspot, R.drawable.stat_sys_hotspot,
+                mResources.getString(R.string.accessibility_status_bar_hotspot));
+        }
+"
+17,packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java,"['18970c4d9d55a44040fe6fb762dac93a077c64b5', '3d2fc559e13b7293212955f1858d443f4fe8234e']",2,"        public void onCallStateChanged(int state, String phoneNumber) {
+            if (DEBUG) {
+                Log.d(mTag, ""onCallStateChanged: state="" + state);
+            }
+            mCallState = state;
+            updateTelephony();
+        }
+    };
+
+    class FiveGStateListener implements IFiveGStateListener{
+
+        public void onStateChanged(FiveGServiceState state) {
+            if (DEBUG) {
+                Log.d(mTag, ""onStateChanged: state="" + state);
+            }
+            mFiveGState = state;
+            updateTelephony();
+            notifyListeners();
+        }
+    }
+
+    private ImsMmTelManager.CapabilityCallback mCapabilityCallback = new ImsMmTelManager.CapabilityCallback() {
+        @Override
+        public void onCapabilitiesStatusChanged(MmTelFeature.MmTelCapabilities config) {
+            mCurrentState.voiceCapable =
+                    config.isCapable(MmTelFeature.MmTelCapabilities.CAPABILITY_TYPE_VOICE);
+            mCurrentState.videoCapable =
+                    config.isCapable(MmTelFeature.MmTelCapabilities.CAPABILITY_TYPE_VIDEO);
+            Log.d(mTag, ""onCapabilitiesStatusChanged isVoiceCapable="" + mCurrentState.voiceCapable
+                    + "" isVideoCapable="" + mCurrentState.videoCapable);
+            notifyListenersIfNecessary();
+        }
+    };
+
+    private final ImsMmTelManager.RegistrationCallback mImsRegistrationCallback =
+            new ImsMmTelManager.RegistrationCallback() {
+                @Override
+                public void onRegistered(int imsTransportType) {
+                    Log.d(mTag, ""onRegistered imsTransportType="" + imsTransportType);
+                    mCurrentState.imsRegistered = true;
+                    notifyListenersIfNecessary();
+                }
+
+                @Override
+                public void onRegistering(int imsTransportType) {
+                    Log.d(mTag, ""onRegistering imsTransportType="" + imsTransportType);
+                    mCurrentState.imsRegistered = false;
+                    notifyListenersIfNecessary();
+                }
+
+                @Override
+                public void onUnregistered(ImsReasonInfo info) {
+                    Log.d(mTag, ""onDeregistered imsReasonInfo="" + info);
+                    mCurrentState.imsRegistered = false;
+                    notifyListenersIfNecessary();
+                }
+    };
+
+    private final BroadcastReceiver mVolteSwitchObserver = new BroadcastReceiver() {
+        public void onReceive(Context context, Intent intent) {
+            Log.d(mTag, ""action="" + intent.getAction());
+            if ( mConfig.showVolteIcon ) {
+                notifyListeners();
+            }
+        }
+"
+18,packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java,"['d28a4f6b38dbab44128b4319f665dd65c3e4ec2c', 'edb6252578f9b76151e5125a7fb1b16823a68418', '6f47ceafbe6febe54aa5c376baed3415cdf848ad']",3,";
+import android.telephony.ims.ImsMmTelManager;
+import android.telephony.ims.ImsReasonInfo;
+import android.telephony.ims.feature.MmTelFeature;
+"
+19,packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java,"['d28a4f6b38dbab44128b4319f665dd65c3e4ec2c', '71998c3d8b36220df1be12fe6e1ba7eda81cde41']",2,";
+import com.android.internal.telephony.PhoneConstants;
+import com.android.internal.telephony.PhoneConstants.DataState;
+"
+20,packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java,"['d28a4f6b38dbab44128b4319f665dd65c3e4ec2c', 'edb6252578f9b76151e5125a7fb1b16823a68418']",2,"import android.telephony.CellSignalStrengthNr;
+import android.telephony.ims.ImsMmTelManager;
+import android.telephony.ims.ImsReasonInfo;
+import android.telephony.ims.feature.MmTelFeature;
+"
+21,packages/SystemUI/src/com/android/systemui/statusbar/policy/NetworkControllerImpl.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', 'edb6252578f9b76151e5125a7fb1b16823a68418']",2,"        filter.addAction(TelephonyIntents.ACTION_ANY_DATA_CONNECTION_STATE_CHANGED);
+        m"
+22,services/core/java/com/android/server/BluetoothManagerService.java,"['a33382db0bb0bc29bab84f1e5ee36d682bea593e', 'df73284a33506ba26aadbd20a1dbd01353820200']",2,"                        // Wait for (a) is required only when Bluetooth is being
+                        // turned off.
+                        int state;
+                        try {
+                            state = mBluetooth.getState();
+                        } catch (RemoteException e) {
+                            Slog.e(TAG, ""getState()"", e);
+                            break;
+                        }
+                        if(state == BluetoothAdapter.STATE_TURNING_OFF || state == BluetoothAdapter.STATE_BLE_TURNING_OFF)
+                            waitFor"
+23,services/core/java/com/android/server/BluetoothManagerService.java,"['a33382db0bb0bc29bab84f1e5ee36d682bea593e', 'df73284a33506ba26aadbd20a1dbd01353820200']",2,");
+
+                        try {
+                            mBluetoothLock.readLock().lock();
+                            if((mBluetooth.getState() == BluetoothAdapter.STATE_BLE_ON) &&
+                                    ((isBluetoothPersistedStateOnBluetooth() ||
+                                    !isBleAppPresent()))) {
+                                Message disableMsg =
+                                        mHandler.obtainMessage(MESSAGE_DISABLE);
+                                mHandler.sendMessageDelayed(disableMsg, 100);
+                                break;
+                            }
+                        } catch (RemoteException e) {
+                            Slog.e(TAG, ""Unable to initiate disable"", e);
+                        } finally {
+                            mBluetoothLock.readLock().unlock();
+                        }
+"
+24,services/core/java/com/android/server/Watchdog.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '8faa0d981413f18b2468dde1b1fe71e248df0df1']",2,"                                    subject, "
+25,services/core/java/com/android/server/Watchdog.java,"['b6292e3e1ba3616eac1032737a91925391d94b92', '8faa0d981413f18b2468dde1b1fe71e248df0df1']",2,"                            initialStack = ActivityManagerService.dumpStackTraces(pids,
+                                    null, null, getInterestingNativePids()"
+26,services/core/java/com/android/server/Watchdog.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '8faa0d981413f18b2468dde1b1fe71e248df0df1']",2,"            final File finalStack = ActivityManagerService.dumpStackTraces(
+                    pids, "
+27,services/core/java/com/android/server/am/ActivityManagerConstants.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', '71998c3d8b36220df1be12fe6e1ba7eda81cde41']",2,"
+        if (mPerf != null) {
+          // Maximum number of cached processes we will allow.
+            DEFAULT_MAX_CACHED_PROCESSES = MAX_CACHED_PROCESSES = Integer.valueOf(
+                                                 mPerf.perfGetProp(""ro.vendor.qti.sys.fw.bg_apps_limit"", ""32""));
+
+           //Trim Settings
+            USE_TRIM_SETTINGS = Boolean.parseBoolean(mPerf.perfGetProp(""ro.vendor.qti.sys.fw.use_trim_settings"", ""true""));
+            EMPTY_APP_PERCENT = Integer.valueOf(mPerf.perfGetProp(""ro.vendor.qti.sys.fw.empty_app_percent"", ""50""));
+            TRIM_EMPTY_PERCENT = Integer.valueOf(mPerf.perfGetProp(""ro.vendor.qti.sys.fw.trim_empty_percent"", ""100""));
+            TRIM_CACHE_PERCENT = Integer.valueOf(mPerf.perfGetProp(""ro.vendor.qti.sys.fw.trim_cache_percent"", ""100""));
+            TRIM_ENABLE_MEMORY = Long.valueOf(mPerf.perfGetProp(""ro.vendor.qti.sys.fw.trim_enable_memory"", ""1073741824""));
+        }
+"
+28,services/core/java/com/android/server/am/ActivityManagerService.java,"['fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2', 'dfd2f7fed77160af2c57edfa20f1768b42aaa8da']",2,"        public int startActivityAsUserEmpty(Bundle options) {
+            return ActivityManagerService.this.startActivityAsUserEmpty(options);
+"
+29,services/core/java/com/android/server/am/ActivityManagerService.java,"['6fc85c43e31aad55eecd51d3b0de34715ae03810', 'ae1b3a8f3221dbe692fd90d414cfe5040538c264']",2,"    /* Freq Aggr boost objects */
+    public static BoostFramework mPerfServiceStartHint = null;
+    /* UX perf event object */
+    public static BoostFramework mUxPerf = new BoostFramework();
+    public static boolean mForceStopKill = false;
+"
+30,services/core/java/com/android/server/am/ProcessRecord.java,"['d28a4f6b38dbab44128b4319f665dd65c3e4ec2c', '43ceded8caaffead0a2a1967f42a4ef4bb658ced', '8faa0d981413f18b2468dde1b1fe71e248df0df1']",3,"import com.android.server.Watchdog;
+"
+31,services/core/java/com/android/server/audio/AudioDeviceBroker.java,"['7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2', 'ae1b3a8f3221dbe692fd90d414cfe5040538c264']",2,"                case MSG_L_A2DP_ACTIVE_DEVICE_CHANGE_EXT: {
+                    final BtDeviceConnectionInfo info = (BtDeviceConnectionInfo) msg.obj;
+                    AudioService.sDeviceLogger.log((new AudioEventLogger.StringEvent(
+                    ""handleBluetoothA2dpActiveDeviceChangeExt ""
+                           + "" state="" + info.mState
+                           // only querying address as this is the only readily available
+                           // field on the device
+                           + "" addr="" + info.mDevice.getAddress()
+                           + "" prof="" + info.mProfile + "" supprNoisy="" + info.mSupprNoisy
+                           + "" vol="" + info.mVolume)).printLog(TAG));
+                    synchronized (mDeviceStateLock) {
+                        mDeviceInventory.handleBluetoothA2dpActiveDeviceChangeExt(
+                                info.mDevice, info.mState, info.mProfile,
+                                info.mSupprNoisy, info.mVolume);
+                    }
+"
+32,services/core/java/com/android/server/audio/AudioDeviceBroker.java,"['fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,"            if (AudioService.DEBUG_SCO) {
+                Log.i(TAG, ""In isBluetoothScoOnForApp(), mForcedUseForCommExt: "" +
+                      mForcedUseForCommExt);
+            }
+"
+33,services/core/java/com/android/server/audio/AudioDeviceBroker.java,"['fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,"            if (AudioService.DEBUG_SCO) {
+                Log.i(TAG, ""In isSpeakerphoneOn(), mForcedUseForCommExt: "" +mForcedUseForCommExt);
+            }
+"
+34,services/core/java/com/android/server/audio/AudioDeviceBroker.java,"['24f36fd2514856aaafe6a32a99050e272a6bd361', 'fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",3,"        if (AudioService.DEBUG_SCO) {
+            Log.i(TAG, ""setBluetoothScoOn: "" + on + "" "" + eventSource);
+        }
+"
+35,services/core/java/com/android/server/audio/AudioDeviceBroker.java,"['24f36fd2514856aaafe6a32a99050e272a6bd361', 'fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2']",2,"        if (AudioService.DEBUG_SCO) {
+            Log.i(TAG, ""setBluetoothScoOn: "" + on + "" "" + eventSource);
+        }
+        "
+36,services/core/java/com/android/server/audio/AudioService.java,"['fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2', 'bb9ded46832af38a453b78b92ad2de32ef1cf845']",2,"            if ((newModeOwnerPid != oldModeOwnerPid) && (newModeOwnerPid != 0)) {
+                Log.i(TAG, ""In binderDied(), calling disconnectBluetoothSco()"");
+                mDeviceBroker.postDisconnectBluetoothSco(newModeOwnerPid);
+"
+37,services/core/java/com/android/server/audio/AudioService.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', 'fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",3,"        Log.i(TAG, ""setMode(mode = "" + mode + "", callingPackage = "" +
+                  callingPackage + "", Process ID: "" + Binder.getCallingPid());
+"
+38,services/core/java/com/android/server/audio/AudioService.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', 'fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2']",2,"        Log.i(TAG, ""setMode(mode = "" + mode + "", callingPackage = "" +
+                  callingPackage + "", Process ID: "" + Binder.getCallingPid());
+        if (DEBUG_MODE) { Log.v(TAG, ""setMode(mode="" + mode + "", callingPackage="" + callingPackage + "")""); }
+"
+39,services/core/java/com/android/server/audio/BtHelper.java,"['fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,"    //SCO device tracking for TWSPLUS device
+    private HashMap<BluetoothDevice, Integer> mScoClientDevices =
+                                          new HashMap<BluetoothDevice, Integer>();
+
+    private void updateTwsPlusScoState(BluetoothDevice device, Integer state) {
+        if (mScoClientDevices.containsKey(device)) {
+            Integer prevState = mScoClientDevices.get(device);
+            Log.i(TAG, ""updateTwsPlusScoState: prevState: "" + prevState + ""state: "" + state);
+            if (state != prevState) {
+                mScoClientDevices.remove(device);
+                mScoClientDevices.put(device, state);
+            }
+        } else {
+            mScoClientDevices.put(device, state);
+        }
+    }
+
+    private boolean isAudioPathUp() {
+        boolean ret = false;
+        Iterator it = mScoClientDevices.entrySet().iterator();
+        for (Integer value :  mScoClientDevices.values()) {
+            if (value == BluetoothHeadset.STATE_AUDIO_CONNECTED) {
+                ret = true;
+                break;
+            }
+        }
+        Log.d(TAG, ""isAudioPathUp returns"" + ret);
+        return ret;
+    }
+
+    private boolean checkAndUpdatTwsPlusScoState(Intent intent, Integer state) {
+        //default ret value is true
+        //so that legacy devices fallsthru
+        boolean ret = true;
+        BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+        Log.i(TAG, ""device:"" + device);
+
+        if (device == null) {
+           Log.e(TAG, ""checkAndUpdatTwsPlusScoState: device is null"");
+           //intent cant have device has null
+           //in case it is treat them as non-twsplus case and return true
+           return ret;
+        }
+
+        if (device.isTwsPlusDevice()) {
+            if (state == BluetoothHeadset.STATE_AUDIO_CONNECTED) {
+                //if adding new Device
+                //check if there is no device already connected
+                if (isAudioPathUp()) {
+                    Log.i(TAG, ""No need to bringup audio-path"");
+                    ret = false;
+                }
+                //Update the States now
+                updateTwsPlusScoState(device, state);
+            } else {
+                //For disconnect cases, update the state first
+                updateTwsPlusScoState(device, state);
+                //if deleting new Device
+                //check if all devices are disconnected
+                if (isAudioPathUp()) {
+                    Log.i(TAG, ""not good to tear down audio-path"");
+                    ret = false;
+                }
+            }
+        }
+        Log.i(TAG, ""checkAndUpdatTwsPlusScoState returns "" + ret);
+        return ret;
+    }
+
+"
+40,services/core/java/com/android/server/connectivity/NetworkAgentInfo.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', '24f36fd2514856aaafe6a32a99050e272a6bd361', '18970c4d9d55a44040fe6fb762dac93a077c64b5', '3d2fc559e13b7293212955f1858d443f4fe8234e']",4,"import static android.net.NetworkCapabilities.NET_CAPABILITY_INTERNET;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_MMS;
+"
+41,services/core/java/com/android/server/connectivity/NetworkAgentInfo.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', '18970c4d9d55a44040fe6fb762dac93a077c64b5', '8faa0d981413f18b2468dde1b1fe71e248df0df1']",3,"import static android.net.NetworkCapabilities.NET_CAPABILITY_INTERNET;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_MMS;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_"
+42,services/core/java/com/android/server/connectivity/NetworkAgentInfo.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",2,"import static android.net.NetworkCapabilities.NET_CAPABILITY_INTERNET;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_MMS;
+import static android.net.NetworkCapabilities.NET_CAPABILITY_VALIDATED;
+"
+43,services/core/java/com/android/server/locksettings/LockSettingsService.java,"['18970c4d9d55a44040fe6fb762dac93a077c64b5', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2," {
+        if (DEBUG) Slog.d(TAG, ""clearUserKeyProtection user="" + userId);
+        final UserInfo userInfo = mUserManager.getUserInfo(userId);
+        final IStorageManager storageManager = mInjector.getStorageManager();
+        final long callingId = Binder.clearCallingIdentity();
+        try {
+            storageManager.clearUserKeyAuth(userId, userInfo.serialNumber, token, secret);
+        } "
+44,services/core/java/com/android/server/locksettings/LockSettingsService.java,"['18970c4d9d55a44040fe6fb762dac93a077c64b5', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,", 0, userId, progressCallback);
+        if ((response.getResponseCode() == VerifyCredentialResponse.RESPONSE_OK) &&
+                                           (userId == UserHandle.USER_OWNER)) {
+                //TODO(b/127810705): Update to credentials to use byte[]
+                String credentialString = credential == null ? null : new String(credential);
+                retainPassword(credentialString);
+        }
+        return response;
+"
+45,services/core/java/com/android/server/pm/PackageManagerService.java,"['18970c4d9d55a44040fe6fb762dac93a077c64b5', 'ae1b3a8f3221dbe692fd90d414cfe5040538c264']",2,"        if (pkgName != null)
+            acquireUxPerfLock(BoostFramework.UXE_EVENT_PKG_INSTALL, pkgName, 0);
+"
+46,services/core/java/com/android/server/wm/ActivityRecord.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', '71998c3d8b36220df1be12fe6e1ba7eda81cde41']",2,"
+        if (mPerf == null)
+            mPerf = new BoostFramework();
+"
+47,services/core/java/com/android/server/wm/ActivityRecord.java,"['18970c4d9d55a44040fe6fb762dac93a077c64b5', '784ecc8e9194775f58ad5a45422ed16570bcbee6']",2,"import android.util.BoostFramework;
+"
+48,services/core/java/com/android/server/wm/ActivityStack.java,"['24f36fd2514856aaafe6a32a99050e272a6bd361', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",2,".mDisplayContent;
+        if (mPerf == null) {
+            mPerf = new BoostFramework();
+        }
+"
+49,services/core/java/com/android/server/wm/ActivityStack.java,"['5358a994b854c7a6627858c48d6947e8acff6ea9', '62f4dee264cabcd5595e6e4c0a6ab3228281d3e0']",2,"import com.android.internal.app.ActivityTrigger;
+
+"
+50,services/core/java/com/android/server/wm/ActivityStack.java,"['edb6252578f9b76151e5125a7fb1b16823a68418', '5358a994b854c7a6627858c48d6947e8acff6ea9']",2,public class ActivityStack extends 
+51,services/core/java/com/android/server/wm/ActivityStack.java,"['5358a994b854c7a6627858c48d6947e8acff6ea9', '8faa0d981413f18b2468dde1b1fe71e248df0df1']",2,public class ActivityStack extends Task
+52,services/core/java/com/android/server/wm/ActivityStackSupervisor.java,"['edb6252578f9b76151e5125a7fb1b16823a68418', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,"import static com.android.server.wm.ActivityStack.ActivityState.DESTROYED;
+"
+53,telecomm/java/android/telecom/Call.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', '3d2fc559e13b7293212955f1858d443f4fe8234e']",2,"            if (can(capabilities, CAPABILITY_SUPPORTS_RTT_REMOTE)) {
+                builder.append("" CAPABILITY_SUPPORTS_RTT_REMOTE"");
+"
+54,telecomm/java/android/telecom/Connection.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', '3d2fc559e13b7293212955f1858d443f4fe8234e']",2,"        if ((capabilities & CAPABILITY_SUPPORTS_RTT_REMOTE) == CAPABILITY_SUPPORTS_RTT_REMOTE) {
+            builder.append(isLong ? "" CAPABILITY_SUPPORTS_RTT_REMOTE"" : "" sup_rtt"");
+"
+55,telecomm/java/android/telecom/ConnectionService.java,"['af02bd5317cc0cced0a7646d5bbf407a181dda9c', 'd28a4f6b38dbab44128b4319f665dd65c3e4ec2c', '3d2fc559e13b7293212955f1858d443f4fe8234e']",3,"    //Proprietary values starts after this.
+    private static final int MSG_ADD_PARTICIPANT_WITH_CONFERENCE = 40;
+"
+56,telephony/java/android/telephony/DisconnectCause.java,"['6fc85c43e31aad55eecd51d3b0de34715ae03810', '71998c3d8b36220df1be12fe6e1ba7eda81cde41', '7fe8671fd7b5388dd9be6295dbea6d31209468f9', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",4,"        case NETWORK_OUT_OF_ORDER:
+            return ""NETWORK_OUT_OF_ORDER"";
+        case TEMPORARY_FAILURE:
+            return ""TEMPORARY_FAILURE"";
+        case SWITCHING_EQUIPMENT_CONGESTION:
+            return ""SWITCHING_EQUIPMENT_CONGESTION"";
+        case ACCESS_INFORMATION_DISCARDED:
+            return ""ACCESS_INFORMATION_DISCARDED"";
+        case REQUESTED_CIRCUIT_OR_CHANNEL_NOT_AVAILABLE:
+            return ""REQUESTED_CIRCUIT_OR_CHANNEL_NOT_AVAILABLE"";
+        case RESOURCES_UNAVAILABLE_OR_UNSPECIFIED:
+            return ""RESOURCES_UNAVAILABLE_OR_UNSPECIFIED"";
+        case QOS_UNAVAILABLE:
+            return ""QOS_UNAVAILABLE"";
+        case REQUESTED_FACILITY_NOT_SUBSCRIBED:
+            return ""REQUESTED_FACILITY_NOT_SUBSCRIBED"";
+        case INCOMING_CALLS_BARRED_WITHIN_CUG:
+            return ""INCOMING_CALLS_BARRED_WITHIN_CUG"";
+        case BEARER_CAPABILITY_UNAVAILABLE:
+            return ""BEARER_CAPABILITY_UNAVAILABLE"";
+        case SERVICE_OPTION_NOT_AVAILABLE:
+            return ""SERVICE_OPTION_NOT_AVAILABLE"";
+        case BEARER_SERVICE_NOT_IMPLEMENTED:
+            return ""BEARER_SERVICE_NOT_IMPLEMENTED"";
+        case REQUESTED_FACILITY_NOT_IMPLEMENTED:
+            return ""REQUESTED_FACILITY_NOT_IMPLEMENTED"";
+        case ONLY_DIGITAL_INFORMATION_BEARER_AVAILABLE:
+            return ""ONLY_DIGITAL_INFORMATION_BEARER_AVAILABLE"";
+        case SERVICE_OR_OPTION_NOT_IMPLEMENTED:
+            return ""SERVICE_OR_OPTION_NOT_IMPLEMENTED"";
+        case INVALID_TRANSACTION_IDENTIFIER:
+            return ""INVALID_TRANSACTION_IDENTIFIER"";
+        case USER_NOT_MEMBER_OF_CUG:
+            return ""USER_NOT_MEMBER_OF_CUG"";
+        case INCOMPATIBLE_DESTINATION:
+            return ""INCOMPATIBLE_DESTINATION"";
+        case INVALID_TRANSIT_NW_SELECTION:
+            return ""INVALID_TRANSIT_NW_SELECTION"";
+        case SEMANTICALLY_INCORRECT_MESSAGE:
+            return ""SEMANTICALLY_INCORRECT_MESSAGE"";
+        case INVALID_MANDATORY_INFORMATION:
+            return ""INVALID_MANDATORY_INFORMATION"";
+        case MESSAGE_TYPE_NON_IMPLEMENTED:
+            return ""MESSAGE_TYPE_NON_IMPLEMENTED"";
+        case MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE:
+            return ""MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE"";
+        case INFORMATION_ELEMENT_NON_EXISTENT:
+            return ""INFORMATION_ELEMENT_NON_EXISTENT"";
+        case CONDITIONAL_IE_ERROR:
+            return ""CONDITIONAL_IE_ERROR"";
+        case MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE:
+            return ""MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE"";
+        case RECOVERY_ON_TIMER_EXPIRED:
+            return ""RECOVERY_ON_TIMER_EXPIRED"";
+        case PROTOCOL_ERROR_UNSPECIFIED:
+            return ""PROTOCOL_ERROR_UNSPECIFIED"";
+        case INTERWORKING_UNSPECIFIED:
+            return ""INTERWORKING_UNSPECIFIED"";
+        case LOCAL_LOW_BATTERY:
+            return ""LOCAL_LOW_BATTERY"";
+        case HO_NOT_FEASIBLE:
+            return ""HO_NOT_FEASIBLE"";
+        case NON_SELECTED_USER_CLEARING:
+            return ""NON_SELECTED_USER_CLEARING"";
+"
+57,telephony/java/android/telephony/DisconnectCause.java,"['6fc85c43e31aad55eecd51d3b0de34715ae03810', '18970c4d9d55a44040fe6fb762dac93a077c64b5']",2,"    /** @hide */
+    public static final int INCOMING_CALLS_BARRED_WITHIN_CUG = 80;
+    /** @hide */
+    public static final int BEARER_CAPABILITY_UNAVAILABLE = 81;
+    /** @hide */
+    public static final int SERVICE_OPTION_NOT_AVAILABLE = 82;
+    /** @hide */
+    public static final int BEARER_SERVICE_NOT_IMPLEMENTED = 83;
+    /** @hide */
+    public static final int REQUESTED_FACILITY_NOT_IMPLEMENTED = 84;
+    /** @hide */
+    public static final int ONLY_DIGITAL_INFORMATION_BEARER_AVAILABLE = 85;
+    /** @hide */
+    public static final int SERVICE_OR_OPTION_NOT_IMPLEMENTED = 86;
+    /** @hide */
+    public static final int INVALID_TRANSACTION_IDENTIFIER = 87;
+    /** @hide */
+    public static final int USER_NOT_MEMBER_OF_CUG = 88;
+    /** @hide */
+    public static final int INCOMPATIBLE_DESTINATION = 89;
+    /** @hide */
+    public static final int INVALID_TRANSIT_NW_SELECTION = 90;
+    /** @hide */
+    public static final int SEMANTICALLY_INCORRECT_MESSAGE = 91;
+    /** @hide */
+    public static final int INVALID_MANDATORY_INFORMATION = 92;
+    /** @hide */
+    public static final int MESSAGE_TYPE_NON_IMPLEMENTED = 93;
+    /** @hide */
+    public static final int MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE = 94;
+    /** @hide */
+    public static final int INFORMATION_ELEMENT_NON_EXISTENT = 95;
+    /** @hide */
+    public static final int CONDITIONAL_IE_ERROR = 96;
+    /** @hide */
+    public static final int MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE = 97;
+    /** @hide */
+    public static final int RECOVERY_ON_TIMER_EXPIRED = 98;
+    /** @hide */
+    public static final int PROTOCOL_ERROR_UNSPECIFIED = 99;
+    /** @hide */
+    public static final int INTERWORKING_UNSPECIFIED = 100;
+    /** @hide */
+    public static final int LOCAL_LOW_BATTERY = 101;
+    /** @hide */
+    public static final int NO_CIRCUIT_AVAIL = 102;
+    /** @hide */
+    public static final int NO_ROUTE_TO_DESTINATION = 103;
+    /** @hide */
+    public static final int OPERATOR_DETERMINED_BARRING = 104;
+    /** @hide */
+    public static final int CALL_FAIL_NO_USER_RESPONDING = 105;
+    /** @hide */
+    public static final int CALL_FAIL_NO_ANSWER_FROM_USER = 106;
+    /** @hide */
+    public static final int CALL_FAIL_DESTINATION_OUT_OF_ORDER = 107;
+    /** @hide */
+    public static final int BEARER_CAPABILITY_NOT_AUTHORIZED = 108;
+    /** @hide */
+    public static final int CHANNEL_UNACCEPTABLE = 109;
+    /** @hide */
+    public static final int CALL_REJECTED = 110;
+    /** @hide */
+    public static final int NUMBER_CHANGED = 111;
+    /** @hide */
+    public static final int PREEMPTION = 112;
+    /** @hide */
+    public static final int FACILITY_REJECTED = 113;
+    /** @hide */
+    public static final int RESP_TO_STATUS_ENQUIRY = 114;
+    /** @hide */
+    public static final int NETWORK_OUT_OF_ORDER = 115;
+    /** @hide */
+    public static final int TEMPORARY_FAILURE = 116;
+    /** @hide */
+    public static final int SWITCHING_EQUIPMENT_CONGESTION = 117;
+    /** @hide */
+    public static final int ACCESS_INFORMATION_DISCARDED = 118;
+    /** @hide */
+    public static final int REQUESTED_CIRCUIT_OR_CHANNEL_NOT_AVAILABLE = 119;
+    /** @hide */
+    public static final int RESOURCES_UNAVAILABLE_OR_UNSPECIFIED = 120;
+"
+58,wifi/java/android/net/wifi/SoftApConfiguration.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,                    in.read
+59,wifi/java/android/net/wifi/SoftApConfiguration.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,"                && mOweTransIfaceName == other.mOweTransIfaceName;
+"
+60,wifi/java/android/net/wifi/SoftApConfiguration.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,            mOweTransIfaceName = 
+61,wifi/java/android/net/wifi/SoftApConfiguration.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,"            mOweTransIfaceName = null;
+"
+62,wifi/java/android/net/wifi/SoftApConfiguration.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,"            mOweTransIfaceName = other.mOweTransIfaceName;
+"
+63,wifi/java/android/net/wifi/SoftApConfiguration.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,"         * Specifies an iface name for OWE transition mode for the AP.
+         * <p>
+         * <li>If not set, defaults to null.</li>
+         *
+         * @param oweTransIfaceName iface name for OWE transition mode.
+         * @return Builder for chaining.
+         *
+         * @hide
+         */
+        @NonNull
+        public Builder setOweTransIfaceName(@Nullable String oweTransIfaceName) {
+            mOweTransIfaceName = oweTransIfaceName;
+"
+64,wifi/java/android/net/wifi/SoftApConfiguration.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,"        dest.writeString(mOweTransIfaceName);
+"
+65,wifi/java/android/net/wifi/SoftApConfiguration.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,        mOweTransIfaceName = 
+66,wifi/java/android/net/wifi/SoftApConfiguration.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,        mOweTransIfaceName = o
+67,wifi/java/android/net/wifi/SoftApConfiguration.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,"        mOweTransIfaceName = oweTransIfaceName;
+"
+68,wifi/java/android/net/wifi/SoftApConfiguration.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,"        sbuf.append("" \n OWE Transition mode Iface ="").append(mOweTransIfaceName);
+"
+69,wifi/java/android/net/wifi/SoftApConfiguration.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,"     * Return the iface name for OWE transition mode for the AP.
+     * {@link #setOweTransIfaceName(String)}.
+     *
+     * @hide
+     */
+    @Nullable
+    public String getOweTransIfaceName() {
+      return mOweTransIfaceName;
+"
+70,wifi/java/android/net/wifi/WifiConfiguration.java,"['5358a994b854c7a6627858c48d6947e8acff6ea9', 'fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2']",2,"                config.oweTransIfaceName = in.readString();
+"
+71,wifi/java/android/net/wifi/WifiConfiguration.java,"['5358a994b854c7a6627858c48d6947e8acff6ea9', '240d78276b3206717587bea012131945c6f60179']",2,"            oweTransIfaceName = source.oweTransIfaceName;
+"
+72,wifi/java/android/net/wifi/WifiConfiguration.java,"['5358a994b854c7a6627858c48d6947e8acff6ea9', 'fa63f69f0fdfc50fe92caa22dbe1b4b120807ed2']",2,"        dest.writeString(oweTransIfaceName);
+"
+73,wifi/java/android/net/wifi/WifiConfiguration.java,"['6fc85c43e31aad55eecd51d3b0de34715ae03810', '5358a994b854c7a6627858c48d6947e8acff6ea9']",2,"        dppConnector = null;
+        dppNetAccessKey = null;
+        dppNetAccessKeyExpiry = -1;
+        dppCsign = null;
+        oweTransIfaceName = null;
+"
+74,wifi/java/android/net/wifi/WifiConfiguration.java,"['43ceded8caaffead0a2a1967f42a4ef4bb658ced', '8faa0d981413f18b2468dde1b1fe71e248df0df1']",2,"        } else if (allowedKeyManagement.get(KeyMgmt.DPP)) {
+            key = SSID + KeyMgmt.strings[KeyMgmt.DPP];
+"
+75,wifi/java/android/net/wifi/WifiConfiguration.java,"['6fc85c43e31aad55eecd51d3b0de34715ae03810', '240d78276b3206717587bea012131945c6f60179']",2,"ng();
+                config.oweTransIfaceName = in.readString();
+"
+76,wifi/java/android/net/wifi/WifiEnterpriseConfig.java,"['43ceded8caaffead0a2a1967f42a4ef4bb658ced', '8faa0d981413f18b2468dde1b1fe71e248df0df1']",2,"    /** @hide */
+    public static final String KEY_SIMNUM          = ""sim_num"";
+"
+77,wifi/java/android/net/wifi/WifiEnterpriseConfig.java,"['f6f595c8a4c17ed2347482c43e2cccc89531224e', '8faa0d981413f18b2468dde1b1fe71e248df0df1']",2,"    public static final String KEY_SIMNUM          = ""sim_num"";
+"
+78,wifi/java/android/net/wifi/WifiInfo.java,"['edb6252578f9b76151e5125a7fb1b16823a68418', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,"                .append("", Wifi Generation: "").append(mWifiGeneration)
+                .append("", TWT support: "").append(mTwtSupport)
+                .append("", Eight Max VHT Spatial streams support: "").append(mVhtMax8SpatialStreamsSupport)
+"
+79,wifi/java/android/net/wifi/WifiInfo.java,"['edb6252578f9b76151e5125a7fb1b16823a68418', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,"                info.mWifiGeneration = in.readInt();
+                info.mVhtMax8SpatialStreamsSupport = in.readInt() != 0;
+                info.mTwtSupport = in.readInt() != 0;
+"
+80,wifi/java/android/net/wifi/WifiInfo.java,"['edb6252578f9b76151e5125a7fb1b16823a68418', '7c6cc72e18cc1df5205fd2bc47664e6cc2534ad2']",2,"        dest.writeInt(mWifiGeneration);
+        dest.writeInt(mVhtMax8SpatialStreamsSupport ? 1 : 0);
+        dest.writeInt(mTwtSupport ? 1 : 0);
+"
+81,wifi/java/android/net/wifi/WifiManager.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,"         * Called when Stations connected to soft AP.
+         *
+         * @param Macaddr Mac Address of connected Stations to soft AP
+         * @param numClients number of connected clients
+         */
+        public abstract void onStaConnected(@NonNull String Macaddr, int numClients);
+
+        /**
+         * Called when Stations disconnected to soft AP.
+         *
+         * @param Macaddr Mac Address of Disconnected Stations to soft AP
+         * @param numClients number of connected clients
+         */
+        public abstract void onStaDisconnected(@NonNull String Macaddr, int numClients);
+"
+82,wifi/java/android/net/wifi/WifiManager.java,"['edb6252578f9b76151e5125a7fb1b16823a68418', '240d78276b3206717587bea012131945c6f60179']",2,"         * Called when Stations connected to soft AP.
+         *
+         * @param Macaddr Mac Address of connected Stations to soft AP
+         * @param numClients number of connected clients
+         */
+        public abstract void onStaConnected(String Macaddr, int numClients);
+
+        /**
+         * Called when Stations disconnected to soft AP.
+         *
+         * @param Macaddr Mac Address of Disconnected Stations to soft AP
+         * @param numClients number of connected clients
+         */
+        public abstract void onStaDisconnected(String Macaddr, int numClients);
+"
+83,wifi/java/android/net/wifi/WifiManager.java,"['71998c3d8b36220df1be12fe6e1ba7eda81cde41', '43ceded8caaffead0a2a1967f42a4ef4bb658ced']",2,"        public void onStaConnected(String Macaddr, int numClients) throws RemoteException {
+            Log.v(TAG, ""SoftApCallbackProxy: ["" + numClients + ""]onStaConnected Macaddr ="" + Macaddr);
+            Binder.clearCallingIdentity();
+            mExecutor.execute(() -> {
+                mCallback.onStaConnected(Macaddr, numClients);
+            });
+        }
+
+        @Override
+        public void onStaDisconnected(String Macaddr, int numClients) throws RemoteException {
+            Log.v(TAG, ""SoftApCallbackProxy: ["" + numClients + ""]onStaDisconnected Macaddr ="" + Macaddr);
+            Binder.clearCallingIdentity();
+            mExecutor.execute(() -> {
+                mCallback.onStaDisconnected(Macaddr, numClients);
+"

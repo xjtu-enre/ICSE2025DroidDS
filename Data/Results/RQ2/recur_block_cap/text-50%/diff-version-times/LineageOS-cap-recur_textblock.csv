@@ -1,0 +1,26 @@
+id,file,merge_commitid,times,recur_segment
+1,packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBarTransitions.java,"['58a632b15f68b88e6fd57c317d348a26a7ec2c6f', 'f67897bc05520f743974fc397aa96e4049a057b3']",2,"    private View mLeftSide, mStatusIcons, mNetworkTraffic, mBattery"
+2,packages/SystemUI/src/com/android/systemui/statusbar/phone/fragment/CollapsedStatusBarFragment.java,"['58a632b15f68b88e6fd57c317d348a26a7ec2c6f', '8acf7b3981a55a3da70fd03d38b3645437b84d46']",2,"    private ClockController mClockController;
+    private boolean mIsClockBlacklisted;
+"
+3,packages/SystemUI/src/com/android/systemui/statusbar/phone/fragment/CollapsedStatusBarFragment.java,"['58a632b15f68b88e6fd57c317d348a26a7ec2c6f', '8acf7b3981a55a3da70fd03d38b3645437b84d46']",2,import com.android.systemui.
+4,packages/SystemUI/src/com/android/systemui/statusbar/phone/fragment/CollapsedStatusBarFragment.java,"['58a632b15f68b88e6fd57c317d348a26a7ec2c6f', '8acf7b3981a55a3da70fd03d38b3645437b84d46']",2,"import com.android.systemui.Dependency;
+"
+5,packages/SystemUI/src/com/android/systemui/statusbar/policy/Clock.java,"['12930acc5076e1acff0744b8d225bb2d2173f1b5', '63d76f28fe78b240b481a690e14966fb3838aa3f', 'f67897bc05520f743974fc397aa96e4049a057b3']",3," static final String CLOCK_STYLE = ""lineagesystem:status_bar_am_pm"";
+"
+6,services/core/java/com/android/server/policy/PhoneWindowManager.java,"['74544b9e39b174025fcb91cc194ca920b12e8683', 'c124bc9f956754d80b1cf5e3da842c19d9088bd9', '05fa7e2c3e169e955e815187e15fd141fe9aa95b', '617f1aaaa25fabf89a392460136fbe1031d963cd']",4,"    private final List<DeviceKeyHandler> mDeviceKeyHandlers = new ArrayList<>();
+"
+7,services/core/java/com/android/server/policy/PhoneWindowManager.java,"['74544b9e39b174025fcb91cc194ca920b12e8683', '05fa7e2c3e169e955e815187e15fd141fe9aa95b', '617f1aaaa25fabf89a392460136fbe1031d963cd']",3,"    private final List<DeviceKeyHandler> mDeviceKeyHandlers = new ArrayList<>();
+
+    private LineageButtons mLineageButtons;
+"
+8,services/core/java/com/android/server/policy/keyguard/KeyguardStateMonitor.java,"['96e5fca97c43ea282d5ad4b7c6fad40acd91586d', 'f67897bc05520f743974fc397aa96e4049a057b3', '5df8608656b363f13049855431e2618dd153edaf']",3,"    private IUsbRestrict mUsbRestrictor = null;
+    private ContentResolver mContentResolver;
+
+"
+9,services/core/java/com/android/server/policy/keyguard/KeyguardStateMonitor.java,"['721f892272f7a01a7b3d4db7cefd8943acbb8a01', '5df8608656b363f13049855431e2618dd153edaf']",2,"    private IUsbRestrict mUsbRestrictor = null;
+    private ContentResolver mContentResolver;
+
+    IKeystoreService mKeystoreService;
+
+"

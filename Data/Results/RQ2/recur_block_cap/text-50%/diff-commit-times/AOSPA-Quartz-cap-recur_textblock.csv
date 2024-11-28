@@ -1,0 +1,1145 @@
+id,file,merge_commitid,times,recur_segment
+1,core/java/android/provider/Settings.java,"['6e3be19b8a58c265a2c3ff4b9cbabdb6a4ae9bf6', '1581c348fc5d6cbf1673b3dbc5960637f891d488', '1730c08a2fd38f0ff8135692a855ada865130939', '2edeff882ab756e76b3a028a1568d8774ddc0257']",4,"            VALIDATORS.put(WIFI_DISCONNECT_DELAY_DURATION, WIFI_DISCONNECT_DELAY_DURATION_VALIDATOR);
+"
+2,core/java/android/provider/Settings.java,"['1581c348fc5d6cbf1673b3dbc5960637f891d488', '1730c08a2fd38f0ff8135692a855ada865130939', '2edeff882ab756e76b3a028a1568d8774ddc0257']",3,            WIFI_DISCONNECT_DELAY_DURATION
+3,core/java/android/provider/Settings.java,"['1730c08a2fd38f0ff8135692a855ada865130939', '2edeff882ab756e76b3a028a1568d8774ddc0257']",2,"            WIFI_DISCONNECT_DELAY_DURATION,
+"
+4,core/java/android/service/carrier/CarrierIdentifier.java,"['8d21ad0d966c1e9f96e5a65144efad2582391957', '2775a5a9b030266a910301e8b464811acafcd5fa']",2,"          + ""mcc="" + mMcc
+          + "",mnc="" + mMnc
+          + "",spn="" + mSpn
+          + "",imsi="" + mImsi
+          + "",gid1="" + mGid1
+          + "",gid2="" + mGid2
+          + "",iccid="" + mIccid
+          + """
+5,packages/SettingsLib/src/com/android/settingslib/bluetooth/CachedBluetoothDevice.java,"['6e3be19b8a58c265a2c3ff4b9cbabdb6a4ae9bf6', '1581c348fc5d6cbf1673b3dbc5960637f891d488']",2,"        A2dpSinkProfile a2dpSinkProfile = mProfileManager.getA2dpSinkProfile();
+        Log.i(TAG, ""a2dpProfile :"" + a2dpProfile + "" a2dpSinkProfile :"" + a2dpSinkProfile);
+        if (a2dpProfile != null) {
+            return a2dpProfile.getConnectionStatus(mDevice) ==
+"
+6,packages/SettingsLib/src/com/android/settingslib/bluetooth/CachedBluetoothDevice.java,"['ddcaa93e851eb5e57692799446f2ef3fe31436ae', '1581c348fc5d6cbf1673b3dbc5960637f891d488']",2,".annotation.VisibleForTesting;
+import android.os.SystemProperties;
+"
+7,packages/SettingsLib/src/com/android/settingslib/bluetooth/LocalBluetoothProfileManager.java,"['ddcaa93e851eb5e57692799446f2ef3fe31436ae', '1730c08a2fd38f0ff8135692a855ada865130939']",2,"        if (mDunProfile == null && supportedList.contains(BluetoothProfile.DUN)) {
+            if(DEBUG) Log.d(TAG, ""Adding local DUN profile"");
+            mDunProfile = new DunServerProfile(mContext);
+            addProfile(mDunProfile, DunServerProfile.NAME,
+                    BluetoothDun.ACTION_CONNECTION_STATE_CHANGED);
+"
+8,packages/SettingsLib/src/com/android/settingslib/wifi/AccessPoint.java,"['8d21ad0d966c1e9f96e5a65144efad2582391957', 'b76115be4efabffaa6febc57cec47acc2f933c79']",2,    public static final int SECURITY_DPP = 
+9,packages/SystemUI/src/com/android/keyguard/KeyguardSimPinView.java,"['657230bb5e95ec8560c534360cac5a25fd743129', '89cad5d93a5083474840e90d08d6e4aec5833932']",2,"                // If the SIM is removed, then we must remove the keyguard. It will be put up
+                // again when the PUK locked SIM is re-entered.
+                case ABSENT: {
+                    KeyguardUpdateMonitor.getInstance(getContext()).reportSimUnlocked(subId);
+                    // onSimStateChanged callback can fire when the SIM PIN lock is not currently
+                    // active and mCallback is null.
+                    if (mCallback != null) {
+                        mCallback.dismiss(true, KeyguardUpdateMonitor.getCurrentUser());
+                    }
+                    "
+10,packages/SystemUI/src/com/android/keyguard/KeyguardUpdateMonitor.java,"['6e3be19b8a58c265a2c3ff4b9cbabdb6a4ae9bf6', '657230bb5e95ec8560c534360cac5a25fd743129', '4e4914b22b779e6376bb00ae20636175b2a70d8c', '1730c08a2fd38f0ff8135692a855ada865130939']",4,"    private static final int MSG_LOCALE_CHANGED = 500;
+"
+11,packages/SystemUI/src/com/android/systemui/statusbar/phone/PanelView.java,"['4646ace2d5aecc79f895d6273c928602852d7f12', '4a30c150e58ec67edb92a7bec5ea48cebd6b90d4']",2,"import com.android.systemui.statusbar.phone.HeadsUpManagerPhone;
+"
+12,packages/SystemUI/src/com/android/systemui/statusbar/policy/HotspotControllerImpl.java,"['6e3be19b8a58c265a2c3ff4b9cbabdb6a4ae9bf6', 'ddcaa93e851eb5e57692799446f2ef3fe31436ae']",2,"    @Override
+    public void onNumClientsChanged(int numConnectedDevices) {
+        // Do nothing - we don't care about changing anything here.
+    }
+
+    @Override
+    public void onStaConnected(String Macaddr, int numConnectedDevices) {
+        mNumConnectedDevices = numConnectedDevices;
+        fireHotspotChangedCallback(isHotspotEnabled(), numConnectedDevices);
+    }
+
+    @Override
+    public void onStaDisconnected(String Macaddr, int numConnectedDevices) {
+        mNumConnectedDevices = numConnectedDevices;
+        fireHotspotChangedCallback(isHotspotEnabled(), numConnectedDevices);
+"
+13,packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java,"['2b252c526c654de6d04ec0165b4b8f039b37f82b', '188a21cc8ac704f36fd3f2984b4da86307ab7949']",2,"        pw.println(""  mFiveGState="" + mFiveGState + "","");
+"
+14,packages/SystemUI/src/com/android/systemui/statusbar/policy/MobileSignalController.java,"['657230bb5e95ec8560c534360cac5a25fd743129', '2775a5a9b030266a910301e8b464811acafcd5fa']",2,"import android.telephony.ims.ImsMmTelManager;
+import android.telephony.ims."
+15,packages/SystemUI/src/com/android/systemui/statusbar/policy/TelephonyIcons.java,"['595572aed3270fda20949d9c19381969d40ecfd4', '2775a5a9b030266a910301e8b464811acafcd5fa']",2,");
+
+    static final int DATA_TYPE_UNKNOWN = 0;
+    static final int DATA_TYPE_G = 1;
+    static final int DATA_TYPE_E = 2;
+    static final int DATA_TYPE_2G = 3;
+    static final int DATA_TYPE_3G = 4;
+    static final int DATA_TYPE_4G = 5;
+    static final int DATA_TYPE_H = 6;
+    static final int DATA_TYPE_HP = 7;
+    static final int DATA_TYPE_1X = 8;
+    static final int DATA_TYPE_LTE = 9;
+    static final int DATA_TYPE_4G_PLUS = 10;
+
+    static final int SIGNAL_STRENGTH_TYPE_G = 0;
+    static final int SIGNAL_STRENGTH_TYPE_E = 1;
+    static final int SIGNAL_STRENGTH_TYPE_3G = 2;
+    static final int SIGNAL_STRENGTH_TYPE_4G = 3;
+    static final int SIGNAL_STRENGTH_TYPE_H = 4;
+    static final int SIGNAL_STRENGTH_TYPE_HP = 5;
+    static final int SIGNAL_STRENGTH_TYPE_1X = 6;
+    static final int SIGNAL_STRENGTH_TYPE_CDMA = 7;
+    static final int SIGNAL_STRENGTH_TYPE_UMTS = 8;
+    static final int SIGNAL_STRENGTH_TYPE_4G_PLUS = 9;
+
+    static final int DEFAULT_SUB = 0;
+    static final int INET_TYPE_NUM = 2;
+    static final int SIGNAL_LEVEL_NUM = SignalStrength.NUM_SIGNAL_STRENGTH_BINS;
+    static final String TAG = ""TelephonyIcons"";
+    static final String NS = ""com.android.systemui"";
+    static final boolean DEBUG = Log.isLoggable(TAG, Log.DEBUG);;
+
+    static String[] mDataTypeArray, mDataTypeGenerationArray;
+    static String[] mDataTypeDescriptionArray, mDataTypeGenerationDescArray;
+    static String[] mDataActivityArray;
+    static String[] mSignalStrengthArray, mSignalStrengthRoamingArray;
+    static String[] mSignalNullArray;
+    static String[] mSignalStrengthDesc;
+
+    static int[] mSelectedDataTypeIcon;
+    static int[] mSelectedQSDataTypeIcon;
+    static String[] mSelectedDataTypeDesc;
+    static int[] mSelectedDataActivityIndex;
+    static int[] mSelectedSignalStreagthIndex;
+    static SparseArray<Integer> mStacked2SingleIconLookup;
+
+    private static Resources mRes;
+    private static boolean isInitiated = false;
+
+    static void readIconsFromXml(Context context) {
+        if (isInitiated) {
+            log(TAG, ""readIconsFromXml, already read!"");
+            return;
+        }
+
+        mRes = context.getResources();
+        try {
+            mDataTypeArray = mRes.getStringArray(R.array.multi_data_type);
+            mDataTypeDescriptionArray = mRes.getStringArray(
+                    R.array.telephony_data_type_description);
+            mDataTypeGenerationArray = mRes.getStringArray(
+                    R.array.telephony_data_type_generation);
+            mDataTypeGenerationDescArray = mRes.getStringArray(
+                    R.array.telephony_data_type_generation_description);
+            mDataActivityArray = mRes.getStringArray(R.array.multi_data_activity);
+            mSignalStrengthArray = mRes.getStringArray(R.array.multi_signal_strength);
+            mSignalStrengthRoamingArray = mRes.getStringArray(
+                    R.array.multi_signal_strength_roaming);
+            mSignalNullArray = mRes.getStringArray(R.array.multi_signal_null);
+            mSignalStrengthDesc = mRes.getStringArray(R.array.signal_strength_description);
+            initStacked2SingleIconLookup();
+        } catch (android.content.res.Resources.NotFoundException e) {
+            isInitiated = false;
+            log(TAG, ""readIconsFromXml, exception happened: "" + e);
+            return;
+        }
+
+        if (mSelectedDataTypeIcon == null
+                && mDataTypeArray.length != 0) {
+            mSelectedDataTypeIcon = new int[mDataTypeArray.length];
+        }
+        if (mSelectedQSDataTypeIcon == null
+                && mDataTypeArray.length != 0) {
+            mSelectedQSDataTypeIcon = new int[mDataTypeArray.length];
+        }
+        if (mSelectedDataTypeDesc == null
+                && mDataTypeArray.length != 0) {
+            mSelectedDataTypeDesc = new String[mDataTypeArray.length];
+        }
+        if (mSelectedDataActivityIndex == null
+                && mDataActivityArray.length != 0) {
+            mSelectedDataActivityIndex = new int[mDataActivityArray.length];
+        }
+        if (mSelectedSignalStreagthIndex == null
+                && mSignalStrengthArray.length != 0) {
+            mSelectedSignalStreagthIndex = new int[mSignalStrengthArray.length];
+        }
+        isInitiated = true;
+    }
+
+    static void initStacked2SingleIconLookup() {
+        mStacked2SingleIconLookup = new SparseArray<>();
+        TypedArray stackedIcons = mRes.obtainTypedArray(R.array.stacked_signal_icons);
+        TypedArray singleIcons = mRes.obtainTypedArray(R.array.single_signal_icons);
+
+        mStacked2SingleIconLookup.clear();
+        for (int i = 0; i < stackedIcons.length() && i < singleIcons.length(); i++) {
+            mStacked2SingleIconLookup.put(stackedIcons.getResourceId(i,0),
+                    singleIcons.getResourceId(i,0));
+        }
+        stackedIcons.recycle();
+        singleIcons.recycle();
+        log(TAG, ""initStacked2SingleIconLookup: size="" + mStacked2SingleIconLookup.size());
+    }
+
+    static int getSignalNullIcon(int slot) {
+        if (mSignalNullArray == null) {
+            return 0;
+        }
+        String resName = mSignalNullArray[slot];
+        log(TAG, ""null signal icon name: "" + resName);
+        int resId = mRes.getIdentifier(resName, null, NS);
+        return resId;
+    }
+
+    static void updateDataType(int slot, int type, boolean showAtLeast3G,
+                               boolean show4GforLte, boolean hspaDistinguishable, int inet) {
+        log(TAG, ""updateDataType ""
+                + String.format(""slot=%d, type=%d, inetCondition=%d"",
+                slot, type, inet)
+                + "" showAtLeast3G="" + String.valueOf(showAtLeast3G)
+                + "" show4GforLte="" + String.valueOf(show4GforLte)
+                + "" hspaDistinguishable="" + String.valueOf(hspaDistinguishable));
+
+        String resName = mDataTypeArray[slot];
+        int resId = mRes.getIdentifier(resName, null, NS);
+        String[] dataTypeArray = mRes.getStringArray(resId);
+
+        log(TAG, ""data type item name: "" + resName + "" id:"" + resId);
+
+        switch (type) {
+            case TelephonyManager.NETWORK_TYPE_UNKNOWN:
+                if (!showAtLeast3G) {
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = 0;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedDataActivityIndex[slot] = 0;
+                    mSelectedSignalStreagthIndex[slot] = 0;
+                    break;
+                } else {
+                    // fall through
+                }
+            case TelephonyManager.NETWORK_TYPE_EDGE:
+                if (!showAtLeast3G) {
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_E;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_E;
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_E;
+                    break;
+                } else {
+                    // fall through
+                }
+            case TelephonyManager.NETWORK_TYPE_UMTS:
+            case TelephonyManager.NETWORK_TYPE_TD_SCDMA:
+                mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                        dataTypeArray[type], null, NS);
+                mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_UMTS;
+                break;
+            case TelephonyManager.NETWORK_TYPE_HSDPA:
+            case TelephonyManager.NETWORK_TYPE_HSUPA:
+            case TelephonyManager.NETWORK_TYPE_HSPA:
+                if (hspaDistinguishable) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_H;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_H;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_H;
+                } else {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            mDataTypeGenerationArray[0], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeGenerationDescArray[0];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_3G;
+                }
+                break;
+            case TelephonyManager.NETWORK_TYPE_HSPAP:
+                if (hspaDistinguishable) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_HP;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_H;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_HP;
+                } else {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            mDataTypeGenerationArray[0], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeGenerationDescArray[0];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_3G;
+                }
+                break;
+            case TelephonyManager.NETWORK_TYPE_CDMA:
+                if (!showAtLeast3G) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_1X;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_1X;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_CDMA;
+                    break;
+                } else {
+                    // fall through
+                }
+            case TelephonyManager.NETWORK_TYPE_1xRTT:
+                if (!showAtLeast3G) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_1X;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_1X;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_1X;
+                    break;
+                } else {
+                    // fall through
+                }
+            case TelephonyManager.NETWORK_TYPE_EVDO_0: //fall through
+            case TelephonyManager.NETWORK_TYPE_EVDO_A:
+            case TelephonyManager.NETWORK_TYPE_EVDO_B:
+            case TelephonyManager.NETWORK_TYPE_EHRPD:
+                mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                        dataTypeArray[type], null, NS);
+                mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_3G;
+                break;
+            case TelephonyManager.NETWORK_TYPE_LTE:
+            case TelephonyManager.NETWORK_TYPE_LTE_CA:
+                if (show4GforLte) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_4G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            mDataTypeGenerationArray[1], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_4G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeGenerationDescArray[1];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_4G;
+
+                    if ( type == TelephonyManager.NETWORK_TYPE_LTE_CA) {
+                        //Select 4G+ icon.
+                        mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                                mDataTypeGenerationArray[2], null, NS);
+                        mSelectedQSDataTypeIcon[slot] = ICON_4G_PLUS;
+                        mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_4G_PLUS;
+                        mSelectedDataActivityIndex[slot] = DATA_TYPE_4G_PLUS;
+                    }
+                } else {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_LTE;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_LTE;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_4G;
+                }
+                break;
+            case TelephonyManager.NETWORK_TYPE_GPRS:
+            case TelephonyManager.NETWORK_TYPE_GSM:
+                if (!showAtLeast3G) {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            dataTypeArray[type], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeDescriptionArray[type];
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_G;
+                } else {
+                    mSelectedDataActivityIndex[slot] = DATA_TYPE_3G;
+                    mSelectedDataTypeIcon[slot] = mRes.getIdentifier(
+                            mDataTypeGenerationArray[0], null, NS);
+                    mSelectedQSDataTypeIcon[slot] = ICON_3G;
+                    mSelectedDataTypeDesc[slot] = mDataTypeGenerationDescArray[0];;
+                    mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_3G;
+                }
+                break;
+            default:
+                mSelectedDataActivityIndex[slot] = DATA_TYPE_UNKNOWN;
+                mSelectedDataTypeIcon[slot] = 0;
+                mSelectedQSDataTypeIcon[slot] = 0;
+                mSelectedDataTypeDesc[slot] = """";
+                mSelectedSignalStreagthIndex[slot] = SIGNAL_STRENGTH_TYPE_G;
+                break;
+        }
+        log(TAG, ""updateDataType "" + String.format(
+                ""mSelectedDataTypeIcon[%d]=%d, mSelectedDataActivityIndex=%d"",
+                slot, mSelectedDataTypeIcon[slot], mSelectedDataActivityIndex[slot]));
+    }
+
+
+    static int getQSDataTypeIcon(int slot) {
+        return mSelectedQSDataTypeIcon[slot];
+    }
+
+    static int getDataTypeIcon(int slot) {
+        log(TAG, ""getDataTypeIcon "" + String.format(""sub=%d"", slot));
+        return mSelectedDataTypeIcon[slot];
+    }
+
+    static int getDataTypeDesc(int slot) {
+        return mRes.getIdentifier(mSelectedDataTypeDesc[slot], null, NS);
+    }
+
+    static int getDataActivity(int slot, int activity) {
+        log(TAG, String.format(""getDataActivity, slot=%d, activity=%d"",
+                slot, activity));
+
+        String[] dataActivityArray = mRes.getStringArray(
+                mRes.getIdentifier(mDataActivityArray[slot], null, NS));
+        String[] selectedTypeArray = mRes.getStringArray(mRes.getIdentifier(
+                dataActivityArray[mSelectedDataActivityIndex[slot]], null, NS));
+
+        return mRes.getIdentifier(selectedTypeArray[activity], null, NS);
+    }
+
+    static int getSignalStrengthIcon(int slot, int inet, int level, boolean roaming) {
+        log(TAG, ""getSignalStrengthIcon: "" + String.format(
+                ""slot=%d, inetCondition=%d, level=%d, roaming=%b"", slot, inet, level, roaming));
+
+        String[] signalStrengthArray, selectedTypeArray;
+
+        signalStrengthArray = mRes.getStringArray(mRes.getIdentifier(!roaming ?
+                mSignalStrengthArray[slot] : mSignalStrengthRoamingArray[slot], null, NS));
+        log(TAG, String.format(""signalStrengthArray.length=%d"", signalStrengthArray.length));
+
+        selectedTypeArray = mRes.getStringArray(mRes.getIdentifier(
+                signalStrengthArray[mSelectedSignalStreagthIndex[slot]], null, NS));
+        log(TAG, String.format(""selectedTypeArray.length=%d"", selectedTypeArray.length));
+
+        String[] inetArray = mRes.getStringArray(
+                mRes.getIdentifier(selectedTypeArray[inet], null, NS));
+        log(TAG, String.format(""inetArray.length=%d"", inetArray.length));
+
+        return mRes.getIdentifier(inetArray[level], null, NS);
+    }
+
+
+    static int convertMobileStrengthIcon(int stackedIcon) {
+        if (mStacked2SingleIconLookup == null) {
+            return stackedIcon;
+        }
+        int index = mStacked2SingleIconLookup.indexOfKey(stackedIcon);
+        if (index >= 0) {
+            return mStacked2SingleIconLookup.get(stackedIcon);
+        }
+        return stackedIcon;
+    }
+
+    static int getStackedVoiceIcon(int level) {
+        int retValue = 0;
+        switch(level){
+            case SignalStrength.SIGNAL_STRENGTH_NONE_OR_UNKNOWN:
+                retValue = R.drawable.stat_sys_signal_0_2g;
+                break;
+            case SignalStrength.SIGNAL_STRENGTH_POOR:
+                retValue = R.drawable.stat_sys_signal_1_2g;
+                break;
+            case SignalStrength.SIGNAL_STRENGTH_MODERATE:
+                retValue = R.drawable.stat_sys_signal_2_2g;
+                break;
+            case SignalStrength.SIGNAL_STRENGTH_GOOD:
+                retValue = R.drawable.stat_sys_signal_3_2g;
+                break;
+            case SignalStrength.SIGNAL_STRENGTH_GREAT:
+                retValue = R.drawable.stat_sys_signal_4_2g;
+                break;
+            default:
+                break;
+        }
+        return retValue;
+    }
+
+    static int getRoamingSignalIconId(int level, int inet){
+        return TELEPHONY_SIGNAL_STRENGTH_ROAMING_R[inet][level];
+    }
+
+    static int[]  getSignalStrengthDes(int slot) {
+        int[] resId = new int[SIGNAL_LEVEL_NUM];
+        for (int i = 0; i < SIGNAL_LEVEL_NUM; i++) {
+            resId[i] = mRes.getIdentifier(mSignalStrengthDesc[i], null, NS);
+        }
+        return resId;
+    }
+
+    private static void log(String tag, String str){
+        if (DEBUG) {
+            Log.d(tag, str);
+        }
+    }
+"
+16,packages/SystemUI/src/com/android/systemui/statusbar/policy/WifiSignalController.java,"['657230bb5e95ec8560c534360cac5a25fd743129', '1730c08a2fd38f0ff8135692a855ada865130939']",2,"        if(wifiManager != null){
+            wifiManager.registerTrafficStateCallback(new WifiTrafficStateCallback(),  null);
+"
+17,services/core/java/com/android/server/BluetoothManagerService.java,"['657230bb5e95ec8560c534360cac5a25fd743129', '89cad5d93a5083474840e90d08d6e4aec5833932']",2,"
+"
+18,services/core/java/com/android/server/ConnectivityService.java,"['1452baeffa18c2760dac56bee26c20fa12a499a3', '1581c348fc5d6cbf1673b3dbc5960637f891d488', '1730c08a2fd38f0ff8135692a855ada865130939']",3,"
+    private boolean isMobileNetwork(NetworkAgentInfo nai) {
+        if (nai != null && nai.networkCapabilities != null &&
+            nai.networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean satisfiesMobileNetworkDataCheck(NetworkCapabilities agentNc) {
+        if (agentNc != null && agentNc.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+            if (getIntSpecifier(agentNc.getNetworkSpecifier()) == SubscriptionManager
+                                    .getDefaultDataSubscriptionId()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean satisfiesMobileMultiNetworkDataCheck(NetworkCapabilities agentNc,
+            NetworkCapabilities requestNc) {
+        if (requestNc != null && getIntSpecifier(requestNc.getNetworkSpecifier()) < 0) {
+            return satisfiesMobileNetworkDataCheck(agentNc);
+        }
+        return true;
+    }
+
+    private int getIntSpecifier(NetworkSpecifier networkSpecifierObj) {
+        String specifierStr = null;
+        int specifier = -1;
+        if (networkSpecifierObj != null
+                && networkSpecifierObj instanceof StringNetworkSpecifier) {
+            specifierStr = ((StringNetworkSpecifier) networkSpecifierObj).specifier;
+        }
+        if (specifierStr != null &&  specifierStr.isEmpty() == false) {
+            try {
+                specifier = Integer.parseInt(specifierStr);
+            } catch (NumberFormatException e) {
+                specifier = -1;
+            }
+        }
+        return specifier;
+    }
+
+    private boolean isBestMobileMultiNetwork(NetworkAgentInfo currentNetwork,
+            NetworkCapabilities currentRequestNc,
+            NetworkAgentInfo newNetwork,
+            NetworkCapabilities newRequestNc,
+            NetworkCapabilities requestNc) {
+        if (isMobileNetwork(currentNetwork) &&
+            isMobileNetwork(newNetwork) &&
+            satisfiesMobileMultiNetworkDataCheck(newRequestNc, requestNc) &&
+            !satisfiesMobileMultiNetworkDataCheck(currentRequestNc, requestNc)) {
+            return true;
+        }
+        return false;
+    }
+"
+19,services/core/java/com/android/server/ConnectivityService.java,"['1581c348fc5d6cbf1673b3dbc5960637f891d488', '1730c08a2fd38f0ff8135692a855ada865130939']",2,"
+    private boolean isMobileNetwork(NetworkAgentInfo nai) {
+        if (nai != null && nai.networkCapabilities != null &&
+            nai.networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean satisfiesMobileNetworkDataCheck(NetworkCapabilities agentNc) {
+        if (agentNc != null && agentNc.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+            if (getIntSpecifier(agentNc.getNetworkSpecifier()) == SubscriptionManager
+                                    .getDefaultDataSubscriptionId()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean satisfiesMobileMultiNetworkDataCheck(NetworkCapabilities agentNc,
+            NetworkCapabilities requestNc) {
+        if (requestNc != null && getIntSpecifier(requestNc.getNetworkSpecifier()) < 0) {
+            return satisfiesMobileNetworkDataCheck(agentNc);
+        }
+        return true;
+    }
+
+    private int getIntSpecifier(NetworkSpecifier networkSpecifierObj) {
+        String specifierStr = null;
+        int specifier = -1;
+        if (networkSpecifierObj != null
+                && networkSpecifierObj instanceof StringNetworkSpecifier) {
+            specifierStr = ((StringNetworkSpecifier) networkSpecifierObj).specifier;
+        }
+        if (specifierStr != null &&  specifierStr.isEmpty() == false) {
+            try {
+                specifier = Integer.parseInt(specifierStr);
+            } catch (NumberFormatException e) {
+                specifier = -1;
+            }
+        }
+        return specifier;
+    }
+
+    private boolean isBestMobileMultiNetwork(NetworkAgentInfo currentNetwork,
+            NetworkCapabilities currentRequestNc,
+            NetworkAgentInfo newNetwork,
+            NetworkCapabilities newRequestNc,
+            NetworkCapabilities requestNc) {
+        if (isMobileNetwork(currentNetwork) &&
+            isMobileNetwork(newNetwork) &&
+            satisfiesMobileMultiNetworkDataCheck(newRequestNc, requestNc) &&
+            !satisfiesMobileMultiNetworkDataCheck(currentRequestNc, requestNc)) {
+            return true;
+        }
+        return false;
+    }
+
+    private void handleUpdateTCPBuffersfor5G() {
+        Network network = getActiveNetwork();
+        NetworkAgentInfo ntwAgent = getNetworkAgentInfoForNetwork(network);
+        if (DBG)
+            log(""handleUpdateTCPBuffersfor5G nai "" + ntwAgent);
+        if (ntwAgent != null)
+            updateTcpBufferSizes(ntwAgent);
+    }
+"
+20,services/core/java/com/android/server/ConnectivityService.java,"['567b4cf7b54062947b5eabe6ecef7b70fbb7301b', 'ba167de93776a7e5d1b347d1ee646e161cf24ce5']",2,"                case EVENT_UPDATE_TCP_BUFFER_FOR_5G:
+                    handleUpdateTCPBuffersfor5G();
+"
+21,services/core/java/com/android/server/ConnectivityService.java,"['1452baeffa18c2760dac56bee26c20fa12a499a3', 'ddcaa93e851eb5e57692799446f2ef3fe31436ae']",2,"    private boolean isMobileNetwork(NetworkAgentInfo nai) {
+        if (nai != null && nai.networkCapabilities != null &&
+            nai.networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean satisfiesMobileNetworkDataCheck(NetworkCapabilities agentNc) {
+        if (agentNc != null && agentNc.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+            if (getIntSpecifier(agentNc.getNetworkSpecifier()) == SubscriptionManager
+                                    .getDefaultDataSubscriptionId()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean satisfiesMobileMultiNetworkDataCheck(NetworkCapabilities agentNc,
+            NetworkCapabilities requestNc) {
+        if (requestNc != null && getIntSpecifier(requestNc.getNetworkSpecifier()) < 0) {
+            return satisfiesMobileNetworkDataCheck(agentNc);
+        }
+        return true;
+    }
+
+    private int getIntSpecifier(NetworkSpecifier networkSpecifierObj) {
+        String specifierStr = null;
+        int specifier = -1;
+        if (networkSpecifierObj != null
+                && networkSpecifierObj instanceof StringNetworkSpecifier) {
+            specifierStr = ((StringNetworkSpecifier) networkSpecifierObj).specifier;
+        }
+        if (specifierStr != null &&  specifierStr.isEmpty() == false) {
+            try {
+                specifier = Integer.parseInt(specifierStr);
+            } catch (NumberFormatException e) {
+                specifier = -1;
+            }
+        }
+        return specifier;
+    }
+
+    private boolean isBestMobileMultiNetwork(NetworkAgentInfo currentNetwork,
+            NetworkCapabilities currentRequestNc,
+            NetworkAgentInfo newNetwork,
+            NetworkCapabilities newRequestNc,
+            NetworkCapabilities requestNc) {
+        if (isMobileNetwork(currentNetwork) &&
+            isMobileNetwork(newNetwork) &&
+            satisfiesMobileMultiNetworkDataCheck(newRequestNc, requestNc) &&
+            !satisfiesMobileMultiNetworkDataCheck(currentRequestNc, requestNc)) {
+            return true;
+        }
+        return false;
+    }
+"
+22,services/core/java/com/android/server/ConnectivityService.java,"['ddcaa93e851eb5e57692799446f2ef3fe31436ae', '1581c348fc5d6cbf1673b3dbc5960637f891d488', '1730c08a2fd38f0ff8135692a855ada865130939']",3,"    private boolean isMobileNetwork(NetworkAgentInfo nai) {
+        if (nai != null && nai.networkCapabilities != null &&
+            nai.networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean satisfiesMobileNetworkDataCheck(NetworkCapabilities agentNc) {
+        if (agentNc != null && agentNc.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+            if (getIntSpecifier(agentNc.getNetworkSpecifier()) == SubscriptionManager
+                                    .getDefaultDataSubscriptionId()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean satisfiesMobileMultiNetworkDataCheck(NetworkCapabilities agentNc,
+            NetworkCapabilities requestNc) {
+        if (requestNc != null && getIntSpecifier(requestNc.getNetworkSpecifier()) < 0) {
+            return satisfiesMobileNetworkDataCheck(agentNc);
+        }
+        return true;
+    }
+
+    private int getIntSpecifier(NetworkSpecifier networkSpecifierObj) {
+        String specifierStr = null;
+        int specifier = -1;
+        if (networkSpecifierObj != null
+                && networkSpecifierObj instanceof StringNetworkSpecifier) {
+            specifierStr = ((StringNetworkSpecifier) networkSpecifierObj).specifier;
+        }
+        if (specifierStr != null &&  specifierStr.isEmpty() == false) {
+            try {
+                specifier = Integer.parseInt(specifierStr);
+            } catch (NumberFormatException e) {
+                specifier = -1;
+            }
+        }
+        return specifier;
+    }
+
+    private boolean isBestMobileMultiNetwork(NetworkAgentInfo currentNetwork,
+            NetworkCapabilities currentRequestNc,
+            NetworkAgentInfo newNetwork,
+            NetworkCapabilities newRequestNc,
+            NetworkCapabilities requestNc) {
+        if (isMobileNetwork(currentNetwork) &&
+            isMobileNetwork(newNetwork) &&
+            satisfiesMobileMultiNetworkDataCheck(newRequestNc, requestNc) &&
+            !satisfiesMobileMultiNetworkDataCheck(currentRequestNc, requestNc)) {
+            return true;
+        }
+        return false;
+    }
+
+    private void handleUpdateTCPBuffersfor5G() {
+        Network network = getActiveNetwork();
+        NetworkAgentInfo ntwAgent = getNetworkAgentInfoForNetwork(network);
+        if (DBG)
+            log(""handleUpdateTCPBuffersfor5G nai "" + ntwAgent);
+        if (ntwAgent != null)
+            updateTcpBufferSizes(ntwAgent);
+"
+23,services/core/java/com/android/server/ConnectivityService.java,"['567b4cf7b54062947b5eabe6ecef7b70fbb7301b', '2775a5a9b030266a910301e8b464811acafcd5fa']",2,"    private boolean isMobileNetwork(NetworkAgentInfo nai) {
+        if (nai != null && nai.networkCapabilities != null &&
+            nai.networkCapabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean satisfiesMobileNetworkDataCheck(NetworkCapabilities agentNc) {
+        if (agentNc != null && agentNc.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+            if((agentNc.hasCapability(NET_CAPABILITY_EIMS) &&
+                 (mSubscriptionManager != null &&
+                  (mSubscriptionManager.getActiveSubscriptionInfoList() == null ||
+                   mSubscriptionManager.getActiveSubscriptionInfoList().size()==0))) ||
+               (getIntSpecifier(agentNc.getNetworkSpecifier()) == SubscriptionManager
+                                    .getDefaultDataSubscriptionId())) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean satisfiesMobileMultiNetworkDataCheck(NetworkCapabilities agentNc,
+            NetworkCapabilities requestNc) {
+        if (requestNc != null && getIntSpecifier(requestNc.getNetworkSpecifier()) < 0) {
+            return satisfiesMobileNetworkDataCheck(agentNc);
+        }
+        return true;
+    }
+
+    private int getIntSpecifier(NetworkSpecifier networkSpecifierObj) {
+        String specifierStr = null;
+        int specifier = -1;
+        if (networkSpecifierObj != null
+                && networkSpecifierObj instanceof StringNetworkSpecifier) {
+            specifierStr = ((StringNetworkSpecifier) networkSpecifierObj).specifier;
+        }
+        if (specifierStr != null &&  specifierStr.isEmpty() == false) {
+            try {
+                specifier = Integer.parseInt(specifierStr);
+            } catch (NumberFormatException e) {
+                specifier = -1;
+            }
+        }
+        return specifier;
+    }
+
+    private boolean isBestMobileMultiNetwork(NetworkAgentInfo currentNetwork,
+            NetworkCapabilities currentRequestNc,
+            NetworkAgentInfo newNetwork,
+            NetworkCapabilities newRequestNc,
+            NetworkCapabilities requestNc) {
+        if (isMobileNetwork(currentNetwork) &&
+            isMobileNetwork(newNetwork) &&
+            satisfiesMobileMultiNetworkDataCheck(newRequestNc, requestNc) &&
+            !satisfiesMobileMultiNetworkDataCheck(currentRequestNc, requestNc)) {
+            return true;
+        }
+        return false;
+    }
+
+    private void handleUpdateTCPBuffersfor5G() {
+        Network network = getActiveNetwork();
+        NetworkAgentInfo ntwAgent = getNetworkAgentInfoForNetwork(network);
+        if (DBG)
+            log(""handleUpdateTCPBuffersfor5G nai "" + ntwAgent);
+        if (ntwAgent != null)
+            updateTcpBufferSizes(ntwAgent);
+"
+24,services/core/java/com/android/server/ConnectivityService.java,"['88b45c586d461df38b866d529bc98d1dfa3e8838', 'ba167de93776a7e5d1b347d1ee646e161cf24ce5']",2,"    private static final int EVENT_UPDATE_TCP_BUFFER_FOR_5G = 160;
+"
+25,services/core/java/com/android/server/am/ActivityManagerService.java,"['4a30c150e58ec67edb92a7bec5ea48cebd6b90d4', '88b45c586d461df38b866d529bc98d1dfa3e8838']",2,"    /* Freq Aggr boost objects */
+    public static BoostFramework mPerfServiceStartHint = null;
+    /* UX perf event object */
+    public static BoostFramework mUxPerf = new BoostFramework();
+"
+26,services/core/java/com/android/server/am/ActivityRecord.java,"['6e3be19b8a58c265a2c3ff4b9cbabdb6a4ae9bf6', 'ddcaa93e851eb5e57692799446f2ef3fe31436ae']",2,"        final long curTime = SystemClock.uptimeMillis();
+        if (displayStartTime != 0) {
+            reportLaunchTimeLocked(curTime);
+        }
+        final LaunchTimeTracker.Entry entry = mStackSupervisor.getLaunchTimeTracker().getEntry(
+                getWindowingMode());
+        if (fullyDrawnStartTime != 0 && entry != null) {
+            final long thisTime = curTime - fullyDrawnStartTime;
+            final long totalTime = entry.mFullyDrawnStartTime != 0
+                    ? (curTime - entry.mFullyDrawnStartTime) : thisTime;
+            if (SHOW_ACTIVITY_START_TIME) {
+                Trace.asyncTraceEnd(TRACE_TAG_ACTIVITY_MANAGER, ""drawing"", 0);
+                EventLog.writeEvent(AM_ACTIVITY_FULLY_DRAWN_TIME,
+                        userId, System.identityHashCode(this), shortComponentName,
+                        thisTime, totalTime);
+                StringBuilder sb = service.mStringBuilder;
+                sb.setLength(0);
+                sb.append(""Fully drawn "");
+                sb.append(shortComponentName);
+                sb.append("": "");
+                TimeUtils.formatDuration(thisTime, sb);
+                if (thisTime != totalTime) {
+                    sb.append("" (total "");
+                    TimeUtils.formatDuration(totalTime, sb);
+                    sb.append("")"");
+                }
+                Log.i(TAG, sb.toString());
+            }
+            if (totalTime > 0) {
+                //service.mUsageStatsService.noteFullyDrawnTime(realActivity, (int) totalTime);
+            }
+            entry.mFullyDrawnStartTime = 0;
+        }
+        mStackSupervisor.getActivityMetricsLogger().logAppTransitionReportedDrawn(this,
+                restoredFromBundle);
+        fullyDrawnStartTime = 0;
+    }
+
+    private void reportLaunchTimeLocked(final long curTime) {
+        final LaunchTimeTracker.Entry entry = mStackSupervisor.getLaunchTimeTracker().getEntry(
+                getWindowingMode());
+        if (entry == null) {
+            return;
+        }
+        final long thisTime = curTime - displayStartTime;
+        final long totalTime = entry.mLaunchStartTime != 0
+                ? (curTime - entry.mLaunchStartTime) : thisTime;
+        if (SHOW_ACTIVITY_START_TIME) {
+            Trace.asyncTraceEnd(TRACE_TAG_ACTIVITY_MANAGER, ""launching: "" + packageName, 0);
+            EventLog.writeEvent(AM_ACTIVITY_LAUNCH_TIME,
+                    userId, System.identityHashCode(this), shortComponentName,
+                    thisTime, totalTime);
+            StringBuilder sb = service.mStringBuilder;
+            sb.setLength(0);
+            sb.append(""Displayed "");
+            sb.append(shortComponentName);
+            sb.append("": "");
+            TimeUtils.formatDuration(thisTime, sb);
+            if (thisTime != totalTime) {
+                sb.append("" (total "");
+                TimeUtils.formatDuration(totalTime, sb);
+                sb.append("")"");
+            "
+27,services/core/java/com/android/server/audio/AudioService.java,"['567b4cf7b54062947b5eabe6ecef7b70fbb7301b', '1581c348fc5d6cbf1673b3dbc5960637f891d488']",2,"            Log.i(TAG, ""In setBluetoothScoOn(), on: ""+on+"". The calling application Uid: ""
+                  + Binder.getCallingUid() + "", is greater than FIRST_APPLICATION_UID""
+                  + "" exiting from setBluetoothScoOn()"");
+            if (on)
+                mForcedUseForCommExt = AudioSystem.FORCE_BT_SCO;
+            else if (mForcedUseForCommExt == AudioSystem.FORCE_BT_SCO)
+                mForcedUseForCommExt = AudioSystem.FORCE_NONE;
+            Log.i(TAG, ""In setbluetoothScoOn(), mForcedUseForCommExt: ""
+                        + mForcedUseForCommExt);
+"
+28,services/core/java/com/android/server/connectivity/tethering/TetheringConfiguration.java,"['1452baeffa18c2760dac56bee26c20fa12a499a3', 'cf03be865b65f49562f1e442ee0e7510ee597aa8']",2,"        if (SystemProperties.getInt(""persist.vendor.fst.softap.en"", 0) == 1) {
+            String defaultFstInterfaceName = ""bond0"";
+            String fstInterfaceName = SystemProperties.get(
+                ""persist.vendor.fst.data.interface"", defaultFstInterfaceName);
+            tetherableWifiRegexs = new String[] { fstInterfaceName };
+        } else {
+            tetherableWifiRegexs = "
+29,services/core/java/com/android/server/wm/WindowManagerService.java,"['ddcaa93e851eb5e57692799446f2ef3fe31436ae', '1730c08a2fd38f0ff8135692a855ada865130939']",2,"import com.android.internal.app.ActivityTrigger;
+"
+30,telecomm/java/android/telecom/Connection.java,"['657230bb5e95ec8560c534360cac5a25fd743129', '88b45c586d461df38b866d529bc98d1dfa3e8838']",2,"     * Connection event used to inform an {@link InCallService} that the call session property
+     * has changed
+     * @hide
+     */
+    public static final String EVENT_CALL_PROPERTY_CHANGED =
+            ""android.telecom.event.EVENT_CALL_PROPERTY_CHANGED"";
+"
+31,telephony/java/android/telephony/DisconnectCause.java,"['ddcaa93e851eb5e57692799446f2ef3fe31436ae', 'b76115be4efabffaa6febc57cec47acc2f933c79']",2,"        case NETWORK_OUT_OF_ORDER:
+            return ""NETWORK_OUT_OF_ORDER"";
+        case TEMPORARY_FAILURE:
+            return ""TEMPORARY_FAILURE"";
+        case SWITCHING_EQUIPMENT_CONGESTION:
+            return ""SWITCHING_EQUIPMENT_CONGESTION"";
+        case ACCESS_INFORMATION_DISCARDED:
+            return ""ACCESS_INFORMATION_DISCARDED"";
+        case REQUESTED_CIRCUIT_OR_CHANNEL_NOT_AVAILABLE:
+            return ""REQUESTED_CIRCUIT_OR_CHANNEL_NOT_AVAILABLE"";
+        case RESOURCES_UNAVAILABLE_OR_UNSPECIFIED:
+            return ""RESOURCES_UNAVAILABLE_OR_UNSPECIFIED"";
+        case QOS_UNAVAILABLE:
+            return ""QOS_UNAVAILABLE"";
+        case REQUESTED_FACILITY_NOT_SUBSCRIBED:
+            return ""REQUESTED_FACILITY_NOT_SUBSCRIBED"";
+        case INCOMING_CALLS_BARRED_WITHIN_CUG:
+            return ""INCOMING_CALLS_BARRED_WITHIN_CUG"";
+        case BEARER_CAPABILITY_UNAVAILABLE:
+            return ""BEARER_CAPABILITY_UNAVAILABLE"";
+        case SERVICE_OPTION_NOT_AVAILABLE:
+            return ""SERVICE_OPTION_NOT_AVAILABLE"";
+        case BEARER_SERVICE_NOT_IMPLEMENTED:
+            return ""BEARER_SERVICE_NOT_IMPLEMENTED"";
+        case REQUESTED_FACILITY_NOT_IMPLEMENTED:
+            return ""REQUESTED_FACILITY_NOT_IMPLEMENTED"";
+        case ONLY_DIGITAL_INFORMATION_BEARER_AVAILABLE:
+            return ""ONLY_DIGITAL_INFORMATION_BEARER_AVAILABLE"";
+        case SERVICE_OR_OPTION_NOT_IMPLEMENTED:
+            return ""SERVICE_OR_OPTION_NOT_IMPLEMENTED"";
+        case INVALID_TRANSACTION_IDENTIFIER:
+            return ""INVALID_TRANSACTION_IDENTIFIER"";
+        case USER_NOT_MEMBER_OF_CUG:
+            return ""USER_NOT_MEMBER_OF_CUG"";
+        case INCOMPATIBLE_DESTINATION:
+            return ""INCOMPATIBLE_DESTINATION"";
+        case INVALID_TRANSIT_NW_SELECTION:
+            return ""INVALID_TRANSIT_NW_SELECTION"";
+        case SEMANTICALLY_INCORRECT_MESSAGE:
+            return ""SEMANTICALLY_INCORRECT_MESSAGE"";
+        case INVALID_MANDATORY_INFORMATION:
+            return ""INVALID_MANDATORY_INFORMATION"";
+        case MESSAGE_TYPE_NON_IMPLEMENTED:
+            return ""MESSAGE_TYPE_NON_IMPLEMENTED"";
+        case MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE:
+            return ""MESSAGE_TYPE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE"";
+        case INFORMATION_ELEMENT_NON_EXISTENT:
+            return ""INFORMATION_ELEMENT_NON_EXISTENT"";
+        case CONDITIONAL_IE_ERROR:
+            return ""CONDITIONAL_IE_ERROR"";
+        case MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE:
+            return ""MESSAGE_NOT_COMPATIBLE_WITH_PROTOCOL_STATE"";
+        case RECOVERY_ON_TIMER_EXPIRED:
+            return ""RECOVERY_ON_TIMER_EXPIRED"";
+        case PROTOCOL_ERROR_UNSPECIFIED:
+            return ""PROTOCOL_ERROR_UNSPECIFIED"";
+        case INTERWORKING_UNSPECIFIED:
+            return ""INTERWORKING_UNSPECIFIED"";
+        case LOCAL_LOW_BATTERY:
+            return ""LOCAL_LOW_BATTERY"";
+        case HO_NOT_FEASIBLE:
+            return ""HO_NOT_FEASIBLE"";
+        case NON_SELECTED_USER_CLEARING:
+            return ""NON_SELECTED_USER_CLEARING"";
+"
+32,wifi/java/android/net/wifi/WifiManager.java,"['b76115be4efabffaa6febc57cec47acc2f933c79', '1730c08a2fd38f0ff8135692a855ada865130939', '2edeff882ab756e76b3a028a1568d8774ddc0257']",3,"     * Get driver Capabilities.
+     *
+     * @param capaType ASCII string, capability type ex: key_mgmt.
+     * @return String of capabilities from driver for type capaParameter.
+     * {@hide}
+     */
+    public String getCapabilities(String capaType) {
+        try {
+            return mService.getCapabilities(capaType);
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }
+
+
+    /**
+     * Add the DPP bootstrap info obtained from QR code.
+     *
+     * @param uri:The URI obtained from the QR code reader.
+     *
+     * @return: Handle to strored info else -1 on failure
+     * @hide
+     */
+    public int dppAddBootstrapQrCode(String uri) {
+        try {
+            return mService.dppAddBootstrapQrCode(uri);
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }
+
+
+    /**
+     * Generate bootstrap URI based on the passed arguments
+     *
+     * @param config ¨C bootstrap generate config, mandatory parameters
+     *                 are: type, frequency, mac_addr, curve, key.
+     *
+     * @return: Handle to strored URI info else -1 on failure
+     * @hide
+     */
+    public int dppBootstrapGenerate(WifiDppConfig config) {
+        try {
+            return mService.dppBootstrapGenerate(config);
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }
+
+    /**
+     * Get bootstrap URI based on bootstrap ID
+     *
+     * @param bootstrap_id: Stored bootstrap ID
+     *
+     * @return: URI string else -1 on failure
+     * @hide
+     */
+    public String dppGetUri(int bootstrap_id) {
+        try {
+            return mService.dppGetUri(bootstrap_id);
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }
+
+    /**
+     * Remove bootstrap URI based on bootstrap ID.
+     *
+     * @param bootstrap_id: Stored bootstrap ID. 0 to remove all.
+     *
+     * @return: 0 ¨C Success or -1 on failure
+     * @hide
+     */
+    public int dppBootstrapRemove(int bootstrap_id) {
+        try {
+            return mService.dppBootstrapRemove(bootstrap_id);
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }
+
+    /**
+     * start listen on the channel specified waiting to receive
+     * the DPP Authentication request.
+     *
+     * @param frequency: DPP listen frequency
+     * @param dpp_role: Configurator/Enrollee role
+     * @param qr_mutual: Mutual authentication required
+     * @param netrole_ap: network role
+     *
+     * @return: Returns 0 if a DPP-listen work is successfully
+     *  queued and -1 on failure.
+     * @hide
+     */
+    public int dppListen(String frequency, int dpp_role, boolean qr_mutual,
+                         boolean netrole_ap) {
+        try {
+            return mService.dppListen(frequency, dpp_role, qr_mutual, netrole_ap);
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }
+
+    /**
+     * stop ongoing dpp listen.
+     *
+     * @hide
+     */
+    public void dppStopListen() {
+        try {
+            mService.dppStopListen();
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }
+
+    /**
+     * Adds the DPP configurator
+     *
+     * @param curve curve used for dpp encryption
+     * @param key private key
+     * @param expiry timeout in seconds
+     *
+     * @return: Identifier of the added configurator or -1 on failure
+     * @hide
+     */
+    public int dppConfiguratorAdd(String curve, String key, int expiry) {
+        try {
+            return mService.dppConfiguratorAdd(curve, key, expiry);
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }
+
+    /**
+     * Remove the added configurator through dppConfiguratorAdd.
+     *
+     * @param config_id: DPP Configurator ID. 0 to remove all.
+     *
+     * @return: Handle to strored info else -1 on failure
+     * @hide
+     */
+    public int dppConfiguratorRemove(int config_id) {
+        try {
+            return mService.dppConfiguratorRemove(config_id);
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }
+
+    /**
+     * Start DPP authentication and provisioning with the specified peer
+     *
+     * @param config ¨C dpp auth init config mandatory parameters
+     *                 are: peer_bootstrap_id,  own_bootstrap_id,  dpp_role,
+     *                 ssid, passphrase, isDpp, conf_id, expiry.
+     *
+     * @return: 0 if DPP auth request was transmitted and -1 on failure
+     * @hide
+     */
+    public int  dppStartAuth(WifiDppConfig config) {
+        try {
+            return mService.dppStartAuth(config);
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+    }
+
+    /**
+     * Retrieve Private key to be used for configurator
+     *
+     * @param id: id of configurator
+     *
+     * @return: KEY string else -1 on failure
+     * @hide
+     */
+    public String dppConfiguratorGetKey(int id) {
+        try {
+            return mService.dppConfiguratorGetKey(id);
+        } catch (RemoteException e) {
+            throw e.rethrowFromSystemServer();
+        }
+"

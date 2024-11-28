@@ -1,0 +1,16 @@
+id,merge_commitid,file,Loc_details,block_text_1,block_text_2,recur_segment,proportion
+1,"['617f1aaaa25fabf89a392460136fbe1031d963cd', '74544b9e39b174025fcb91cc194ca920b12e8683']",services/core/java/com/android/server/policy/PhoneWindowManager.java,"[(682, 685, 4), (680, 682, 3)]","    private final List<DeviceKeyHandler> mDeviceKeyHandlers = new ArrayList<>();
+
+    private LineageButtons mLineageButtons;
+
+","    private final List<DeviceKeyHandler> mDeviceKeyHandlers = new ArrayList<>();
+
+    private LineageButtons mLineageButtons;
+","    private final List<DeviceKeyHandler> mDeviceKeyHandlers = new ArrayList<>();
+
+    private LineageButtons mLineageButtons;
+","[0.992, 1.0]"
+2,"['617f1aaaa25fabf89a392460136fbe1031d963cd', 'd274c33a679b96f638f6b6d14abb2472dd3fc2ac']",services/core/java/com/android/server/notification/NotificationManagerService.java,"[(490, 490, 1), (482, 482, 1)]","    final ArrayMap<String, Long> mLastSoundTimestamps = new ArrayMap<>();
+","    final ArrayMap<String, Long> mLastSoundTimestamps = new ArrayMap<>();
+","    final ArrayMap<String, Long> mLastSoundTimestamps = new ArrayMap<>();
+","[1.0, 1.0]"

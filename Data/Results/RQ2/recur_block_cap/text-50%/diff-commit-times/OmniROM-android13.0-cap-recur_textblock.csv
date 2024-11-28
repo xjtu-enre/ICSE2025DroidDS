@@ -1,0 +1,10 @@
+id,file,merge_commitid,times,recur_segment
+1,packages/SystemUI/src/com/android/systemui/dagger/SystemUIModule.java,"['f2b53072aa24c3f9f84e762d313f85f5f179e4a4', '20b50bcf2cdd722955040b713056399f0ec17bd2']",2,"import com.android.systemui.omni.dagger.OmniModule;
+"
+2,packages/SystemUI/src/com/android/systemui/qs/QSPanelControllerBase.java,"['e9fa89ccc721890c1d006a243a7376de4147d6d8', 'f2b53072aa24c3f9f84e762d313f85f5f179e4a4']",2,"import android.provider.Settings;
+"
+3,services/core/java/com/android/server/dreams/DreamManagerService.java,"['f2b53072aa24c3f9f84e762d313f85f5f179e4a4', '20b50bcf2cdd722955040b713056399f0ec17bd2']",2,"            return isDozingInternal();
+"
+4,services/core/java/com/android/server/dreams/DreamManagerService.java,"['f2b53072aa24c3f9f84e762d313f85f5f179e4a4', '20b50bcf2cdd722955040b713056399f0ec17bd2']",2,"        public boolean isDozing() {
+            return isDozingInternal();
+"

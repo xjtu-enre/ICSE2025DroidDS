@@ -1,0 +1,40 @@
+Unnamed: 0,Merge,Conf_details,Conf_methods,Loc,Block,Loc_details,is_in_aff_files
+8,6c7095e544d7681cf5325fb042cc1a39f4f9d05a,services/core/java/com/android/server/pm/UserManagerService.java,[],5,1,"[(4104, 4108, 5)]",True
+11,735ab084f19a936dd259c0f9a51b6f7abc4fa19c,packages/SystemUI/src/com/android/systemui/keyguard/KeyguardViewMediator.java,[],1,2,"[(0, 0, 0), (1979, 1979, 1)]",True
+16,3ba362dbbaa1d6319de0e8ffff03c0acbe76d9f9,packages/SystemUI/src/com/android/systemui/screenshot/SaveImageInBackgroundTask.java,[],4,2,"[(193, 193, 1), (525, 527, 3)]",True
+17,7e0b40ee7d0b4239a1becaf6f8b01693463a65e8,packages/SystemUI/src/com/android/systemui/screenshot/SaveImageInBackgroundTask.java,[],29,4,"[(177, 187, 11), (506, 517, 12), (528, 530, 3), (537, 539, 3)]",True
+19,840a15b39fd720a077e075bb494f9d38f8f0aa08,core/java/com/android/internal/app/ChooserActivity.java,[],8,1,"[(19, 26, 8)]",True
+27,840a15b39fd720a077e075bb494f9d38f8f0aa08,packages/SystemUI/src/com/android/systemui/statusbar/phone/CentralSurfacesImpl.java,[],1,1,"[(3603, 3603, 1)]",True
+28,840a15b39fd720a077e075bb494f9d38f8f0aa08,services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java,[],1,1,"[(449, 449, 1)]",True
+49,42803229a71b47a28ef777291f8c629ad98b0238,packages/SystemUI/src/com/android/systemui/qs/tiles/InternetTile.java,[],3,1,"[(257, 259, 3)]",True
+51,42803229a71b47a28ef777291f8c629ad98b0238,services/core/java/com/android/server/policy/PhoneWindowManager.java,[],1,1,"[(645, 645, 1)]",True
+52,42803229a71b47a28ef777291f8c629ad98b0238,packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBarPolicy.java,[],70,2,"[(45, 46, 2), (607, 674, 68)]",True
+54,42803229a71b47a28ef777291f8c629ad98b0238,services/usb/java/com/android/server/usb/UsbDeviceManager.java,[],3,1,"[(954, 956, 3)]",True
+56,42803229a71b47a28ef777291f8c629ad98b0238,core/java/android/hardware/Camera.java,[],4,1,"[(344, 347, 4)]",True
+58,42803229a71b47a28ef777291f8c629ad98b0238,packages/SettingsLib/IllustrationPreference/src/com/android/settingslib/widget/IllustrationPreference.java,[],1,1,"[(122, 122, 1)]",True
+61,42803229a71b47a28ef777291f8c629ad98b0238,packages/SystemUI/src/com/android/systemui/shade/NotificationPanelViewController.java,[],76,4,"[(372, 372, 1), (811, 812, 2), (901, 902, 2), (2490, 2560, 71)]",True
+64,42803229a71b47a28ef777291f8c629ad98b0238,packages/SystemUI/src/com/android/systemui/qs/tileimpl/QSFactoryImpl.java,[],232,4,"[(31, 67, 37), (80, 118, 39), (126, 204, 79), (220, 296, 77)]",True
+65,42803229a71b47a28ef777291f8c629ad98b0238,packages/SystemUI/src/com/android/systemui/theme/ThemeOverlayController.java,[],4,1,"[(546, 549, 4)]",True
+68,1ab0b23a1d46b60a76015f090ada435f10bc9ecd,packages/SystemUI/src/com/android/keyguard/KeyguardPINView.java,[],3,1,"[(62, 64, 3)]",True
+69,1ab0b23a1d46b60a76015f090ada435f10bc9ecd,services/appwidget/java/com/android/server/appwidget/AppWidgetXmlUtil.java,[],1,1,"[(96, 96, 1)]",True
+71,1ab0b23a1d46b60a76015f090ada435f10bc9ecd,packages/SystemUI/src/com/android/systemui/qs/QuickStatusBarHeader.java,[],3,1,"[(282, 284, 3)]",True
+75,1ab0b23a1d46b60a76015f090ada435f10bc9ecd,packages/SettingsLib/tests/robotests/src/com/android/settingslib/drawer/CategoryKeyTest.java,[],1,1,"[(63, 63, 1)]",True
+76,1ab0b23a1d46b60a76015f090ada435f10bc9ecd,services/core/java/com/android/server/statusbar/StatusBarManagerService.java,[],7,1,"[(2161, 2167, 7)]",True
+77,1ab0b23a1d46b60a76015f090ada435f10bc9ecd,core/java/android/hardware/Camera.java,[],4,1,"[(334, 337, 4)]",True
+78,1ab0b23a1d46b60a76015f090ada435f10bc9ecd,packages/SystemUI/src/com/android/systemui/screenshot/ScreenshotView.java,[],2,1,"[(783, 784, 2)]",True
+80,1ab0b23a1d46b60a76015f090ada435f10bc9ecd,packages/SystemUI/src/com/android/systemui/keyguard/KeyguardViewMediator.java,[],29,2,"[(347, 357, 11), (2315, 2332, 18)]",True
+82,1ab0b23a1d46b60a76015f090ada435f10bc9ecd,services/core/java/com/android/server/power/PowerManagerService.java,[],8,1,"[(1502, 1509, 8)]",True
+85,1ab0b23a1d46b60a76015f090ada435f10bc9ecd,packages/SystemUI/src/com/android/systemui/shade/NotificationPanelViewController.java,[],227,7,"[(51, 51, 1), (77, 77, 1), (298, 319, 22), (358, 360, 3), (797, 815, 19), (4216, 4394, 179), (4830, 4831, 2)]",True
+86,1ab0b23a1d46b60a76015f090ada435f10bc9ecd,packages/SystemUI/src/com/android/systemui/screenshot/SaveImageInBackgroundTask.java,[],4,1,"[(161, 164, 4)]",True
+88,1ab0b23a1d46b60a76015f090ada435f10bc9ecd,packages/SystemUI/src/com/android/systemui/tuner/TunerActivity.java,[],9,1,"[(69, 77, 9)]",True
+90,8a3fc87179eb4857cbde71ef0a7acc1d9189e2e6,packages/SystemUI/src/com/android/keyguard/NumPadKey.java,[],3,1,"[(40, 42, 3)]",True
+92,8a3fc87179eb4857cbde71ef0a7acc1d9189e2e6,packages/SystemUI/src/com/android/systemui/statusbar/connectivity/MobileSignalController.java,[],1,1,"[(274, 274, 1)]",True
+93,8a3fc87179eb4857cbde71ef0a7acc1d9189e2e6,core/java/android/provider/Settings.java,[],9,1,"[(10823, 10831, 9)]",True
+94,8a3fc87179eb4857cbde71ef0a7acc1d9189e2e6,packages/SystemUI/src/com/android/systemui/statusbar/policy/BluetoothControllerImpl.java,[],18,1,"[(326, 343, 18)]",True
+95,8a3fc87179eb4857cbde71ef0a7acc1d9189e2e6,packages/SystemUI/src/com/android/systemui/navigationbar/NavigationBarView.java,[],2,1,"[(85, 86, 2)]",True
+96,8a3fc87179eb4857cbde71ef0a7acc1d9189e2e6,packages/SystemUI/src/com/android/systemui/statusbar/phone/fragment/CollapsedStatusBarFragment.java,[],12,3,"[(236, 237, 2), (479, 481, 3), (488, 494, 7)]",True
+97,8a3fc87179eb4857cbde71ef0a7acc1d9189e2e6,packages/SystemUI/src/com/android/systemui/qs/tileimpl/QSTileImpl.java,[],21,3,"[(297, 299, 3), (304, 307, 4), (312, 325, 14)]",True
+105,8a3fc87179eb4857cbde71ef0a7acc1d9189e2e6,packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBarTransitions.java,[],1,1,"[(34, 34, 1)]",True
+106,8a3fc87179eb4857cbde71ef0a7acc1d9189e2e6,services/core/java/com/android/server/connectivity/Vpn.java,[],104,1,"[(2964, 3067, 104)]",True
+110,8a3fc87179eb4857cbde71ef0a7acc1d9189e2e6,packages/SystemUI/src/com/android/systemui/qs/tileimpl/QSFactoryImpl.java,[],41,4,"[(108, 115, 8), (153, 160, 8), (193, 200, 8), (274, 290, 17)]",True
+112,72ae328c0ea598eaf6e115a44520b2e7f3cc9eba,packages/SystemUI/src/com/android/systemui/statusbar/phone/fragment/CollapsedStatusBarFragment.java,[],1,1,"[(489, 489, 1)]",True

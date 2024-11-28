@@ -1,0 +1,7 @@
+id,file,merge_commitid,times,recur_segment
+1,services/core/java/com/android/server/notification/NotificationManagerService.java,"['617f1aaaa25fabf89a392460136fbe1031d963cd', 'd274c33a679b96f638f6b6d14abb2472dd3fc2ac']",2,"    final ArrayMap<String, Long> mLastSoundTimestamps = new ArrayMap<>();
+"
+2,services/core/java/com/android/server/policy/PhoneWindowManager.java,"['74544b9e39b174025fcb91cc194ca920b12e8683', '617f1aaaa25fabf89a392460136fbe1031d963cd']",2,"    private final List<DeviceKeyHandler> mDeviceKeyHandlers = new ArrayList<>();
+
+    private LineageButtons mLineageButtons;
+"

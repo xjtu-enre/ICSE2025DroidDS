@@ -1,0 +1,1248 @@
+{
+    "res": [
+        {
+            "IntrusiveModify": {
+                "native_class_intrusive_add_method": {
+                    "res": {
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 6,
+                                "top_50": 7,
+                                "top_100": 16,
+                                "top_10%": 47,
+                                "top_25%": 29,
+                                "top_50%": 9,
+                                "top_100%": 10
+                            }
+                        }
+                    },
+                    "filter": {
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                },
+                "native_method_intrusive": {
+                    "res": {
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 31,
+                                "top_50": 71,
+                                "top_100": 85,
+                                "top_10%": 351,
+                                "top_25%": 216,
+                                "top_50%": 56,
+                                "top_100%": 32
+                            }
+                        }
+                    },
+                    "filter": {
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "FinalDel": {
+                "del_native_class_final": {
+                    "res": {
+                        "is_inherit": {
+                            "is_inherit": 0,
+                            "no_inherit": 2
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 2,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    },
+                    "filter": {
+                        "is_inherit": {
+                            "is_inherit": 0,
+                            "no_inherit": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                },
+                "del_native_method_final": {
+                    "res": {
+                        "is_override": {
+                            "is_override": 0,
+                            "no_override": 1
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 1,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    },
+                    "filter": {
+                        "is_override": {
+                            "is_override": 0,
+                            "no_override": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "AccessibilityModify": {
+                "native_class_access_modify": {
+                    "res": {
+                        "native_used_frequency": {
+                            "n0_e0": 0,
+                            "n1_e0": 0,
+                            "n0_e1": 0,
+                            "n1_e1": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        },
+                        "native_used_effectiveness": {
+                            "0": 0,
+                            "0-0.2": 0,
+                            "0.2-0.5": 0,
+                            "0.5-1": 0
+                        }
+                    },
+                    "filter": {
+                        "native_used_frequency": {
+                            "n0_e0": 0,
+                            "n1_e0": 0,
+                            "n0_e1": 0,
+                            "n1_e1": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        },
+                        "native_used_effectiveness": {
+                            "0": 0,
+                            "0-0.2": 0,
+                            "0.2-0.5": 0,
+                            "0.5-1": 0
+                        }
+                    }
+                },
+                "native_method_access_modify": {
+                    "res": {
+                        "native_used_frequency": {
+                            "n0_e0": 0,
+                            "n1_e0": 5,
+                            "n0_e1": 0,
+                            "n1_e1": 5
+                        },
+                        "native_used_effectiveness": {
+                            "0": 9,
+                            "0-0.2": 0,
+                            "0.2-0.5": 0,
+                            "0.5-1": 1
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 6,
+                                "top_10%": 3,
+                                "top_25%": 1,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    },
+                    "filter": {
+                        "native_used_frequency": {
+                            "n0_e0": 0,
+                            "n1_e0": 0,
+                            "n0_e1": 0,
+                            "n1_e1": 0
+                        },
+                        "native_used_effectiveness": {
+                            "0": 0,
+                            "0-0.2": 0,
+                            "0.2-0.5": 0,
+                            "0.5-1": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "HiddenApi": {
+                "call_native_hidden_method": {
+                    "res": {
+                        "acceptable_hidden": {
+                            "no_acceptable_hidden": 0,
+                            "all_acceptable_hidden": 0,
+                            "mix_acceptable_hidden": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    },
+                    "filter": {
+                        "acceptable_hidden": {
+                            "no_acceptable_hidden": 0,
+                            "all_acceptable_hidden": 0,
+                            "mix_acceptable_hidden": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                },
+                "use_native_hidden_variable": {
+                    "res": {
+                        "acceptable_hidden": {
+                            "no_acceptable_hidden": 0,
+                            "all_acceptable_hidden": 0,
+                            "mix_acceptable_hidden": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    },
+                    "filter": {
+                        "acceptable_hidden": {
+                            "no_acceptable_hidden": 0,
+                            "all_acceptable_hidden": 0,
+                            "mix_acceptable_hidden": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                },
+                "call_native_hidden_modify_method": {
+                    "res": {
+                        "acceptable_hidden": {
+                            "no_acceptable_hidden": 0,
+                            "all_acceptable_hidden": 0,
+                            "mix_acceptable_hidden": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    },
+                    "filter": {
+                        "acceptable_hidden": {
+                            "no_acceptable_hidden": 0,
+                            "all_acceptable_hidden": 0,
+                            "mix_acceptable_hidden": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                },
+                "use_native_hidden_modify_variable": {
+                    "res": {
+                        "acceptable_hidden": {
+                            "no_acceptable_hidden": 0,
+                            "all_acceptable_hidden": 0,
+                            "mix_acceptable_hidden": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    },
+                    "filter": {
+                        "acceptable_hidden": {
+                            "no_acceptable_hidden": 0,
+                            "all_acceptable_hidden": 0,
+                            "mix_acceptable_hidden": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "ParameterListModifyDep": {
+                "native_method_add_parameter": {
+                    "res": {
+                        "add_param": {
+                            "single_simple_param": 47,
+                            "single_complex_param": 6,
+                            "multi_simple_param": 6,
+                            "multi_complex_param": 1
+                        },
+                        "native_used_frequency": {
+                            "n0_e0": 12,
+                            "n1_e0": 42,
+                            "n0_e1": 3,
+                            "n1_e1": 3
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 5,
+                                "top_50": 0,
+                                "top_100": 7,
+                                "top_10%": 30,
+                                "top_25%": 10,
+                                "top_50%": 5,
+                                "top_100%": 3
+                            }
+                        }
+                    },
+                    "filter": {
+                        "add_param": {
+                            "single_simple_param": 0,
+                            "single_complex_param": 0,
+                            "multi_simple_param": 0,
+                            "multi_complex_param": 0
+                        },
+                        "native_used_frequency": {
+                            "n0_e0": 0,
+                            "n1_e0": 0,
+                            "n0_e1": 0,
+                            "n1_e1": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "InnerExtensionClassUseDep": {
+                "native_class_add_inner_class": {
+                    "res": {
+                        "inner_scale": {
+                            "per_inner_class_loc_0.05": 2,
+                            "per_inner_class_loc_0.1": 0,
+                            "per_inner_class_loc_0.2": 0,
+                            "per_inner_class_loc_~": 0
+                        },
+                        "extensive_access_frequency": {
+                            "per_private_0": 0,
+                            "per_private_0-0.2": 0,
+                            "per_private_0.2-0.5": 0,
+                            "per_private_0.5-1": 2
+                        },
+                        "anonymous_class": {
+                            "is_anonymous_class": 1,
+                            "is_not_anonymous_class": 1
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 1,
+                                "top_100": 0,
+                                "top_10%": 1,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    },
+                    "filter": {
+                        "inner_scale": {
+                            "per_inner_class_loc_0.05": 0,
+                            "per_inner_class_loc_0.1": 0,
+                            "per_inner_class_loc_0.2": 0,
+                            "per_inner_class_loc_~": 0
+                        },
+                        "extensive_access_frequency": {
+                            "per_private_0": 0,
+                            "per_private_0-0.2": 0,
+                            "per_private_0.2-0.5": 0,
+                            "per_private_0.5-1": 0
+                        },
+                        "anonymous_class": {
+                            "is_anonymous_class": 0,
+                            "is_not_anonymous_class": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "InheritExtension": {
+                "native_class_inherit_extensive_class": {
+                    "res": {
+                        "is_new_inherit": {
+                            "new_add_inherit": 0,
+                            "modify_inherit": 0
+                        },
+                        "is_inherit": {
+                            "is_inherit": 0,
+                            "no_inherit": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    },
+                    "filter": {
+                        "is_new_inherit": {
+                            "new_add_inherit": 0,
+                            "modify_inherit": 0
+                        },
+                        "is_inherit": {
+                            "is_inherit": 0,
+                            "no_inherit": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "ImplementExtension": {
+                "native_class_implement_extensive_interface": {
+                    "res": {
+                        "is_new_implement": {
+                            "new_add_implement": 0,
+                            "modify_implement": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    },
+                    "filter": {
+                        "is_new_implement": {
+                            "new_add_implement": 0,
+                            "modify_implement": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "AggregationExtensionInterfaceClassDep": {
+                "native_class_aggregate_extensive_interface": {
+                    "res": {
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        },
+                        "native_access_frequency": {
+                            "per_private_0": 0,
+                            "per_private_0-0.2": 0,
+                            "per_private_0.2-0.5": 0,
+                            "per_private_0.5-1": 0
+                        }
+                    },
+                    "filter": {
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        },
+                        "native_access_frequency": {
+                            "per_private_0": 0,
+                            "per_private_0-0.2": 0,
+                            "per_private_0.2-0.5": 0,
+                            "per_private_0.5-1": 0
+                        }
+                    }
+                },
+                "native_class_aggregate_extensive_class": {
+                    "res": {
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 2,
+                                "top_100": 1,
+                                "top_10%": 0,
+                                "top_25%": 6,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        },
+                        "native_access_frequency": {
+                            "per_private_0": 9,
+                            "per_private_0-0.2": 0,
+                            "per_private_0.2-0.5": 0,
+                            "per_private_0.5-1": 0
+                        }
+                    },
+                    "filter": {
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        },
+                        "native_access_frequency": {
+                            "per_private_0": 0,
+                            "per_private_0-0.2": 0,
+                            "per_private_0.2-0.5": 0,
+                            "per_private_0.5-1": 0
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "ReflectUse": {
+                "extensive_method_reflect_native_method": {
+                    "res": {
+                        "open_in_sdk": {
+                            "all_not_in_sdk": 0,
+                            "all_in_sdk": 0,
+                            "mix_in_sdk": 0
+                        },
+                        "func_metrics": {
+                            "test": 0,
+                            "not test": 0
+                        },
+                        "extensive_access_frequency": {
+                            "per_private_0": 0,
+                            "per_private_0-0.2": 0,
+                            "per_private_0.2-0.5": 0,
+                            "per_private_0.5-1": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    },
+                    "filter": {
+                        "open_in_sdk": {
+                            "all_not_in_sdk": 0,
+                            "all_in_sdk": 0,
+                            "mix_in_sdk": 0
+                        },
+                        "func_metrics": {
+                            "test": 0,
+                            "not test": 0
+                        },
+                        "extensive_access_frequency": {
+                            "per_private_0": 0,
+                            "per_private_0-0.2": 0,
+                            "per_private_0.2-0.5": 0,
+                            "per_private_0.5-1": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                },
+                "extensive_method_reflect_native_class": {
+                    "res": {
+                        "open_in_sdk": {
+                            "all_not_in_sdk": 12,
+                            "all_in_sdk": 11,
+                            "mix_in_sdk": 0
+                        },
+                        "func_metrics": {
+                            "test": 1,
+                            "not test": 22
+                        },
+                        "extensive_access_frequency": {
+                            "per_private_0": 23,
+                            "per_private_0-0.2": 0,
+                            "per_private_0.2-0.5": 0,
+                            "per_private_0.5-1": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 2,
+                                "top_50": 4,
+                                "top_100": 4,
+                                "top_10%": 6,
+                                "top_25%": 6,
+                                "top_50%": 1,
+                                "top_100%": 0
+                            }
+                        }
+                    },
+                    "filter": {
+                        "open_in_sdk": {
+                            "all_not_in_sdk": 0,
+                            "all_in_sdk": 0,
+                            "mix_in_sdk": 0
+                        },
+                        "func_metrics": {
+                            "test": 0,
+                            "not test": 0
+                        },
+                        "extensive_access_frequency": {
+                            "per_private_0": 0,
+                            "per_private_0-0.2": 0,
+                            "per_private_0.2-0.5": 0,
+                            "per_private_0.5-1": 0
+                        },
+                        "stability": {
+                            "history_commits": {
+                                "0-10": 0,
+                                "10-30": 0,
+                                "30-50": 0,
+                                "50-": 0
+                            },
+                            "maintenance_cost": {
+                                "per_of_changloc_loc_1": 0,
+                                "per_of_changloc_loc_2": 0,
+                                "per_of_changloc_loc_5": 0,
+                                "per_of_changloc_loc_~": 0
+                            },
+                            "maintenance_cost_rank": {
+                                "top_10": 0,
+                                "top_50": 0,
+                                "top_100": 0,
+                                "top_10%": 0,
+                                "top_25%": 0,
+                                "top_50%": 0,
+                                "top_100%": 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

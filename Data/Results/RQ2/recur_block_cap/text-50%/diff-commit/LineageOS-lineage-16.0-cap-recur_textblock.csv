@@ -1,0 +1,6 @@
+id,merge_commitid,file,Loc_details,block_text_1,block_text_2,recur_segment,proportion
+1,"['12930acc5076e1acff0744b8d225bb2d2173f1b5', '63d76f28fe78b240b481a690e14966fb3838aa3f']",packages/SystemUI/src/com/android/systemui/statusbar/policy/Clock.java,"[(67, 67, 1), (74, 75, 2)]","    public static final String CLOCK_STYLE = ""lineagesystem:status_bar_am_pm"";
+","
+    public static final String CLOCK_STYLE = ""lineagesystem:status_bar_am_pm"";
+","    public static final String CLOCK_STYLE = ""lineagesystem:status_bar_am_pm"";
+","[1.0, 0.988]"

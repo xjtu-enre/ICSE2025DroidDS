@@ -1,0 +1,378 @@
+id,file,merge_commitid,times,recur_segment
+1,core/java/android/app/ActivityManagerInternal.java,"['e85435d4d9a2f7122bd5c97ad0a25c768d124a0e', '3933f277a025be704e68ea593536e492831a7e05', '02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '24818fca475a6726f5ef0cae42149615079af6e9', '2051462f672b5986ef321bf1de3657e7653864e8', '1b62159ffcebb2c102e129b2e778a8f65b7e5948', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",7,"    // Starts a process as empty.
+    public abstract int startActivityAsUserEmpty(Bundle options);
+"
+2,core/java/android/app/PendingIntent.java,"['4c3d4ac80fe9f0fb4fbb4fcffcd2ba3f4e6fca6c', 'b6d6690a3594cd78966e26508247d4ab1b66776f']",2,")
+                    && !flagImmutableSet && !flagMutableSet) {
+                String msg = packageName + "": Targeting S+ (version "" + Build.VERSION_CODES.S
+                        + "" and above) requires that one of FLAG_IMMUTABLE or FLAG_MUTABLE""
+                        + "" be specified when creating a PendingIntent.\nStrongly consider""
+                        + "" using FLAG_IMMUTABLE, only use FLAG_MUTABLE if some functionality""
+                        + "" depends on the PendingIntent being mutable, e.g. if it needs to""
+                        + "" be used with inline replies or bubbles."";
+                    throw new IllegalArgumentException(msg);
+            }
+"
+3,core/java/android/content/res/CompatibilityInfo.java,"['337095f9d277c566cb888bc3adbac16576f1ae70', '24818fca475a6726f5ef0cae42149615079af6e9']",2,"            int density = appInfo.getOverrideDensity();
+            if ((appInfo.flags & ApplicationInfo.FLAG_SUPPORTS_SCREEN_DENSITIES) == 0) {
+"
+4,core/java/android/view/Choreographer.java,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '449f659b21d039b8692602294b040038ac1e6ccb']",2,"            ScrollOptimizer.setVsyncTime(mTimestampNanos);
+"
+5,location/java/android/location/LocationManager.java,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",2,        android.util.SeempLog.record(4
+6,media/java/android/media/AudioFormat.java,"['337095f9d277c566cb888bc3adbac16576f1ae70', 'd3ff2de786af936a9af8739f5c98972804dd5823']",2,"    /** Audio data format: AMRNB
+     * @hide
+     * */
+    public static final int ENCODING_AMRNB = 100;
+    /** Audio data format: AMRWB
+     * @hide
+     * */
+    public static final int ENCODING_AMRWB = 101;
+    /** Audio data format: EVRC
+     * @hide
+     * */
+    public static final int ENCODING_EVRC = 102;
+    /** Audio data format: EVRCB
+     * @hide
+     * */
+    public static final int ENCODING_EVRCB = 103;
+    /** Audio data format: EVRCWB
+     * @hide
+     * */
+    public static final int ENCODING_EVRCWB = 104;
+    /** Audio data format: EVRCNW
+     * @hide
+     * */
+    public static final int ENCODING_EVRCNW = 105;
+"
+7,packages/SettingsLib/src/com/android/settingslib/bluetooth/CachedBluetoothDevice.java,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '2051462f672b5986ef321bf1de3657e7653864e8']",2,"    public int getGroupId(){
+        return mGroupId;
+    }
+
+    public boolean isGroupDevice() {
+        return mIsGroupDevice;
+    }
+
+    public boolean isPrivateAddr() {
+        return mIsIgnore;
+    }
+
+    public void setDeviceType(int deviceType) {
+        if (deviceType!= mType) {
+            // Log.d(TAG, ""setDeviceType deviceType "" + deviceType + "" type "" + mType);
+            mType = deviceType;
+            if (mType == UNKNOWN || mType == BREDR) {
+                mIsGroupDevice = false;
+                mGroupId = UNKNOWN;
+                mIsIgnore = false;
+            } else if (mType == PRIVATE_ADDR) {
+                mIsGroupDevice = false;
+                mGroupId = UNKNOWN;
+                mIsIgnore = true;
+            } else if (mType >= GROUPID_START && mType <= GROUPID_END ) {
+                mGroupId = mType;
+                mIsIgnore = false;
+                mIsGroupDevice = true;
+            } else {
+                Log.e(TAG, ""setDeviceType error type "" + mType);
+            }
+        }
+       /* Log.d(TAG, ""setDeviceType mType "" + mType + "" mIsGroupDevice "" + mIsGroupDevice
+                + "" mGroupId "" + mGroupId + "" mIsIgnore "" + mIsIgnore
+                + "" name "" + getName() + "" addr "" + getAddress()); */
+    }
+
+    public boolean isTypeUnKnown() {
+        if (mType == UNKNOWN) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int getmType() {
+        return mType;
+"
+8,packages/SettingsLib/src/com/android/settingslib/wifi/WifiStatusTracker.java,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '3e8cb98421761bb7dfafe59a22a15fe2e176f272']",2,"            updateRssi(mWifiInfo.getRssi());
+            maybeRequestNetworkScore();
+            wifiStandard = mWifiInfo.getWifiStandard();
+            vhtMax8SpatialStreamsSupport = mWifiInfo.isVhtMax8SpatialStreamsSupported();
+            he8ssCapableAp = mWifiInfo.isHe8ssCapableAp();
+            if (m"
+9,packages/SystemUI/src/com/android/keyguard/KeyguardSecurityModel.java,"['21cdef883cc867db55340b25d5c95e19b12ab383', '27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca']",2,"import com.android.systemui.keyguard.KeyguardViewMediator;
+"
+10,packages/SystemUI/src/com/android/systemui/qs/tiles/CastTile.java,"['337095f9d277c566cb888bc3adbac16576f1ae70', '757dbb836469bbdd7eb8312deaf584fe0c99c17d']",2,"                    if(SystemProperties.getBoolean(WFD_ENABLE, false)) {
+                        if(enabled != mWifiConnected) {
+                            mWifiConnected = enabled;
+"
+11,packages/SystemUI/src/com/android/systemui/statusbar/phone/KeyguardBottomAreaView.java,"['9d10272031d3f400d399db45927abf3be739b074', '337095f9d277c566cb888bc3adbac16576f1ae70']",2,        mEmergencyCarrierArea.set
+12,packages/SystemUI/src/com/android/systemui/statusbar/phone/KeyguardBottomAreaView.java,"['9d10272031d3f400d399db45927abf3be739b074', '337095f9d277c566cb888bc3adbac16576f1ae70', '757dbb836469bbdd7eb8312deaf584fe0c99c17d']",3,"        mEmergencyCarrierArea.setAlpha(alpha);
+"
+13,packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"['71c831703ae59baf47e0afe611fecd714c481cdf', '219787565ff982848d596fa8743cd132af113e6b', '1b62159ffcebb2c102e129b2e778a8f65b7e5948']",3,"            @Main Executor uiExecutor,
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+"
+14,packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '9d10272031d3f400d399db45927abf3be739b074', '71c831703ae59baf47e0afe611fecd714c481cdf', '1b62159ffcebb2c102e129b2e778a8f65b7e5948', '219787565ff982848d596fa8743cd132af113e6b']",6,            EmergencyButtonController.Factory emergencyButtonControllerFactory
+15,packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '71c831703ae59baf47e0afe611fecd714c481cdf', '1b62159ffcebb2c102e129b2e778a8f65b7e5948', '219787565ff982848d596fa8743cd132af113e6b']",5,"            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+"
+16,packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"['71c831703ae59baf47e0afe611fecd714c481cdf', '9d10272031d3f400d399db45927abf3be739b074', 'b6d6690a3594cd78966e26508247d4ab1b66776f']",3,"        EmergencyButton emergencyButton =
+                mKeyguardBottomArea.findViewById(R.id.emergency_call_button);
+        mEmergencyButtonController = mEmergencyButtonControllerFactory.create(emergencyButton);
+        mEmergencyButtonController.init();
+"
+17,packages/SystemUI/src/com/android/systemui/statusbar/phone/NotificationPanelViewController.java,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '71c831703ae59baf47e0afe611fecd714c481cdf', '219787565ff982848d596fa8743cd132af113e6b', '1b62159ffcebb2c102e129b2e778a8f65b7e5948']",4,",
+            EmergencyButtonController.Factory emergencyButtonControllerFactory) {
+"
+18,packages/SystemUI/src/com/android/systemui/statusbar/phone/PanelViewController.java,"['e85435d4d9a2f7122bd5c97ad0a25c768d124a0e', 'b6d6690a3594cd78966e26508247d4ab1b66776f']",2,"        if (mPerf != null) {
+            String currentPackage = mView.getContext().getPackageName();
+            mPerf.perfHint(BoostFramework.VENDOR_HINT_SCROLL_BOOST, currentPackage, -1, BoostFramework.Scroll.PANEL_VIEW);
+        }
+"
+19,packages/SystemUI/tests/src/com/android/systemui/qs/carrier/QSCarrierGroupControllerTest.java,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '337095f9d277c566cb888bc3adbac16576f1ae70', '757dbb836469bbdd7eb8312deaf584fe0c99c17d']",3,"                0, 0, true, true, 0, """", """", """", "
+20,packages/SystemUI/tests/src/com/android/systemui/qs/carrier/QSCarrierGroupControllerTest.java,"['337095f9d277c566cb888bc3adbac16576f1ae70', '757dbb836469bbdd7eb8312deaf584fe0c99c17d']",2,"                0, 0, true, true, 0, """", """", """", true, 0, true"
+21,services/core/java/com/android/server/BluetoothManagerService.java,"['2051462f672b5986ef321bf1de3657e7653864e8', '1b62159ffcebb2c102e129b2e778a8f65b7e5948']",2,"                if (mBluetoothGatt != null) {
+                    mBluetoothGatt.unregAll("
+22,services/core/java/com/android/server/BluetoothManagerService.java,"['21cdef883cc867db55340b25d5c95e19b12ab383', '2051462f672b5986ef321bf1de3657e7653864e8']",2,"            intent.addFlags(Intent.FLAG_RECEIVER_INCLUDE_BACKGROUND);
+            mContext.sendBroadcastAsUser(intent, UserHandle.ALL, BLUETOOTH_"
+23,services/core/java/com/android/server/BluetoothManagerService.java,"['21cdef883cc867db55340b25d5c95e19b12ab383', '2051462f672b5986ef321bf1de3657e7653864e8']",2,"        intent.setFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+        mContext.sendBroadcastAsUser(intent, UserHandle.ALL, BLUETOOTH_"
+24,services/core/java/com/android/server/Watchdog.java,"['21cdef883cc867db55340b25d5c95e19b12ab383', '81abbc1d7858f29d3344ff6f1702ece80eab8341']",2,"                                    subject, report.toString(), finalStack, null"
+25,services/core/java/com/android/server/Watchdog.java,"['71c831703ae59baf47e0afe611fecd714c481cdf', '81abbc1d7858f29d3344ff6f1702ece80eab8341']",2,"ubject, report.toString(), finalStack, null, null, null);
+"
+26,services/core/java/com/android/server/am/ActiveServices.java,"['ac442e0398fe7344f66cbbd4d2af15b1bfdbf46b', '3933f277a025be704e68ea593536e492831a7e05']",2,"        if(mPerf != null)
+            SERVICE_RESCHEDULE = Boolean.parseBoolean(mPerf.perfGetProp(""ro.vendor.qti.am.reschedule_service"", ""false""));
+"
+27,services/core/java/com/android/server/am/OomAdjuster.java,"['337095f9d277c566cb888bc3adbac16576f1ae70', 'd3ff2de786af936a9af8739f5c98972804dd5823']",2,"            if(mIsTopAppRenderThreadBoostEnabled) {
+                if(mCurRenderThreadTid != app.renderThreadTid && app.renderThreadTid > 0) {
+                    mCurRenderThreadTid = app.renderThreadTid;
+                    if (mPerfBoost != null) {
+                        Slog.d(TAG, ""TOP-APP: pid:"" + app.pid + "", processName: ""
+                               + app.processName + "", renderThreadTid: "" + app.renderThreadTid);
+                        if (mPerfHandle >= 0) {
+                            mPerfBoost.perfLockRelease();
+                            mPerfHandle = -1;
+                        }
+                        mPerfHandle = mPerfBoost.perfHint(BoostFramework.VENDOR_HINT_BOOST_RENDERTHREAD,
+                                                          app.processName, app.renderThreadTid, 1);
+                        Slog.d(TAG, ""VENDOR_HINT_BOOST_RENDERTHREAD perfHint was called. mPerfHandle: ""
+                               + mPerfHandle);
+                    }
+                }
+            }
+
+"
+28,services/core/java/com/android/server/display/DisplayManagerService.java,"['ac442e0398fe7344f66cbbd4d2af15b1bfdbf46b', '3933f277a025be704e68ea593536e492831a7e05']",2,"    // The synchronization root for the display dumpsys.
+    private final SyncRoot mSyncDump = new SyncRoot();
+
+    // Whether dump is inprogress or not.
+    @GuardedBy(""mSyncDump"")
+    private boolean mDumpInProgress;
+"
+29,services/core/java/com/android/server/display/DisplayModeDirector.java,"['022e461c46ee3629d43ba134e977a0f3353c8782', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",2,        private boolean m
+30,services/core/java/com/android/server/display/DisplayModeDirector.java,"['022e461c46ee3629d43ba134e977a0f3353c8782', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",2,"rightness + "", ambient lux "" +  mAmbientLux +
+                        "", Vote "" + vote);
+"
+31,services/core/java/com/android/server/display/LocalDisplayAdapter.java,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '337095f9d277c566cb888bc3adbac16576f1ae70']",2,"                } else if (isBuiltIn) {
+                    mInfo.type = Display.TYPE_INTERNAL;
+                    mInfo.touch = DisplayDeviceInfo.TOUCH_INTERNAL;
+                    mInfo.name = getContext().getResources().getString(
+                            com.android.internal.R.string.display_manager_built_in_display_name);
+                    mInfo.flags |= DisplayDeviceInfo.FLAG_ROTATES_WITH_CONTENT;
+
+                    if (SystemProperties.getBoolean(
+                                    ""vendor.display.builtin_presentation"", false)) {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_PRESENTATION;
+                    } else {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_PRIVATE;
+                    }
+
+                    if (!SystemProperties.getBoolean(
+                                    ""vendor.display.builtin_mirroring"", false)) {
+                        mInfo.flags |= DisplayDeviceInfo.FLAG_OWN_CONTENT_ONLY;
+                    }
+
+                    mInfo.setAssumedDensityForExternalDisplay("
+32,services/core/java/com/android/server/location/LocationManagerService.java,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '449f659b21d039b8692602294b040038ac1e6ccb']",2,";
+
+    private String mComboNlpPackageName;
+    private String mComboNlpReadyMarker;
+    private String mComboNlpScreenMarker;
+"
+33,services/core/java/com/android/server/locksettings/LockSettingsService.java,"['24818fca475a6726f5ef0cae42149615079af6e9', '1b62159ffcebb2c102e129b2e778a8f65b7e5948']",2,"    private static String mSavePassword = DEFAULT_PASSWORD;
+
+"
+34,services/core/java/com/android/server/pm/PackageInstallerSession.java,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",2,"        if (mIsPerfLockAcquired && mPerfBoostInstall != null) {
+            mPerfBoostInstall.perfLockRelease();
+            mIsPerfLockAcquired = false;
+        }
+        if (hasParentSessionId()) {
+            throw new IllegalStateException(
+                    ""Session "" + sessionId + "" is a child of multi-package session ""
+                            + getParentSessionId() +  "" and may not be abandoned directly."");
+        }
+"
+35,services/core/java/com/android/server/pm/PackageManagerService.java,"['48cbb14e1815430efd7ff5086e7a4c70e75d475f', '15d9159eb00fb7fd92f9dc249af588f655fd8f66']",2,"            int flags;
+"
+36,services/core/java/com/android/server/pm/PackageManagerService.java,"['b6d6690a3594cd78966e26508247d4ab1b66776f', '3e8cb98421761bb7dfafe59a22a15fe2e176f272']",2,";
+            if (umInternal.isUserUnlockingOrUnlocked(user.id)) {
+"
+37,services/core/java/com/android/server/wm/ActivityRecord.java,"['b03d6d43646266d456c22154a1f6fd945bf79f83', '24818fca475a6726f5ef0cae42149615079af6e9']",2,"        if (mPerf == null)
+            mPerf = new BoostFramework();
+"
+38,services/core/java/com/android/server/wm/ActivityRecord.java,"['337095f9d277c566cb888bc3adbac16576f1ae70', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a']",2,"        launching = false;
+        final "
+39,services/core/java/com/android/server/wm/DisplayPolicy.java,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '337095f9d277c566cb888bc3adbac16576f1ae70']",2,"import android.util.BoostFramework;
+"
+40,services/core/java/com/android/server/wm/RefreshRatePolicy.java,"['02a7ee5d65cb8d40fd1dde9aaf6b5ead9222a5a6', '71c831703ae59baf47e0afe611fecd714c481cdf']",2,"        // If app is forced to specified refresh rate, return the specified refresh rate
+        int forceRefreshRateId = mForceList.getForceRefreshRateId(w.getOwningPackage());
+        if(forceRefreshRateId > 0) {
+            return forceRefreshRateId;
+        }
+
+        "
+41,services/core/java/com/android/server/wm/RootWindowContainer.java,"['b03d6d43646266d456c22154a1f6fd945bf79f83', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a']",2,"k getTopDisplayFocusedStack() {
+"
+42,services/core/java/com/android/server/wm/TaskDisplayArea.java,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '449f659b21d039b8692602294b040038ac1e6ccb']",2,"    public static boolean mPerfSendTapHint = false;
+    public static boolean mIsPerfBoostAcquired = false;
+    public static int mPerfHandle = -1;
+    public BoostFramework mPerfBoost = null;
+    public BoostFramework mUxPerf = null;
+"
+43,services/core/java/com/android/server/wm/TaskDisplayArea.java,"['b03d6d43646266d456c22154a1f6fd945bf79f83', '449f659b21d039b8692602294b040038ac1e6ccb']",2,";
+import static com.android.server.wm.Task.ActivityState.DESTROYED;
+"
+44,services/java/com/android/server/SystemServer.java,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '3933f277a025be704e68ea593536e492831a7e05']",2,"            mSystemServiceManager.startService(ActivityTriggerService.class);
+"
+45,telephony/java/android/telephony/CarrierConfigManager.java,"['e85435d4d9a2f7122bd5c97ad0a25c768d124a0e', '24818fca475a6726f5ef0cae42149615079af6e9', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a', '449f659b21d039b8692602294b040038ac1e6ccb', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",5,"        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+"
+46,telephony/java/android/telephony/CarrierConfigManager.java,"['27e7f8c2aa4ce0a2f59b3bf1969b06bfd1e9ebca', '449f659b21d039b8692602294b040038ac1e6ccb', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",4,"        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putInt(KEY_DEFAULT_RTT_MODE_INT, 0);
+"
+47,telephony/java/android/telephony/CarrierConfigManager.java,"['21cdef883cc867db55340b25d5c95e19b12ab383', '2051462f672b5986ef321bf1de3657e7653864e8', '3e8cb98421761bb7dfafe59a22a15fe2e176f272', '1703ba989d8ea7e3cfbf32ac94111087166672de']",4,"        sDefaults.putBoolean(KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE, false);
+        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+"
+48,telephony/java/android/telephony/CarrierConfigManager.java,"['26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",2,"        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+"
+49,telephony/java/android/telephony/CarrierConfigManager.java,"['3e8cb98421761bb7dfafe59a22a15fe2e176f272', '1703ba989d8ea7e3cfbf32ac94111087166672de', '21cdef883cc867db55340b25d5c95e19b12ab383', '26017c68ee11d3f2d54ca731119c8dc4ddb842cf', '2051462f672b5986ef321bf1de3657e7653864e8']",5,"        sDefaults.putStringArray(KEY_MULTI_APN_ARRAY_FOR_SAME_GID, new String[] {
+                ""52FF:mms,supl,hipri,default,fota:SA:nrphone"",
+                ""52FF:mms,supl,hipri,default,fota:NSA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""52FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:SA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:NSA:enhancedphone"",
+                ""53FF:mms,supl,hipri,default,fota:LTE:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:TD_SCDMA:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:UMTS:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:GSM:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:HDR:nxtgenphone"",
+                ""53FF:mms,supl,hipri,default,fota:1xRTT:nxtgenphone"",
+        });
+        sDefaults.putBoolean(KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY, false);
+        sDefaults.putBoolean(KEY_USE_SMS_CALLBACK_MODE_BOOL, false);
+"
+50,telephony/java/android/telephony/CarrierConfigManager.java,"['e85435d4d9a2f7122bd5c97ad0a25c768d124a0e', '24818fca475a6726f5ef0cae42149615079af6e9', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a', '449f659b21d039b8692602294b040038ac1e6ccb', '7fd6edc3a3ff37a750641d5e192835fe217f6050']",5,"     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+"
+51,telephony/java/android/telephony/CarrierConfigManager.java,"['e85435d4d9a2f7122bd5c97ad0a25c768d124a0e', '449f659b21d039b8692602294b040038ac1e6ccb', '8abdf0e95a5d15a310b6df69d33a4510a0b44b4a', '7fd6edc3a3ff37a750641d5e192835fe217f6050', '9272406e82304c5a2a8124c75eedb4b5fdf7273a']",5,"     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * Determines the default RTT mode.
+     *
+     * @hide
+     */
+    public static final String KEY_DEFAULT_RTT_MODE_INT =
+            ""default_rtt_mode_int"";
+"
+52,telephony/java/android/telephony/CarrierConfigManager.java,"['21cdef883cc867db55340b25d5c95e19b12ab383', '2051462f672b5986ef321bf1de3657e7653864e8', '1703ba989d8ea7e3cfbf32ac94111087166672de']",3,"     /**
+     * Flag indicating whether carrier supports multianchor conference.
+     * In multianchor conference, a participant of a conference can add
+     * other participants to the call using merge button thereby resulting
+     * in a conference with multi anchors.
+     * @hide
+     */
+    public static final String KEY_CARRIER_SUPPORTS_MULTIANCHOR_CONFERENCE =
+            ""carrier_supports_multianchor_conference"";
+
+    /**
+     * String array of APN configurations of same MVNO type GID.
+     * The entries should be of form ""GID data:all supported apn types:devicecapability:apnname"".
+     * example: 52FF:default,mms:SA:nrphone
+     *
+     * @hide
+     */
+    public static final String KEY_MULTI_APN_ARRAY_FOR_SAME_GID = ""multi_apn_array_for_same_gid"";
+
+    /**
+     * Flag indicating if APN filtering required.
+     *
+     * @hide
+     */
+    public static final String KEY_REQUIRE_APN_FILTERING_WITH_RADIO_CAPABILITY =
+            ""require_apn_filtering_with_radio_capability_bool"";
+
+    /**
+     * Determines whether carrier supports Sms Callback Mode.
+     * When {@code true}, modem can enter/exit SMS callback mode (SCBM) after sending e911 SMS.
+     * When user tries to make a following e911 call and modem is in SCBM, the same sub will be
+     * selected to place the e911 call over IMS.
+     * When {@code false}, follows the current slot selection logic to place the e911 call.
+     *
+     * @hide
+     */
+    public static final String KEY_USE_SMS_CALLBACK_MODE_BOOL =
+            ""use_sms_callback_mode_bool"";
+"
